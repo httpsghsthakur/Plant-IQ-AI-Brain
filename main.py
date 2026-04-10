@@ -26,22 +26,24 @@ logger = logging.getLogger("plantiq")
 async def lifespan(app: FastAPI):
     """Startup and shutdown events."""
     # ─── Startup ────────────────────────────────────────────────────
-    logger.info("🌱 PlantIQ AI Brain starting up...")
+    logger.info("PlantIQ AI Brain starting up...")
 
     # Data loading now happens dynamically per nursery via DataService caching
-    logger.info("📂 DataService configured for dynamic Supabase fetch")
+    logger.info("DataService configured for dynamic Supabase fetch")
 
     # Load trained models
-    from services.model_service import model_service
-    load_results = model_service.load_all()
-    loaded = sum(1 for v in load_results.values() if v)
-    if loaded > 0:
-        logger.info(f"🤖 Models loaded: {loaded}/8 trained models ready")
-    else:
-        logger.warning("⚠️  No trained models found. Run 'python training/train_all_models.py' first.")
+    try:
+        from services.model_service import model_service
+        load_results = model_service.load_all()
+        loaded = sum(1 for v in load_results.values() if v)
+        if loaded > 0:
+            logger.info(f"Models loaded: {loaded}/8 trained models ready")
+        else:
+            logger.warning("No trained models found. Ensure 'trained_models' directory is present.")
+    except Exception as e:
+        logger.error(f"Error during model loading: {str(e)}")
 
-    logger.info(f"✅ PlantIQ AI Brain ready at http://{config.API_HOST}:{config.API_PORT}")
-    logger.info(f"📖 API docs at http://localhost:{config.API_PORT}/docs")
+    logger.info(f"PlantIQ AI Brain ready at port {config.API_PORT}")
 
     yield
 

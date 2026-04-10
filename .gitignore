@@ -17,7 +17,14 @@ venv.bak/
 tests/
 scratch/
 training_data/
+data/generated/
+data/*.zip
+data/plantvillage_extracted/
+.vscode/
 
 # OS generated files
 .DS_Store
 Thumbs.db
+node_modules
+node_modules
+node_modules

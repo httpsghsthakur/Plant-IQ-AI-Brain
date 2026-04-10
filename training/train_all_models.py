@@ -112,23 +112,30 @@ def train_all():
         data["sensor"], data["attendance"], data["task"], data["inventory"]
     )
 
-    # ─── Model 9: Recommendation Engine (no training needed) ────────
-    print("\n" + "─" * 50)
-    print("🤖 Model 9: Recommendation Engine")
-    from models.recommendation_engine.engine import RecommendationEngine
-    rec_engine = RecommendationEngine()
-    rec_engine.set_models(
-        environmental=env_model,
-        worker=worker_model,
-        plant_health=plant_model,
-        graft=graft_model,
-        resource=resource_model,
-        yield_forecast=yield_model,
-        financial=financial_model,
-        anomaly=anomaly_model,
-    )
     print("  ✅ Recommendation Engine initialized with all 8 models")
     metrics["recommendation_engine"] = {"status": "initialized"}
+
+    # ─── Model 10: Disease Vision (CNN) ──────────────────────────────
+    print("\n" + "─" * 50)
+    print("📸 Model 10: Disease Vision (CNN)")
+    from training.import_dataset import download_dataset, organize_dataset
+    from training.train_vision import train_model as train_vision
+    
+    try:
+        download_dataset()
+        organize_dataset()
+        
+        disease_data_dir = config.DATA_DIR / "diseases"
+        if disease_data_dir.exists():
+            # Run for a small number of epochs in this master script
+            vision_metrics = train_vision(str(disease_data_dir), num_epochs=3)
+            metrics["disease_vision"] = {"status": "trained", "epochs": 3}
+        else:
+            print("  ⚠️  Disease data not found, skipping vision training")
+            metrics["disease_vision"] = {"status": "skipped", "reason": "no_data"}
+    except Exception as e:
+        print(f"  ❌ Disease vision training failed: {e}")
+        metrics["disease_vision"] = {"status": "failed", "error": str(e)}
 
     # ─── Summary ────────────────────────────────────────────────────
     elapsed = time.time() - start_time

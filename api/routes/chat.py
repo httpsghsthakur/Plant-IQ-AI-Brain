@@ -14,10 +14,13 @@ router = APIRouter(prefix="/api/ai", tags=["Advisor Chat"])
 
 class ChatRequest(BaseModel):
     query: str
-    nursery_id: str
+    nursery_id: Optional[str] = None
 
 @router.post("/chat")
-async def chat_with_advisor(request: ChatRequest) -> Dict[str, Any]:
+async def chat_with_advisor(
+    request: ChatRequest,
+    nursery_id: Optional[str] = Query(None, description="Fallback nursery_id from URL params"),
+) -> Dict[str, Any]:
     """
     Expert Advisor Chatbot.
     Ask questions about plant health, water, workers, or system status in plain language.
@@ -25,10 +28,13 @@ async def chat_with_advisor(request: ChatRequest) -> Dict[str, Any]:
     if not request.query:
         raise HTTPException(status_code=400, detail="Query cannot be empty.")
     
-    response = chat_service.process_query(request.query, request.nursery_id)
+    resolved_nursery_id = request.nursery_id or nursery_id or "default"
+    
+    response = chat_service.process_query(request.query, resolved_nursery_id)
     return {
         "status": "success",
         "query": request.query,
-        "nursery_id": request.nursery_id,
+        "nursery_id": resolved_nursery_id,
         "response": response
     }
+

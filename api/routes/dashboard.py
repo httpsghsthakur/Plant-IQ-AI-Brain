@@ -18,42 +18,74 @@ async def get_dashboard_summary(nursery_id: str = Query(...)) -> Dict[str, Any]:
     from services.data_service import data_service
     
     # 1. Fetch scoped nursery data
-    data = data_service.load_nursery_data(nursery_id)
+    try:
+        data = data_service.load_nursery_data(nursery_id)
+    except Exception as e:
+        return {
+            "status": "error",
+            "message": f"Failed to load nursery data: {str(e)}",
+            "nursery_wellness_score": 0,
+            "urgent_care_alerts": [],
+            "summary": {}
+        }
     
-    # 2. Calculate a mock Global Health Score based on actual model health signals
-    # In a real scenario, this would be a weighted average of model outputs.
-    health_score = 88.5 # Starting default
-    
-    # 3. Compile Active Alerts
+    health_score = 100.0
     active_alerts = []
+    growing_areas = 0
     
-    # Check for environmental stress
-    env_results = model_service.environmental.analyze_zone(data["sensor"], "ZONE-A")
-    if env_results.get("risk_level") == "High":
-        active_alerts.append({
-            "id": "env-alert-1",
-            "severity": "high",
-            "message": "Thermal stress detected in Zone A. Immediate irrigation required."
-        })
-        health_score -= 10
+    # 2. Compile Active Alerts & Health Score
+    zones = data.get("zone")
+    if zones is not None and not zones.empty:
+        growing_areas = len(zones)
+        
+        # Analyze each zone
+        for _, zone in zones.iterrows():
+            zone_id = zone["id"]
+            
+            # Check for environmental stress
+            env_results = model_service.environmental.analyze_zone(data["sensor"], zone_id)
+            if env_results and env_results.get("overall_status") in ["critical", "needs_attention"]:
+                severity = "critical" if env_results["overall_status"] == "critical" else "high"
+                risk_score = env_results.get("risk_score", 0)
+                health_score -= (risk_score * 0.2)
+                
+                # Add most urgent recommendation as alert
+                recs = env_results.get("recommendations", [])
+                if recs:
+                    active_alerts.append({
+                        "id": f"env-{zone_id}",
+                        "severity": severity,
+                        "message": f"Zone {zone_id}: {recs[0]['action']}"
+                    })
 
-    # Check for disease risks
-    disease_risks = model_service.plant_health.assess_disease_risk(data["sensor"], data["disease"], "ZONE-A")
-    if any(r.get("probability", 0) > 0.7 for r in disease_risks):
-         active_alerts.append({
-            "id": "disease-alert-1",
-            "severity": "critical",
-            "message": "High Walnut Blight risk detected in propagation area."
-        })
-         health_score -= 15
+            # Check for disease risks
+            disease_risks = model_service.plant_health.assess_disease_risk(data["sensor"], data["disease"], zone_id)
+            if disease_risks:
+                highest_risk = max(disease_risks, key=lambda x: x.get("probability", 0))
+                if highest_risk.get("probability", 0) > 0.5:
+                    prob = highest_risk.get("probability", 0)
+                    severity = "critical" if prob > 0.8 else "high"
+                    health_score -= (prob * 30)
+                    active_alerts.append({
+                        "id": f"disease-{zone_id}",
+                        "severity": severity,
+                        "message": f"Risk of {highest_risk.get('disease')} in {zone_id}"
+                    })
+
+    # Ensure score is within valid bounds
+    health_score = max(0, min(100, health_score))
+
+    # Compile Summary
+    tasks = data.get("task")
+    pending_tasks = len(tasks[tasks["status"] != "completed"]) if tasks is not None and not tasks.empty else 0
 
     return {
         "status": "success",
-        "nursery_wellness_score": max(0, health_score),
+        "nursery_wellness_score": round(health_score, 1),
         "urgent_care_alerts": active_alerts,
         "summary": {
-            "growing_areas": 4, 
-            "pending_daily_tasks": len(data.get("task", [])),
-            "sensor_system_health": "All systems running smoothly"
+            "growing_areas": growing_areas, 
+            "pending_daily_tasks": pending_tasks,
+            "sensor_system_health": "All systems running smoothly" if health_score > 80 else "Needs attention"
         }
     }

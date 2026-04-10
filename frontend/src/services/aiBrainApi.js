@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // The AI Brain is the hub for all Machine Learning insights
-const AI_BRAIN_URL = 'http://localhost:8000/api'; // Update to production URL if needed
+const AI_BRAIN_URL = 'https://plant-iq-ai-brain.onrender.com/api';
 
 const aiBrainApi = axios.create({
   baseURL: AI_BRAIN_URL,

@@ -64,6 +64,7 @@ setup_middleware(app)
 
 # Register routes
 from api.routes.health import router as health_router
+from api.routes.dashboard import router as dashboard_router
 from api.routes.environmental import router as env_router
 from api.routes.worker import router as worker_router
 from api.routes.plant_health import router as plant_router
@@ -76,6 +77,7 @@ from api.routes.recommendations import router as rec_router
 from api.routes.disease_vision import router as vision_router
 
 app.include_router(health_router)
+app.include_router(dashboard_router)
 app.include_router(env_router)
 app.include_router(worker_router)
 app.include_router(plant_router)
@@ -115,6 +117,7 @@ async def root():
             "anomaly_detection": "/api/ai/anomalies/report",
             "pricing": "/api/ai/recommend/pricing",
             "disease_vision_cnn": "/api/ai/vision/disease",
+            "worker_burnout_v2": "/api/ai/predict/worker-burnout",
         },
     }
 

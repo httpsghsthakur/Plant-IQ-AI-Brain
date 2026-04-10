@@ -25,7 +25,7 @@ async def predict_disease_risk(zone_id: str, nursery_id: str = Query(...)):
     from services.model_service import model_service
     from services.data_service import data_service
     data = data_service.load_nursery_data(nursery_id)
-    return {"risks": model_service.plant_health.assess_disease_risk(
+    return {"high_risk_diseases": model_service.plant_health.assess_disease_risk(
         data["sensor"], data["disease"], zone_id
     )}
 

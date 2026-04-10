@@ -41,12 +41,13 @@ async def predict_absenteeism(nursery_id: str = Query(...)):
 
 
 @router.get("/detect/burnout")
+@router.get("/predict/worker-burnout")
 async def detect_burnout(nursery_id: str = Query(...)):
     """Detect workers at risk of burnout."""
     from services.model_service import model_service
     from services.data_service import data_service
     data = data_service.load_nursery_data(nursery_id)
-    return {"alerts": model_service.worker.detect_burnout_risks(
+    return {"worker_predictions": model_service.worker.detect_burnout_risks(
         data["attendance"], data["task"]
     )}
 

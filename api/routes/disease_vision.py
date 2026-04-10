@@ -1,11 +1,14 @@
-from fastapi import APIRouter, File, UploadFile, HTTPException
-from typing import Dict, Any
+from fastapi import APIRouter, File, UploadFile, HTTPException, Query
+from typing import Dict, Any, Optional
 from models.disease_vision.inference import vision_service
 
 router = APIRouter(prefix="/api/ai/vision", tags=["Computer Vision"])
 
 @router.post("/disease")
-async def analyze_plant_disease_image(file: UploadFile = File(...)) -> Dict[str, Any]:
+async def analyze_plant_disease_image(
+    file: UploadFile = File(...),
+    nursery_id: Optional[str] = Query(None)
+) -> Dict[str, Any]:
     """
     Accepts an Image Upload (PNG/JPG) of a plant leaf and uses a PyTorch Convolutional Neural Network (CNN)
     to classify whether the leaf is Healthy or has a disease (e.g. Walnut Blight, Crown Rot).

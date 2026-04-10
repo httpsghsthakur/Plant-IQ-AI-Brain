@@ -43,7 +43,7 @@ def create_placeholder_image(path, label_name):
 
 def generate_lite_vision_data():
     """Generates a small synthetic dataset for development/testing."""
-    print("🎨 Generating synthetic plant disease images...")
+    print("Generating synthetic plant disease images...")
     
     classes = [
         "Apple___Apple_scab",
@@ -66,7 +66,7 @@ def generate_lite_vision_data():
                 create_placeholder_image(target_dir / file_name, cls)
                 total_images += 1
                 
-    print(f"✅ Generated {total_images} synthetic images in {OUTPUT_DIR}")
+    print("Successfully generated synthetic images in")
 
 if __name__ == "__main__":
     generate_lite_vision_data()

@@ -1,0 +1,16 @@
+worker_id,name,age,experience_years,base_skill_level,specialization,daily_wage,hire_date,reliability_score
+W001,Rajesh Kumar,29,7,0.752,grafting,870,2017-12-31,0.902
+W002,Priya Sharma,45,10,0.914,pest_management,1021,2014-06-09,0.951
+W003,Mohammad Iqbal,23,2,0.592,general,659,2022-07-09,0.862
+W004,Sunita Devi,46,1,0.552,grafting,640,2024-02-12,0.659
+W005,Amit Singh,24,10,0.887,grafting,1050,2014-11-30,0.834
+W006,Kavita Devi,46,5,0.685,general,763,2019-08-14,0.847
+W007,Vikram Thakur,41,10,0.87,general,1059,2014-07-24,0.821
+W008,Fatima Begum,25,3,0.609,irrigation,655,2022-02-17,0.889
+W009,Ravi Shankar,39,10,0.877,irrigation,1043,2014-11-03,0.857
+W010,Meena Kumari,36,10,0.911,general,1077,2014-09-11,0.938
+W011,Deepak Negi,45,9,0.873,irrigation,1038,2015-08-05,1.0
+W012,Anita Rana,46,9,0.818,pest_management,958,2015-05-05,0.799
+W013,Suresh Bhatt,54,1,0.569,pest_management,554,2023-08-24,0.939
+W014,Geeta Rawat,44,10,0.825,irrigation,1087,2014-06-25,0.96
+W015,Abdul Rashid,22,3,0.541,pest_management,696,2021-12-02,0.914

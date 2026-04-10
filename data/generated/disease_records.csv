@@ -1,0 +1,475 @@
+case_id,date_detected,plant_id,zone_id,disease_name,severity,treatment_applied,treatment_type,treatment_cost,treatment_success,days_to_recovery,plant_survived
+DIS-00001,2025-04-10,WN-2024-3393,ZONE-A,Crown Rot,mild,False,,0.0,False,,False
+DIS-00002,2025-04-11,WN-2024-4455,ZONE-A,Root Rot,severe,True,insecticide,196.0,True,16.0,True
+DIS-00003,2025-04-11,WN-2024-1970,ZONE-E,Anthracnose,moderate,True,cultural_practice,313.0,True,13.0,True
+DIS-00004,2025-04-12,WN-2024-3182,ZONE-E,Powdery Mildew,mild,True,bactericide,170.0,False,,False
+DIS-00005,2025-04-13,WN-2024-1823,ZONE-E,Crown Rot,mild,True,fungicide,242.0,True,16.0,True
+DIS-00006,2025-04-13,WN-2024-0989,ZONE-C,Walnut Blight,severe,True,insecticide,295.0,False,,False
+DIS-00007,2025-04-14,WN-2024-2826,ZONE-D,Root Rot,moderate,True,fungicide,351.0,True,7.0,True
+DIS-00008,2025-04-17,WN-2024-0549,ZONE-A,Root Rot,moderate,True,cultural_practice,100.0,True,26.0,True
+DIS-00009,2025-04-17,WN-2024-3568,ZONE-C,Walnut Blight,moderate,True,insecticide,406.0,True,14.0,True
+DIS-00010,2025-04-23,WN-2024-2311,ZONE-C,Powdery Mildew,moderate,True,insecticide,174.0,True,25.0,True
+DIS-00011,2025-04-23,WN-2024-1643,ZONE-C,Walnut Blight,moderate,True,cultural_practice,273.0,True,14.0,True
+DIS-00012,2025-04-23,WN-2024-3515,ZONE-C,Anthracnose,severe,True,fungicide,114.0,True,8.0,True
+DIS-00013,2025-04-24,WN-2024-0740,ZONE-B,Root Rot,mild,False,,0.0,False,,True
+DIS-00014,2025-04-24,WN-2024-2305,ZONE-D,Powdery Mildew,moderate,True,fungicide,93.0,True,23.0,True
+DIS-00015,2025-04-25,WN-2024-1924,ZONE-D,Crown Rot,mild,True,insecticide,310.0,True,10.0,True
+DIS-00016,2025-04-25,WN-2024-2810,ZONE-C,Root Rot,mild,True,fungicide,487.0,True,6.0,True
+DIS-00017,2025-04-25,WN-2024-0386,ZONE-A,Walnut Blight,mild,False,,0.0,False,,False
+DIS-00018,2025-04-25,WN-2024-1918,ZONE-B,Anthracnose,mild,True,insecticide,421.0,True,11.0,True
+DIS-00019,2025-04-26,WN-2024-3260,ZONE-F,Crown Rot,moderate,True,insecticide,483.0,True,22.0,True
+DIS-00020,2025-04-30,WN-2024-1239,ZONE-F,Anthracnose,moderate,True,insecticide,308.0,True,14.0,True
+DIS-00021,2025-05-01,WN-2024-1257,ZONE-C,Walnut Blight,moderate,True,fungicide,141.0,True,19.0,True
+DIS-00022,2025-05-01,WN-2024-1332,ZONE-F,Anthracnose,mild,True,fungicide,266.0,True,15.0,True
+DIS-00023,2025-05-04,WN-2024-1678,ZONE-C,Crown Rot,mild,True,bactericide,363.0,True,8.0,True
+DIS-00024,2025-05-06,WN-2024-1394,ZONE-C,Anthracnose,mild,True,fungicide,393.0,True,12.0,True
+DIS-00025,2025-05-07,WN-2024-3414,ZONE-E,Anthracnose,moderate,True,bactericide,336.0,True,10.0,True
+DIS-00026,2025-05-09,WN-2024-2441,ZONE-D,Root Rot,mild,True,insecticide,321.0,True,19.0,True
+DIS-00027,2025-05-11,WN-2024-3777,ZONE-D,Root Rot,severe,True,fungicide,264.0,False,,True
+DIS-00028,2025-05-12,WN-2024-2448,ZONE-D,Root Rot,mild,True,cultural_practice,470.0,True,26.0,True
+DIS-00029,2025-05-14,WN-2024-1269,ZONE-C,Crown Rot,moderate,False,,0.0,False,,False
+DIS-00030,2025-05-14,WN-2024-2054,ZONE-B,Root Rot,moderate,True,cultural_practice,216.0,True,12.0,True
+DIS-00031,2025-05-15,WN-2024-0261,ZONE-A,Anthracnose,mild,True,bactericide,476.0,True,17.0,True
+DIS-00032,2025-05-15,WN-2024-0283,ZONE-D,Crown Rot,severe,True,cultural_practice,218.0,False,,True
+DIS-00033,2025-05-16,WN-2024-4553,ZONE-A,Anthracnose,mild,False,,0.0,False,,True
+DIS-00034,2025-05-20,WN-2024-4793,ZONE-A,Powdery Mildew,mild,True,bactericide,403.0,True,28.0,True
+DIS-00035,2025-05-20,WN-2024-4242,ZONE-D,Walnut Blight,moderate,True,fungicide,410.0,False,,True
+DIS-00036,2025-05-20,WN-2024-4393,ZONE-E,Crown Rot,mild,True,cultural_practice,342.0,True,29.0,True
+DIS-00037,2025-05-21,WN-2024-1814,ZONE-A,Walnut Blight,mild,False,,0.0,False,,False
+DIS-00038,2025-05-21,WN-2024-3334,ZONE-C,Walnut Blight,moderate,True,bactericide,280.0,False,,True
+DIS-00039,2025-05-21,WN-2024-0781,ZONE-C,Powdery Mildew,mild,True,fungicide,56.0,True,29.0,True
+DIS-00040,2025-05-22,WN-2024-3979,ZONE-B,Root Rot,moderate,False,,0.0,False,,False
+DIS-00041,2025-05-22,WN-2024-0766,ZONE-A,Walnut Blight,mild,True,fungicide,70.0,True,16.0,True
+DIS-00042,2025-05-23,WN-2024-4581,ZONE-E,Crown Rot,severe,True,bactericide,227.0,False,,False
+DIS-00043,2025-05-23,WN-2024-4998,ZONE-A,Root Rot,mild,True,cultural_practice,414.0,True,23.0,True
+DIS-00044,2025-05-26,WN-2024-3217,ZONE-F,Powdery Mildew,moderate,True,insecticide,248.0,False,,True
+DIS-00045,2025-05-27,WN-2024-3293,ZONE-B,Powdery Mildew,severe,True,cultural_practice,299.0,False,,False
+DIS-00046,2025-05-28,WN-2024-0073,ZONE-A,Crown Rot,mild,True,fungicide,235.0,True,8.0,True
+DIS-00047,2025-05-29,WN-2024-4238,ZONE-C,Walnut Blight,moderate,True,fungicide,117.0,True,8.0,True
+DIS-00048,2025-05-30,WN-2024-1186,ZONE-D,Root Rot,severe,True,fungicide,463.0,True,23.0,True
+DIS-00049,2025-05-30,WN-2024-1724,ZONE-F,Powdery Mildew,moderate,True,fungicide,170.0,False,,False
+DIS-00050,2025-06-01,WN-2024-4034,ZONE-F,Anthracnose,mild,True,bactericide,249.0,True,27.0,True
+DIS-00051,2025-06-02,WN-2024-4456,ZONE-F,Anthracnose,moderate,False,,0.0,False,,False
+DIS-00052,2025-06-03,WN-2024-2098,ZONE-E,Anthracnose,mild,True,bactericide,52.0,True,28.0,True
+DIS-00053,2025-06-03,WN-2024-4463,ZONE-A,Anthracnose,mild,True,fungicide,159.0,True,13.0,True
+DIS-00054,2025-06-03,WN-2024-0291,ZONE-D,Powdery Mildew,mild,True,fungicide,335.0,True,14.0,True
+DIS-00055,2025-06-06,WN-2024-3555,ZONE-E,Crown Rot,mild,True,fungicide,95.0,True,9.0,True
+DIS-00056,2025-06-07,WN-2024-2623,ZONE-D,Anthracnose,severe,True,fungicide,135.0,True,8.0,True
+DIS-00057,2025-06-08,WN-2024-4235,ZONE-B,Root Rot,moderate,False,,0.0,False,,True
+DIS-00058,2025-06-08,WN-2024-3722,ZONE-F,Crown Rot,moderate,False,,0.0,False,,False
+DIS-00059,2025-06-08,WN-2024-0854,ZONE-F,Powdery Mildew,severe,True,fungicide,219.0,False,,False
+DIS-00060,2025-06-10,WN-2024-1639,ZONE-D,Powdery Mildew,moderate,False,,0.0,False,,False
+DIS-00061,2025-06-12,WN-2024-0530,ZONE-E,Anthracnose,mild,True,cultural_practice,96.0,True,23.0,True
+DIS-00062,2025-06-12,WN-2024-1900,ZONE-F,Root Rot,moderate,True,cultural_practice,453.0,True,13.0,True
+DIS-00063,2025-06-12,WN-2024-3376,ZONE-F,Powdery Mildew,moderate,True,insecticide,316.0,True,17.0,True
+DIS-00064,2025-06-13,WN-2024-2803,ZONE-C,Root Rot,mild,True,insecticide,208.0,True,19.0,True
+DIS-00065,2025-06-14,WN-2024-3331,ZONE-B,Walnut Blight,moderate,True,insecticide,257.0,False,,False
+DIS-00066,2025-06-15,WN-2024-0137,ZONE-D,Anthracnose,mild,True,fungicide,473.0,True,18.0,True
+DIS-00067,2025-06-15,WN-2024-3601,ZONE-F,Anthracnose,mild,True,insecticide,428.0,False,,False
+DIS-00068,2025-06-17,WN-2024-4267,ZONE-D,Root Rot,moderate,True,cultural_practice,419.0,True,7.0,True
+DIS-00069,2025-06-18,WN-2024-4647,ZONE-C,Walnut Blight,moderate,True,fungicide,262.0,True,23.0,True
+DIS-00070,2025-06-18,WN-2024-0760,ZONE-C,Anthracnose,mild,True,bactericide,73.0,True,15.0,True
+DIS-00071,2025-06-18,WN-2024-2067,ZONE-C,Powdery Mildew,moderate,True,cultural_practice,212.0,True,22.0,True
+DIS-00072,2025-06-20,WN-2024-2493,ZONE-A,Walnut Blight,moderate,True,insecticide,398.0,True,27.0,True
+DIS-00073,2025-06-21,WN-2024-0568,ZONE-D,Root Rot,severe,True,fungicide,345.0,False,,False
+DIS-00074,2025-06-22,WN-2024-2826,ZONE-F,Root Rot,mild,False,,0.0,False,,True
+DIS-00075,2025-06-22,WN-2024-4590,ZONE-D,Powdery Mildew,mild,True,cultural_practice,76.0,True,28.0,True
+DIS-00076,2025-06-24,WN-2024-0189,ZONE-D,Walnut Blight,moderate,True,bactericide,269.0,False,,True
+DIS-00077,2025-06-24,WN-2024-1831,ZONE-D,Anthracnose,moderate,True,insecticide,246.0,False,,False
+DIS-00078,2025-06-25,WN-2024-1252,ZONE-E,Crown Rot,severe,True,bactericide,166.0,True,18.0,True
+DIS-00079,2025-06-25,WN-2024-0947,ZONE-C,Powdery Mildew,moderate,True,cultural_practice,268.0,True,20.0,True
+DIS-00080,2025-06-25,WN-2024-3428,ZONE-C,Crown Rot,moderate,True,bactericide,119.0,True,11.0,True
+DIS-00081,2025-06-25,WN-2024-4212,ZONE-D,Crown Rot,moderate,True,cultural_practice,455.0,True,26.0,True
+DIS-00082,2025-06-25,WN-2024-2124,ZONE-F,Anthracnose,moderate,True,fungicide,262.0,False,,False
+DIS-00083,2025-06-26,WN-2024-4202,ZONE-D,Walnut Blight,mild,True,cultural_practice,353.0,True,5.0,True
+DIS-00084,2025-06-26,WN-2024-1663,ZONE-B,Powdery Mildew,moderate,True,cultural_practice,250.0,True,26.0,True
+DIS-00085,2025-06-28,WN-2024-3584,ZONE-A,Powdery Mildew,moderate,True,insecticide,59.0,True,24.0,True
+DIS-00086,2025-06-28,WN-2024-4096,ZONE-A,Crown Rot,mild,True,cultural_practice,355.0,True,8.0,True
+DIS-00087,2025-06-30,WN-2024-1752,ZONE-D,Root Rot,severe,True,insecticide,217.0,False,,True
+DIS-00088,2025-07-01,WN-2024-3528,ZONE-F,Anthracnose,mild,True,cultural_practice,494.0,True,21.0,True
+DIS-00089,2025-07-01,WN-2024-4056,ZONE-F,Walnut Blight,mild,True,cultural_practice,394.0,True,13.0,True
+DIS-00090,2025-07-01,WN-2024-2334,ZONE-D,Anthracnose,mild,True,insecticide,290.0,True,25.0,True
+DIS-00091,2025-07-01,WN-2024-1616,ZONE-E,Crown Rot,mild,True,fungicide,239.0,True,13.0,True
+DIS-00092,2025-07-01,WN-2024-4059,ZONE-A,Powdery Mildew,mild,False,,0.0,False,,True
+DIS-00093,2025-07-02,WN-2024-2025,ZONE-C,Powdery Mildew,mild,True,insecticide,479.0,True,27.0,True
+DIS-00094,2025-07-02,WN-2024-2595,ZONE-D,Walnut Blight,moderate,True,insecticide,73.0,True,18.0,True
+DIS-00095,2025-07-02,WN-2024-1991,ZONE-F,Powdery Mildew,mild,True,insecticide,89.0,True,13.0,True
+DIS-00096,2025-07-02,WN-2024-1601,ZONE-C,Walnut Blight,moderate,False,,0.0,False,,False
+DIS-00097,2025-07-02,WN-2024-2908,ZONE-C,Root Rot,moderate,True,insecticide,447.0,True,19.0,True
+DIS-00098,2025-07-03,WN-2024-3457,ZONE-E,Walnut Blight,moderate,True,cultural_practice,118.0,True,10.0,True
+DIS-00099,2025-07-03,WN-2024-4235,ZONE-A,Crown Rot,moderate,True,fungicide,80.0,True,17.0,True
+DIS-00100,2025-07-04,WN-2024-1127,ZONE-C,Walnut Blight,moderate,True,fungicide,388.0,True,21.0,True
+DIS-00101,2025-07-04,WN-2024-1688,ZONE-C,Crown Rot,severe,True,cultural_practice,471.0,True,24.0,True
+DIS-00102,2025-07-04,WN-2024-1602,ZONE-A,Anthracnose,moderate,False,,0.0,False,,False
+DIS-00103,2025-07-04,WN-2024-3410,ZONE-D,Root Rot,mild,True,fungicide,389.0,True,23.0,True
+DIS-00104,2025-07-05,WN-2024-3964,ZONE-F,Crown Rot,moderate,True,cultural_practice,389.0,True,29.0,True
+DIS-00105,2025-07-05,WN-2024-1820,ZONE-E,Root Rot,mild,True,fungicide,202.0,True,8.0,True
+DIS-00106,2025-07-06,WN-2024-4533,ZONE-F,Anthracnose,mild,True,cultural_practice,369.0,True,29.0,True
+DIS-00107,2025-07-06,WN-2024-2236,ZONE-B,Root Rot,severe,True,fungicide,349.0,True,18.0,True
+DIS-00108,2025-07-07,WN-2024-4909,ZONE-E,Anthracnose,mild,True,bactericide,129.0,True,25.0,True
+DIS-00109,2025-07-07,WN-2024-3192,ZONE-A,Anthracnose,mild,True,cultural_practice,75.0,True,22.0,True
+DIS-00110,2025-07-07,WN-2024-4179,ZONE-E,Powdery Mildew,severe,True,insecticide,224.0,False,,False
+DIS-00111,2025-07-07,WN-2024-2272,ZONE-A,Powdery Mildew,severe,True,bactericide,488.0,False,,False
+DIS-00112,2025-07-08,WN-2024-1127,ZONE-B,Walnut Blight,moderate,True,bactericide,421.0,True,9.0,True
+DIS-00113,2025-07-08,WN-2024-4657,ZONE-D,Root Rot,severe,True,fungicide,382.0,False,,False
+DIS-00114,2025-07-08,WN-2024-0673,ZONE-E,Crown Rot,mild,True,insecticide,194.0,True,8.0,True
+DIS-00115,2025-07-08,WN-2024-1067,ZONE-D,Walnut Blight,severe,True,cultural_practice,392.0,False,,False
+DIS-00116,2025-07-09,WN-2024-1509,ZONE-C,Anthracnose,mild,True,insecticide,66.0,False,,False
+DIS-00117,2025-07-09,WN-2024-1528,ZONE-E,Root Rot,mild,False,,0.0,False,,False
+DIS-00118,2025-07-09,WN-2024-3061,ZONE-E,Powdery Mildew,moderate,False,,0.0,False,,True
+DIS-00119,2025-07-09,WN-2024-4940,ZONE-C,Powdery Mildew,severe,False,,0.0,False,,True
+DIS-00120,2025-07-10,WN-2024-0345,ZONE-E,Walnut Blight,mild,True,cultural_practice,409.0,True,24.0,True
+DIS-00121,2025-07-11,WN-2024-1780,ZONE-A,Anthracnose,mild,True,fungicide,120.0,True,6.0,True
+DIS-00122,2025-07-11,WN-2024-0264,ZONE-B,Powdery Mildew,mild,False,,0.0,False,,True
+DIS-00123,2025-07-11,WN-2024-2441,ZONE-F,Powdery Mildew,moderate,True,fungicide,223.0,True,22.0,True
+DIS-00124,2025-07-13,WN-2024-3878,ZONE-F,Anthracnose,mild,True,fungicide,389.0,True,27.0,True
+DIS-00125,2025-07-13,WN-2024-2439,ZONE-D,Crown Rot,severe,False,,0.0,False,,False
+DIS-00126,2025-07-14,WN-2024-0264,ZONE-D,Anthracnose,moderate,True,cultural_practice,143.0,True,27.0,True
+DIS-00127,2025-07-14,WN-2024-1520,ZONE-D,Crown Rot,severe,True,bactericide,447.0,True,25.0,True
+DIS-00128,2025-07-14,WN-2024-4700,ZONE-B,Walnut Blight,moderate,True,bactericide,338.0,False,,False
+DIS-00129,2025-07-14,WN-2024-3805,ZONE-C,Crown Rot,mild,True,insecticide,320.0,True,15.0,True
+DIS-00130,2025-07-15,WN-2024-0095,ZONE-C,Crown Rot,moderate,True,insecticide,154.0,False,,False
+DIS-00131,2025-07-16,WN-2024-1342,ZONE-F,Powdery Mildew,mild,True,insecticide,78.0,True,10.0,True
+DIS-00132,2025-07-16,WN-2024-0546,ZONE-E,Root Rot,moderate,True,insecticide,289.0,False,,False
+DIS-00133,2025-07-16,WN-2024-1922,ZONE-C,Root Rot,mild,True,cultural_practice,329.0,False,,False
+DIS-00134,2025-07-16,WN-2024-3734,ZONE-A,Powdery Mildew,moderate,False,,0.0,False,,False
+DIS-00135,2025-07-17,WN-2024-4866,ZONE-C,Anthracnose,moderate,True,insecticide,191.0,False,,False
+DIS-00136,2025-07-17,WN-2024-1562,ZONE-B,Anthracnose,mild,True,bactericide,176.0,True,6.0,True
+DIS-00137,2025-07-17,WN-2024-0712,ZONE-D,Walnut Blight,mild,True,bactericide,455.0,True,27.0,True
+DIS-00138,2025-07-18,WN-2024-4128,ZONE-A,Anthracnose,severe,False,,0.0,False,,True
+DIS-00139,2025-07-18,WN-2024-3871,ZONE-F,Root Rot,severe,False,,0.0,False,,True
+DIS-00140,2025-07-18,WN-2024-1644,ZONE-C,Powdery Mildew,mild,True,insecticide,293.0,True,15.0,True
+DIS-00141,2025-07-19,WN-2024-1926,ZONE-A,Walnut Blight,mild,True,cultural_practice,185.0,True,10.0,True
+DIS-00142,2025-07-19,WN-2024-0030,ZONE-E,Powdery Mildew,mild,True,fungicide,444.0,True,23.0,True
+DIS-00143,2025-07-20,WN-2024-4846,ZONE-A,Root Rot,mild,True,insecticide,129.0,True,16.0,True
+DIS-00144,2025-07-20,WN-2024-3021,ZONE-F,Crown Rot,mild,True,insecticide,427.0,True,25.0,True
+DIS-00145,2025-07-20,WN-2024-2803,ZONE-D,Root Rot,mild,False,,0.0,False,,True
+DIS-00146,2025-07-21,WN-2024-1537,ZONE-C,Crown Rot,mild,True,fungicide,488.0,True,25.0,True
+DIS-00147,2025-07-21,WN-2024-4729,ZONE-C,Crown Rot,mild,True,cultural_practice,447.0,True,10.0,True
+DIS-00148,2025-07-22,WN-2024-3176,ZONE-D,Powdery Mildew,mild,True,insecticide,345.0,True,13.0,True
+DIS-00149,2025-07-22,WN-2024-4111,ZONE-F,Powdery Mildew,mild,True,cultural_practice,488.0,True,15.0,True
+DIS-00150,2025-07-22,WN-2024-1597,ZONE-A,Root Rot,mild,True,bactericide,359.0,True,27.0,True
+DIS-00151,2025-07-22,WN-2024-1593,ZONE-F,Crown Rot,moderate,True,fungicide,220.0,True,29.0,True
+DIS-00152,2025-07-22,WN-2024-3172,ZONE-E,Powdery Mildew,moderate,True,fungicide,191.0,False,,True
+DIS-00153,2025-07-23,WN-2024-3982,ZONE-C,Powdery Mildew,moderate,True,bactericide,206.0,True,19.0,True
+DIS-00154,2025-07-23,WN-2024-3889,ZONE-E,Walnut Blight,mild,True,insecticide,334.0,True,19.0,True
+DIS-00155,2025-07-24,WN-2024-3137,ZONE-C,Powdery Mildew,mild,True,cultural_practice,217.0,True,19.0,True
+DIS-00156,2025-07-24,WN-2024-0946,ZONE-A,Root Rot,moderate,True,insecticide,290.0,True,16.0,True
+DIS-00157,2025-07-24,WN-2024-0703,ZONE-C,Walnut Blight,moderate,True,bactericide,315.0,True,26.0,True
+DIS-00158,2025-07-24,WN-2024-4592,ZONE-E,Powdery Mildew,mild,True,fungicide,101.0,True,26.0,True
+DIS-00159,2025-07-25,WN-2024-2390,ZONE-C,Powdery Mildew,mild,True,fungicide,204.0,True,21.0,True
+DIS-00160,2025-07-25,WN-2024-2613,ZONE-E,Crown Rot,mild,True,insecticide,113.0,True,19.0,True
+DIS-00161,2025-07-25,WN-2024-1819,ZONE-D,Crown Rot,mild,True,insecticide,64.0,True,13.0,True
+DIS-00162,2025-07-26,WN-2024-1704,ZONE-C,Anthracnose,mild,True,bactericide,261.0,True,21.0,True
+DIS-00163,2025-07-26,WN-2024-2236,ZONE-F,Crown Rot,moderate,True,cultural_practice,423.0,True,26.0,True
+DIS-00164,2025-07-26,WN-2024-4616,ZONE-D,Crown Rot,mild,True,fungicide,409.0,True,17.0,True
+DIS-00165,2025-07-27,WN-2024-4539,ZONE-B,Root Rot,mild,False,,0.0,False,,True
+DIS-00166,2025-07-27,WN-2024-0596,ZONE-C,Root Rot,moderate,False,,0.0,False,,False
+DIS-00167,2025-07-27,WN-2024-3871,ZONE-A,Walnut Blight,mild,True,cultural_practice,493.0,True,8.0,True
+DIS-00168,2025-07-27,WN-2024-4724,ZONE-E,Anthracnose,severe,True,fungicide,491.0,True,28.0,True
+DIS-00169,2025-07-28,WN-2024-2369,ZONE-D,Powdery Mildew,mild,True,cultural_practice,72.0,True,13.0,True
+DIS-00170,2025-07-28,WN-2024-2440,ZONE-E,Powdery Mildew,moderate,True,insecticide,305.0,False,,False
+DIS-00171,2025-07-28,WN-2024-0318,ZONE-C,Powdery Mildew,mild,True,cultural_practice,407.0,True,21.0,True
+DIS-00172,2025-07-28,WN-2024-1272,ZONE-B,Powdery Mildew,moderate,True,cultural_practice,312.0,True,26.0,True
+DIS-00173,2025-07-29,WN-2024-3407,ZONE-F,Root Rot,moderate,True,insecticide,182.0,False,,True
+DIS-00174,2025-07-29,WN-2024-1689,ZONE-B,Root Rot,mild,True,fungicide,116.0,True,8.0,True
+DIS-00175,2025-07-29,WN-2024-2293,ZONE-A,Root Rot,mild,True,insecticide,54.0,True,24.0,True
+DIS-00176,2025-07-29,WN-2024-3408,ZONE-E,Crown Rot,moderate,False,,0.0,False,,True
+DIS-00177,2025-07-30,WN-2024-2469,ZONE-C,Crown Rot,moderate,True,fungicide,483.0,False,,False
+DIS-00178,2025-07-31,WN-2024-4956,ZONE-F,Anthracnose,moderate,True,cultural_practice,457.0,False,,False
+DIS-00179,2025-07-31,WN-2024-3686,ZONE-D,Crown Rot,mild,True,bactericide,237.0,True,20.0,True
+DIS-00180,2025-08-05,WN-2024-2850,ZONE-C,Powdery Mildew,moderate,True,fungicide,363.0,True,16.0,True
+DIS-00181,2025-08-05,WN-2024-4307,ZONE-A,Crown Rot,mild,True,fungicide,247.0,True,14.0,True
+DIS-00182,2025-08-05,WN-2024-0592,ZONE-A,Walnut Blight,moderate,True,insecticide,154.0,False,,False
+DIS-00183,2025-08-06,WN-2024-3312,ZONE-A,Powdery Mildew,mild,True,insecticide,445.0,True,10.0,True
+DIS-00184,2025-08-06,WN-2024-4654,ZONE-A,Root Rot,moderate,True,bactericide,316.0,True,14.0,True
+DIS-00185,2025-08-07,WN-2024-1075,ZONE-D,Walnut Blight,mild,False,,0.0,False,,False
+DIS-00186,2025-08-07,WN-2024-0084,ZONE-F,Powdery Mildew,moderate,True,cultural_practice,135.0,True,13.0,True
+DIS-00187,2025-08-07,WN-2024-3360,ZONE-C,Crown Rot,moderate,True,fungicide,369.0,True,28.0,True
+DIS-00188,2025-08-07,WN-2024-3722,ZONE-E,Root Rot,mild,True,insecticide,85.0,True,27.0,True
+DIS-00189,2025-08-08,WN-2024-2317,ZONE-C,Walnut Blight,mild,False,,0.0,False,,True
+DIS-00190,2025-08-08,WN-2024-4686,ZONE-E,Crown Rot,mild,False,,0.0,False,,False
+DIS-00191,2025-08-08,WN-2024-1284,ZONE-E,Anthracnose,moderate,True,fungicide,321.0,True,29.0,True
+DIS-00192,2025-08-08,WN-2024-2228,ZONE-B,Powdery Mildew,moderate,True,bactericide,295.0,True,21.0,True
+DIS-00193,2025-08-09,WN-2024-0842,ZONE-C,Powdery Mildew,mild,True,fungicide,413.0,True,22.0,True
+DIS-00194,2025-08-09,WN-2024-3830,ZONE-F,Root Rot,severe,True,insecticide,160.0,True,10.0,True
+DIS-00195,2025-08-09,WN-2024-3837,ZONE-F,Crown Rot,moderate,True,bactericide,92.0,True,15.0,True
+DIS-00196,2025-08-10,WN-2024-2346,ZONE-A,Root Rot,moderate,False,,0.0,False,,False
+DIS-00197,2025-08-10,WN-2024-3830,ZONE-C,Root Rot,mild,True,insecticide,288.0,True,17.0,True
+DIS-00198,2025-08-10,WN-2024-4547,ZONE-B,Root Rot,mild,False,,0.0,False,,False
+DIS-00199,2025-08-10,WN-2024-4632,ZONE-D,Walnut Blight,severe,True,bactericide,105.0,False,,False
+DIS-00200,2025-08-11,WN-2024-4179,ZONE-C,Powdery Mildew,mild,True,cultural_practice,403.0,True,24.0,True
+DIS-00201,2025-08-11,WN-2024-0971,ZONE-B,Root Rot,moderate,True,cultural_practice,139.0,True,9.0,True
+DIS-00202,2025-08-11,WN-2024-4560,ZONE-E,Anthracnose,mild,True,cultural_practice,281.0,True,12.0,True
+DIS-00203,2025-08-12,WN-2024-2916,ZONE-B,Crown Rot,moderate,True,cultural_practice,297.0,False,,False
+DIS-00204,2025-08-13,WN-2024-1822,ZONE-C,Walnut Blight,severe,True,cultural_practice,446.0,False,,True
+DIS-00205,2025-08-13,WN-2024-2800,ZONE-D,Walnut Blight,moderate,True,cultural_practice,378.0,True,6.0,True
+DIS-00206,2025-08-13,WN-2024-2831,ZONE-D,Anthracnose,moderate,True,cultural_practice,371.0,True,9.0,True
+DIS-00207,2025-08-14,WN-2024-1257,ZONE-C,Crown Rot,mild,True,cultural_practice,272.0,True,6.0,True
+DIS-00208,2025-08-15,WN-2024-3172,ZONE-A,Crown Rot,mild,True,fungicide,349.0,True,5.0,True
+DIS-00209,2025-08-16,WN-2024-4416,ZONE-D,Root Rot,severe,True,fungicide,113.0,True,8.0,True
+DIS-00210,2025-08-16,WN-2024-1152,ZONE-F,Walnut Blight,moderate,True,cultural_practice,229.0,False,,False
+DIS-00211,2025-08-16,WN-2024-0127,ZONE-E,Crown Rot,severe,False,,0.0,False,,True
+DIS-00212,2025-08-16,WN-2024-1129,ZONE-E,Anthracnose,moderate,True,fungicide,208.0,True,25.0,True
+DIS-00213,2025-08-16,WN-2024-2083,ZONE-C,Crown Rot,severe,True,cultural_practice,363.0,False,,True
+DIS-00214,2025-08-16,WN-2024-3323,ZONE-C,Crown Rot,severe,True,insecticide,84.0,True,5.0,True
+DIS-00215,2025-08-17,WN-2024-0122,ZONE-B,Crown Rot,severe,True,fungicide,405.0,True,18.0,True
+DIS-00216,2025-08-17,WN-2024-2968,ZONE-E,Powdery Mildew,mild,True,bactericide,167.0,True,11.0,True
+DIS-00217,2025-08-18,WN-2024-0601,ZONE-C,Walnut Blight,severe,True,bactericide,369.0,False,,False
+DIS-00218,2025-08-18,WN-2024-2878,ZONE-D,Powdery Mildew,moderate,True,cultural_practice,235.0,True,28.0,True
+DIS-00219,2025-08-18,WN-2024-1487,ZONE-B,Root Rot,moderate,True,bactericide,434.0,False,,False
+DIS-00220,2025-08-18,WN-2024-4287,ZONE-D,Walnut Blight,mild,True,cultural_practice,195.0,True,5.0,True
+DIS-00221,2025-08-19,WN-2024-4775,ZONE-A,Crown Rot,mild,True,cultural_practice,292.0,True,7.0,True
+DIS-00222,2025-08-20,WN-2024-0540,ZONE-E,Anthracnose,mild,True,fungicide,231.0,True,11.0,True
+DIS-00223,2025-08-21,WN-2024-2898,ZONE-B,Anthracnose,moderate,True,cultural_practice,137.0,False,,False
+DIS-00224,2025-08-21,WN-2024-2874,ZONE-E,Crown Rot,severe,True,bactericide,459.0,False,,False
+DIS-00225,2025-08-22,WN-2024-2881,ZONE-E,Anthracnose,mild,True,fungicide,465.0,True,24.0,True
+DIS-00226,2025-08-22,WN-2024-2932,ZONE-A,Walnut Blight,moderate,False,,0.0,False,,False
+DIS-00227,2025-08-22,WN-2024-2997,ZONE-F,Root Rot,moderate,True,insecticide,450.0,True,18.0,True
+DIS-00228,2025-08-23,WN-2024-2043,ZONE-B,Root Rot,severe,True,bactericide,169.0,False,,False
+DIS-00229,2025-08-23,WN-2024-4992,ZONE-A,Powdery Mildew,severe,True,bactericide,474.0,True,12.0,True
+DIS-00230,2025-08-23,WN-2024-0316,ZONE-B,Anthracnose,severe,True,cultural_practice,304.0,False,,True
+DIS-00231,2025-08-24,WN-2024-1437,ZONE-D,Powdery Mildew,moderate,True,fungicide,231.0,True,22.0,True
+DIS-00232,2025-08-24,WN-2024-3223,ZONE-B,Root Rot,severe,True,fungicide,286.0,False,,False
+DIS-00233,2025-08-24,WN-2024-2700,ZONE-D,Crown Rot,mild,True,fungicide,444.0,True,25.0,True
+DIS-00234,2025-08-25,WN-2024-2971,ZONE-D,Powdery Mildew,mild,True,insecticide,404.0,True,9.0,True
+DIS-00235,2025-08-26,WN-2024-2232,ZONE-E,Root Rot,mild,True,fungicide,485.0,True,28.0,True
+DIS-00236,2025-08-26,WN-2024-4026,ZONE-B,Powdery Mildew,moderate,True,cultural_practice,434.0,True,16.0,True
+DIS-00237,2025-08-26,WN-2024-3307,ZONE-B,Root Rot,severe,True,insecticide,131.0,False,,False
+DIS-00238,2025-08-26,WN-2024-0520,ZONE-A,Walnut Blight,mild,True,fungicide,50.0,True,27.0,True
+DIS-00239,2025-08-26,WN-2024-3362,ZONE-D,Crown Rot,mild,True,insecticide,415.0,True,16.0,True
+DIS-00240,2025-08-26,WN-2024-2150,ZONE-B,Anthracnose,severe,True,cultural_practice,325.0,False,,True
+DIS-00241,2025-08-27,WN-2024-3419,ZONE-B,Walnut Blight,mild,True,insecticide,162.0,False,,False
+DIS-00242,2025-08-27,WN-2024-0653,ZONE-A,Powdery Mildew,severe,True,cultural_practice,189.0,True,13.0,True
+DIS-00243,2025-08-29,WN-2024-0857,ZONE-A,Crown Rot,moderate,False,,0.0,False,,False
+DIS-00244,2025-08-29,WN-2024-2773,ZONE-B,Crown Rot,mild,False,,0.0,False,,False
+DIS-00245,2025-08-29,WN-2024-3548,ZONE-D,Walnut Blight,mild,True,bactericide,398.0,True,6.0,True
+DIS-00246,2025-08-29,WN-2024-0050,ZONE-A,Root Rot,mild,True,bactericide,429.0,True,28.0,True
+DIS-00247,2025-08-29,WN-2024-3133,ZONE-F,Powdery Mildew,mild,True,bactericide,455.0,True,7.0,True
+DIS-00248,2025-08-30,WN-2024-3016,ZONE-C,Walnut Blight,severe,True,bactericide,365.0,False,,False
+DIS-00249,2025-08-30,WN-2024-2362,ZONE-B,Crown Rot,mild,True,cultural_practice,127.0,True,21.0,True
+DIS-00250,2025-08-31,WN-2024-0237,ZONE-B,Powdery Mildew,severe,True,bactericide,431.0,False,,False
+DIS-00251,2025-08-31,WN-2024-0960,ZONE-F,Powdery Mildew,moderate,True,fungicide,199.0,True,5.0,True
+DIS-00252,2025-08-31,WN-2024-2614,ZONE-E,Root Rot,moderate,True,bactericide,76.0,False,,False
+DIS-00253,2025-09-01,WN-2024-4129,ZONE-B,Root Rot,mild,True,bactericide,490.0,True,14.0,True
+DIS-00254,2025-09-01,WN-2024-1631,ZONE-A,Root Rot,mild,True,insecticide,418.0,True,23.0,True
+DIS-00255,2025-09-01,WN-2024-3173,ZONE-F,Crown Rot,mild,True,insecticide,210.0,True,28.0,True
+DIS-00256,2025-09-01,WN-2024-1859,ZONE-D,Powdery Mildew,mild,False,,0.0,False,,False
+DIS-00257,2025-09-01,WN-2024-1675,ZONE-A,Crown Rot,moderate,True,insecticide,287.0,True,9.0,True
+DIS-00258,2025-09-01,WN-2024-3895,ZONE-E,Root Rot,moderate,True,fungicide,233.0,True,10.0,True
+DIS-00259,2025-09-02,WN-2024-0219,ZONE-F,Powdery Mildew,moderate,True,fungicide,120.0,True,7.0,True
+DIS-00260,2025-09-02,WN-2024-4626,ZONE-E,Walnut Blight,mild,True,fungicide,404.0,True,26.0,True
+DIS-00261,2025-09-03,WN-2024-1053,ZONE-B,Root Rot,moderate,True,cultural_practice,55.0,True,18.0,True
+DIS-00262,2025-09-03,WN-2024-0897,ZONE-F,Walnut Blight,mild,True,insecticide,383.0,False,,False
+DIS-00263,2025-09-04,WN-2024-3381,ZONE-A,Crown Rot,mild,True,insecticide,397.0,True,10.0,True
+DIS-00264,2025-09-05,WN-2024-1578,ZONE-A,Walnut Blight,moderate,True,fungicide,428.0,True,13.0,True
+DIS-00265,2025-09-05,WN-2024-2332,ZONE-D,Anthracnose,mild,True,fungicide,405.0,False,,False
+DIS-00266,2025-09-05,WN-2024-4661,ZONE-C,Crown Rot,moderate,True,cultural_practice,413.0,False,,True
+DIS-00267,2025-09-06,WN-2024-2680,ZONE-A,Walnut Blight,mild,True,cultural_practice,258.0,True,13.0,True
+DIS-00268,2025-09-06,WN-2024-4197,ZONE-F,Crown Rot,mild,True,insecticide,411.0,True,16.0,True
+DIS-00269,2025-09-07,WN-2024-0595,ZONE-A,Walnut Blight,moderate,True,cultural_practice,137.0,True,12.0,True
+DIS-00270,2025-09-07,WN-2024-4016,ZONE-F,Anthracnose,mild,True,insecticide,383.0,True,10.0,True
+DIS-00271,2025-09-08,WN-2024-0315,ZONE-E,Root Rot,mild,True,cultural_practice,89.0,True,28.0,True
+DIS-00272,2025-09-08,WN-2024-3737,ZONE-C,Root Rot,moderate,True,fungicide,318.0,True,25.0,True
+DIS-00273,2025-09-09,WN-2024-3517,ZONE-F,Walnut Blight,moderate,True,insecticide,84.0,True,18.0,True
+DIS-00274,2025-09-09,WN-2024-4863,ZONE-E,Anthracnose,moderate,True,cultural_practice,449.0,False,,False
+DIS-00275,2025-09-09,WN-2024-0406,ZONE-C,Root Rot,mild,True,cultural_practice,477.0,True,24.0,True
+DIS-00276,2025-09-09,WN-2024-4566,ZONE-A,Powdery Mildew,severe,True,bactericide,168.0,True,8.0,True
+DIS-00277,2025-09-10,WN-2024-0268,ZONE-E,Anthracnose,mild,True,fungicide,126.0,True,28.0,True
+DIS-00278,2025-09-10,WN-2024-1244,ZONE-B,Walnut Blight,moderate,True,insecticide,495.0,True,17.0,True
+DIS-00279,2025-09-10,WN-2024-4282,ZONE-C,Powdery Mildew,mild,True,cultural_practice,90.0,True,27.0,True
+DIS-00280,2025-09-10,WN-2024-3592,ZONE-E,Powdery Mildew,mild,True,bactericide,307.0,True,22.0,True
+DIS-00281,2025-09-11,WN-2024-1431,ZONE-B,Crown Rot,moderate,True,insecticide,219.0,False,,False
+DIS-00282,2025-09-11,WN-2024-2264,ZONE-E,Anthracnose,moderate,True,bactericide,307.0,False,,False
+DIS-00283,2025-09-11,WN-2024-0101,ZONE-D,Walnut Blight,moderate,True,fungicide,290.0,True,10.0,True
+DIS-00284,2025-09-12,WN-2024-1866,ZONE-D,Powdery Mildew,moderate,True,bactericide,462.0,False,,False
+DIS-00285,2025-09-12,WN-2024-3877,ZONE-A,Powdery Mildew,mild,True,bactericide,190.0,True,14.0,True
+DIS-00286,2025-09-12,WN-2024-3206,ZONE-A,Walnut Blight,mild,True,bactericide,379.0,True,17.0,True
+DIS-00287,2025-09-12,WN-2024-3460,ZONE-E,Crown Rot,severe,True,bactericide,300.0,True,26.0,True
+DIS-00288,2025-09-12,WN-2024-1994,ZONE-A,Anthracnose,severe,True,insecticide,443.0,True,11.0,True
+DIS-00289,2025-09-13,WN-2024-1735,ZONE-C,Anthracnose,mild,True,insecticide,79.0,True,15.0,True
+DIS-00290,2025-09-13,WN-2024-2214,ZONE-F,Anthracnose,mild,True,cultural_practice,314.0,True,19.0,True
+DIS-00291,2025-09-13,WN-2024-3726,ZONE-C,Anthracnose,moderate,True,cultural_practice,110.0,False,,False
+DIS-00292,2025-09-13,WN-2024-4454,ZONE-B,Crown Rot,mild,False,,0.0,False,,False
+DIS-00293,2025-09-13,WN-2024-4483,ZONE-A,Walnut Blight,mild,True,bactericide,105.0,True,23.0,True
+DIS-00294,2025-09-14,WN-2024-1927,ZONE-B,Powdery Mildew,severe,True,fungicide,154.0,False,,True
+DIS-00295,2025-09-14,WN-2024-3541,ZONE-B,Walnut Blight,mild,True,insecticide,348.0,True,27.0,True
+DIS-00296,2025-09-14,WN-2024-4891,ZONE-D,Anthracnose,severe,True,bactericide,472.0,False,,False
+DIS-00297,2025-09-14,WN-2024-2917,ZONE-E,Anthracnose,mild,True,cultural_practice,311.0,True,6.0,True
+DIS-00298,2025-09-14,WN-2024-0247,ZONE-B,Root Rot,mild,True,cultural_practice,100.0,True,29.0,True
+DIS-00299,2025-09-15,WN-2024-2037,ZONE-D,Walnut Blight,severe,True,bactericide,56.0,True,9.0,True
+DIS-00300,2025-09-15,WN-2024-0665,ZONE-A,Crown Rot,severe,True,insecticide,298.0,False,,False
+DIS-00301,2025-09-15,WN-2024-4013,ZONE-E,Root Rot,moderate,True,insecticide,85.0,False,,True
+DIS-00302,2025-09-16,WN-2024-1793,ZONE-E,Crown Rot,mild,True,cultural_practice,409.0,True,11.0,True
+DIS-00303,2025-09-16,WN-2024-3191,ZONE-C,Walnut Blight,moderate,True,cultural_practice,202.0,True,21.0,True
+DIS-00304,2025-09-16,WN-2024-2847,ZONE-D,Anthracnose,mild,True,bactericide,280.0,True,18.0,True
+DIS-00305,2025-09-17,WN-2024-1216,ZONE-D,Walnut Blight,mild,True,cultural_practice,295.0,True,25.0,True
+DIS-00306,2025-09-17,WN-2024-2089,ZONE-F,Walnut Blight,moderate,True,cultural_practice,496.0,True,24.0,True
+DIS-00307,2025-09-18,WN-2024-4609,ZONE-A,Walnut Blight,mild,True,insecticide,63.0,True,10.0,True
+DIS-00308,2025-09-19,WN-2024-3538,ZONE-F,Walnut Blight,mild,True,insecticide,232.0,True,7.0,True
+DIS-00309,2025-09-19,WN-2024-4027,ZONE-B,Walnut Blight,mild,True,bactericide,393.0,True,14.0,True
+DIS-00310,2025-09-20,WN-2024-2041,ZONE-A,Walnut Blight,mild,True,bactericide,171.0,True,22.0,True
+DIS-00311,2025-09-20,WN-2024-0541,ZONE-F,Crown Rot,severe,False,,0.0,False,,False
+DIS-00312,2025-09-21,WN-2024-4570,ZONE-A,Crown Rot,moderate,True,fungicide,115.0,True,9.0,True
+DIS-00313,2025-09-22,WN-2024-2802,ZONE-C,Root Rot,mild,True,bactericide,225.0,True,19.0,True
+DIS-00314,2025-09-22,WN-2024-2120,ZONE-F,Powdery Mildew,mild,True,bactericide,298.0,False,,True
+DIS-00315,2025-09-22,WN-2024-4569,ZONE-E,Walnut Blight,mild,True,bactericide,316.0,True,29.0,True
+DIS-00316,2025-09-23,WN-2024-1605,ZONE-B,Walnut Blight,mild,True,cultural_practice,109.0,True,8.0,True
+DIS-00317,2025-09-23,WN-2024-3165,ZONE-B,Crown Rot,moderate,True,insecticide,160.0,False,,False
+DIS-00318,2025-09-23,WN-2024-3355,ZONE-B,Root Rot,mild,True,bactericide,238.0,True,29.0,True
+DIS-00319,2025-09-23,WN-2024-0266,ZONE-F,Anthracnose,moderate,True,bactericide,335.0,True,23.0,True
+DIS-00320,2025-09-23,WN-2024-0758,ZONE-D,Powdery Mildew,mild,True,insecticide,317.0,True,15.0,True
+DIS-00321,2025-09-24,WN-2024-1203,ZONE-B,Anthracnose,moderate,True,cultural_practice,211.0,False,,False
+DIS-00322,2025-09-25,WN-2024-2582,ZONE-E,Walnut Blight,mild,False,,0.0,False,,False
+DIS-00323,2025-09-25,WN-2024-2388,ZONE-A,Powdery Mildew,mild,True,insecticide,495.0,True,15.0,True
+DIS-00324,2025-09-25,WN-2024-2934,ZONE-F,Walnut Blight,moderate,True,bactericide,428.0,False,,True
+DIS-00325,2025-09-25,WN-2024-2267,ZONE-D,Anthracnose,severe,True,cultural_practice,154.0,False,,False
+DIS-00326,2025-09-25,WN-2024-3838,ZONE-E,Walnut Blight,mild,True,fungicide,323.0,True,19.0,True
+DIS-00327,2025-09-26,WN-2024-0073,ZONE-B,Walnut Blight,moderate,True,insecticide,323.0,False,,False
+DIS-00328,2025-09-26,WN-2024-1142,ZONE-E,Walnut Blight,moderate,True,insecticide,133.0,True,17.0,True
+DIS-00329,2025-09-26,WN-2024-4159,ZONE-F,Anthracnose,mild,True,insecticide,63.0,True,21.0,True
+DIS-00330,2025-09-27,WN-2024-2683,ZONE-A,Powdery Mildew,mild,True,bactericide,427.0,True,14.0,True
+DIS-00331,2025-09-27,WN-2024-1080,ZONE-D,Crown Rot,severe,True,fungicide,434.0,True,8.0,True
+DIS-00332,2025-09-27,WN-2024-0200,ZONE-B,Powdery Mildew,mild,True,bactericide,310.0,True,28.0,True
+DIS-00333,2025-09-27,WN-2024-1883,ZONE-B,Powdery Mildew,mild,True,cultural_practice,86.0,True,10.0,True
+DIS-00334,2025-09-28,WN-2024-2286,ZONE-F,Powdery Mildew,moderate,True,bactericide,69.0,True,10.0,True
+DIS-00335,2025-09-28,WN-2024-4356,ZONE-B,Root Rot,moderate,True,fungicide,222.0,False,,False
+DIS-00336,2025-09-28,WN-2024-2733,ZONE-F,Anthracnose,mild,False,,0.0,False,,False
+DIS-00337,2025-09-29,WN-2024-3310,ZONE-A,Root Rot,severe,True,cultural_practice,228.0,True,11.0,True
+DIS-00338,2025-09-29,WN-2024-0405,ZONE-C,Crown Rot,mild,True,insecticide,263.0,True,12.0,True
+DIS-00339,2025-09-29,WN-2024-2216,ZONE-E,Root Rot,mild,True,fungicide,112.0,False,,True
+DIS-00340,2025-09-29,WN-2024-4728,ZONE-A,Crown Rot,mild,False,,0.0,False,,True
+DIS-00341,2025-09-30,WN-2024-0065,ZONE-E,Crown Rot,mild,True,fungicide,69.0,True,17.0,True
+DIS-00342,2025-09-30,WN-2024-0789,ZONE-D,Powdery Mildew,moderate,True,fungicide,231.0,True,26.0,True
+DIS-00343,2025-09-30,WN-2024-4208,ZONE-E,Root Rot,mild,True,insecticide,350.0,True,13.0,True
+DIS-00344,2025-10-01,WN-2024-4034,ZONE-B,Root Rot,severe,True,insecticide,122.0,True,6.0,True
+DIS-00345,2025-10-01,WN-2024-0844,ZONE-E,Anthracnose,moderate,True,bactericide,212.0,False,,True
+DIS-00346,2025-10-03,WN-2024-4233,ZONE-A,Root Rot,moderate,True,cultural_practice,160.0,True,28.0,True
+DIS-00347,2025-10-04,WN-2024-0630,ZONE-F,Powdery Mildew,moderate,True,insecticide,186.0,True,28.0,True
+DIS-00348,2025-10-05,WN-2024-3073,ZONE-D,Walnut Blight,moderate,True,fungicide,148.0,False,,False
+DIS-00349,2025-10-06,WN-2024-0177,ZONE-A,Walnut Blight,severe,True,insecticide,415.0,False,,True
+DIS-00350,2025-10-06,WN-2024-3666,ZONE-E,Powdery Mildew,severe,True,fungicide,399.0,False,,True
+DIS-00351,2025-10-07,WN-2024-4577,ZONE-F,Crown Rot,mild,True,insecticide,442.0,True,23.0,True
+DIS-00352,2025-10-08,WN-2024-4749,ZONE-B,Anthracnose,mild,True,fungicide,232.0,True,5.0,True
+DIS-00353,2025-10-10,WN-2024-2251,ZONE-C,Anthracnose,moderate,True,bactericide,426.0,True,24.0,True
+DIS-00354,2025-10-11,WN-2024-1754,ZONE-E,Crown Rot,moderate,True,bactericide,225.0,True,14.0,True
+DIS-00355,2025-10-14,WN-2024-3883,ZONE-B,Walnut Blight,moderate,True,cultural_practice,473.0,False,,False
+DIS-00356,2025-10-14,WN-2024-3047,ZONE-F,Root Rot,mild,True,cultural_practice,221.0,True,19.0,True
+DIS-00357,2025-10-16,WN-2024-1065,ZONE-A,Powdery Mildew,severe,True,cultural_practice,51.0,False,,False
+DIS-00358,2025-10-17,WN-2024-3561,ZONE-E,Anthracnose,moderate,True,fungicide,232.0,True,25.0,True
+DIS-00359,2025-10-18,WN-2024-0629,ZONE-D,Crown Rot,severe,True,bactericide,150.0,False,,False
+DIS-00360,2025-10-19,WN-2024-1473,ZONE-F,Root Rot,mild,True,insecticide,414.0,True,14.0,True
+DIS-00361,2025-10-20,WN-2024-4410,ZONE-C,Powdery Mildew,mild,True,bactericide,340.0,True,19.0,True
+DIS-00362,2025-10-21,WN-2024-0563,ZONE-F,Crown Rot,mild,True,fungicide,263.0,True,7.0,True
+DIS-00363,2025-10-21,WN-2024-1634,ZONE-C,Anthracnose,severe,True,fungicide,192.0,False,,False
+DIS-00364,2025-10-21,WN-2024-1250,ZONE-E,Walnut Blight,moderate,True,cultural_practice,469.0,True,26.0,True
+DIS-00365,2025-10-21,WN-2024-1904,ZONE-D,Anthracnose,severe,True,bactericide,266.0,True,22.0,True
+DIS-00366,2025-10-21,WN-2024-0011,ZONE-A,Crown Rot,mild,True,insecticide,364.0,False,,True
+DIS-00367,2025-10-23,WN-2024-4073,ZONE-D,Walnut Blight,moderate,True,cultural_practice,80.0,True,15.0,True
+DIS-00368,2025-10-23,WN-2024-0299,ZONE-C,Walnut Blight,mild,True,cultural_practice,142.0,True,24.0,True
+DIS-00369,2025-10-24,WN-2024-2931,ZONE-C,Root Rot,mild,True,insecticide,332.0,False,,False
+DIS-00370,2025-10-28,WN-2024-1095,ZONE-A,Walnut Blight,mild,False,,0.0,False,,True
+DIS-00371,2025-10-29,WN-2024-1087,ZONE-B,Anthracnose,severe,True,fungicide,424.0,False,,False
+DIS-00372,2025-10-29,WN-2024-0916,ZONE-F,Walnut Blight,moderate,True,bactericide,70.0,True,6.0,True
+DIS-00373,2025-10-29,WN-2024-3299,ZONE-F,Anthracnose,mild,False,,0.0,False,,True
+DIS-00374,2025-10-29,WN-2024-0182,ZONE-E,Crown Rot,mild,True,fungicide,482.0,True,12.0,True
+DIS-00375,2025-10-29,WN-2024-1192,ZONE-C,Root Rot,mild,True,bactericide,177.0,True,14.0,True
+DIS-00376,2025-10-31,WN-2024-2025,ZONE-A,Root Rot,mild,True,bactericide,274.0,True,6.0,True
+DIS-00377,2025-11-06,WN-2024-2900,ZONE-F,Crown Rot,severe,True,fungicide,79.0,True,16.0,True
+DIS-00378,2025-11-09,WN-2024-1239,ZONE-D,Anthracnose,mild,True,cultural_practice,141.0,True,14.0,True
+DIS-00379,2025-11-09,WN-2024-0941,ZONE-F,Crown Rot,mild,True,cultural_practice,196.0,True,11.0,True
+DIS-00380,2025-11-12,WN-2024-4886,ZONE-F,Crown Rot,mild,True,cultural_practice,366.0,False,,False
+DIS-00381,2025-11-14,WN-2024-3477,ZONE-F,Crown Rot,moderate,True,fungicide,384.0,True,19.0,True
+DIS-00382,2025-11-17,WN-2024-3655,ZONE-C,Root Rot,mild,True,bactericide,238.0,True,10.0,True
+DIS-00383,2025-11-18,WN-2024-2237,ZONE-D,Root Rot,moderate,True,bactericide,56.0,False,,True
+DIS-00384,2025-11-19,WN-2024-3003,ZONE-E,Anthracnose,moderate,True,fungicide,124.0,True,28.0,True
+DIS-00385,2025-11-20,WN-2024-2070,ZONE-E,Walnut Blight,mild,True,bactericide,428.0,False,,False
+DIS-00386,2025-11-20,WN-2024-2133,ZONE-D,Root Rot,severe,True,insecticide,98.0,True,26.0,True
+DIS-00387,2025-11-20,WN-2024-1208,ZONE-B,Crown Rot,mild,True,cultural_practice,377.0,True,8.0,True
+DIS-00388,2025-11-21,WN-2024-0724,ZONE-D,Anthracnose,moderate,True,fungicide,138.0,True,18.0,True
+DIS-00389,2025-11-24,WN-2024-4139,ZONE-C,Crown Rot,severe,True,fungicide,221.0,True,10.0,True
+DIS-00390,2025-11-25,WN-2024-3384,ZONE-B,Anthracnose,mild,True,fungicide,116.0,True,15.0,True
+DIS-00391,2025-11-25,WN-2024-3223,ZONE-A,Crown Rot,mild,True,cultural_practice,310.0,True,23.0,True
+DIS-00392,2025-11-25,WN-2024-3608,ZONE-D,Crown Rot,moderate,True,fungicide,189.0,True,20.0,True
+DIS-00393,2025-11-26,WN-2024-1580,ZONE-C,Walnut Blight,moderate,True,cultural_practice,58.0,False,,False
+DIS-00394,2025-11-27,WN-2024-0886,ZONE-A,Walnut Blight,severe,True,bactericide,79.0,False,,True
+DIS-00395,2025-11-27,WN-2024-1983,ZONE-A,Powdery Mildew,moderate,True,bactericide,325.0,True,24.0,True
+DIS-00396,2025-11-27,WN-2024-3323,ZONE-C,Anthracnose,mild,True,fungicide,402.0,True,10.0,True
+DIS-00397,2025-11-28,WN-2024-4686,ZONE-B,Crown Rot,mild,True,insecticide,206.0,False,,False
+DIS-00398,2025-12-01,WN-2024-2022,ZONE-A,Anthracnose,mild,True,bactericide,392.0,True,16.0,True
+DIS-00399,2025-12-02,WN-2024-0691,ZONE-D,Root Rot,moderate,True,bactericide,469.0,True,24.0,True
+DIS-00400,2025-12-06,WN-2024-0462,ZONE-C,Crown Rot,moderate,True,fungicide,57.0,False,,False
+DIS-00401,2025-12-06,WN-2024-2267,ZONE-B,Root Rot,mild,True,insecticide,355.0,True,21.0,True
+DIS-00402,2025-12-08,WN-2024-1338,ZONE-A,Anthracnose,mild,True,bactericide,477.0,True,24.0,True
+DIS-00403,2025-12-09,WN-2024-4800,ZONE-D,Powdery Mildew,severe,True,insecticide,383.0,True,24.0,True
+DIS-00404,2025-12-10,WN-2024-4057,ZONE-D,Crown Rot,moderate,True,bactericide,251.0,False,,False
+DIS-00405,2025-12-12,WN-2024-3313,ZONE-C,Anthracnose,mild,True,insecticide,310.0,True,14.0,True
+DIS-00406,2025-12-18,WN-2024-2885,ZONE-E,Crown Rot,moderate,True,insecticide,224.0,False,,False
+DIS-00407,2025-12-18,WN-2024-1074,ZONE-E,Root Rot,moderate,True,fungicide,401.0,True,22.0,True
+DIS-00408,2025-12-18,WN-2024-1216,ZONE-B,Powdery Mildew,mild,True,insecticide,72.0,True,29.0,True
+DIS-00409,2025-12-23,WN-2024-0373,ZONE-F,Crown Rot,severe,True,insecticide,359.0,True,11.0,True
+DIS-00410,2025-12-24,WN-2024-3529,ZONE-D,Powdery Mildew,mild,True,insecticide,351.0,True,20.0,True
+DIS-00411,2025-12-27,WN-2024-4623,ZONE-C,Powdery Mildew,severe,True,bactericide,427.0,False,,True
+DIS-00412,2025-12-28,WN-2024-0439,ZONE-E,Root Rot,mild,True,fungicide,367.0,True,26.0,True
+DIS-00413,2025-12-31,WN-2024-3190,ZONE-F,Crown Rot,moderate,True,bactericide,123.0,True,21.0,True
+DIS-00414,2025-12-31,WN-2024-0646,ZONE-A,Anthracnose,mild,True,fungicide,62.0,True,27.0,True
+DIS-00415,2025-12-31,WN-2024-4813,ZONE-F,Powdery Mildew,mild,True,bactericide,397.0,True,10.0,True
+DIS-00416,2025-12-31,WN-2024-2928,ZONE-B,Anthracnose,mild,True,cultural_practice,57.0,True,26.0,True
+DIS-00417,2026-01-02,WN-2024-2888,ZONE-E,Walnut Blight,mild,True,cultural_practice,223.0,True,6.0,True
+DIS-00418,2026-01-04,WN-2024-1376,ZONE-F,Root Rot,severe,True,insecticide,283.0,False,,False
+DIS-00419,2026-01-06,WN-2024-0937,ZONE-B,Walnut Blight,mild,True,insecticide,201.0,True,20.0,True
+DIS-00420,2026-01-07,WN-2024-2299,ZONE-A,Anthracnose,mild,True,cultural_practice,230.0,True,27.0,True
+DIS-00421,2026-01-07,WN-2024-3402,ZONE-E,Walnut Blight,mild,True,cultural_practice,284.0,True,20.0,True
+DIS-00422,2026-01-10,WN-2024-1880,ZONE-B,Powdery Mildew,moderate,True,insecticide,76.0,False,,False
+DIS-00423,2026-01-10,WN-2024-4830,ZONE-B,Anthracnose,severe,False,,0.0,False,,False
+DIS-00424,2026-01-10,WN-2024-2557,ZONE-A,Powdery Mildew,moderate,True,bactericide,455.0,False,,True
+DIS-00425,2026-01-13,WN-2024-1353,ZONE-C,Root Rot,severe,False,,0.0,False,,False
+DIS-00426,2026-01-17,WN-2024-3051,ZONE-A,Root Rot,mild,True,cultural_practice,156.0,True,24.0,True
+DIS-00427,2026-01-19,WN-2024-3978,ZONE-E,Walnut Blight,mild,True,bactericide,224.0,True,25.0,True
+DIS-00428,2026-01-19,WN-2024-3430,ZONE-A,Crown Rot,mild,True,cultural_practice,429.0,True,28.0,True
+DIS-00429,2026-01-20,WN-2024-0507,ZONE-F,Powdery Mildew,mild,True,fungicide,309.0,True,25.0,True
+DIS-00430,2026-01-20,WN-2024-2902,ZONE-C,Powdery Mildew,moderate,True,insecticide,211.0,True,17.0,True
+DIS-00431,2026-01-24,WN-2024-0378,ZONE-D,Anthracnose,moderate,True,cultural_practice,303.0,False,,False
+DIS-00432,2026-01-28,WN-2024-3536,ZONE-E,Anthracnose,moderate,True,insecticide,148.0,True,9.0,True
+DIS-00433,2026-01-28,WN-2024-3553,ZONE-C,Powdery Mildew,moderate,True,fungicide,485.0,True,20.0,True
+DIS-00434,2026-01-29,WN-2024-1042,ZONE-D,Powdery Mildew,moderate,False,,0.0,False,,True
+DIS-00435,2026-01-29,WN-2024-2865,ZONE-E,Walnut Blight,moderate,True,cultural_practice,205.0,True,28.0,True
+DIS-00436,2026-01-29,WN-2024-3086,ZONE-E,Walnut Blight,mild,True,insecticide,141.0,True,22.0,True
+DIS-00437,2026-01-30,WN-2024-4021,ZONE-B,Crown Rot,moderate,True,bactericide,424.0,False,,True
+DIS-00438,2026-01-30,WN-2024-1297,ZONE-C,Walnut Blight,mild,True,insecticide,317.0,True,26.0,True
+DIS-00439,2026-02-01,WN-2024-0971,ZONE-E,Crown Rot,severe,False,,0.0,False,,True
+DIS-00440,2026-02-02,WN-2024-0581,ZONE-D,Root Rot,mild,True,fungicide,433.0,True,8.0,True
+DIS-00441,2026-02-03,WN-2024-0942,ZONE-B,Walnut Blight,moderate,True,bactericide,69.0,True,25.0,True
+DIS-00442,2026-02-06,WN-2024-2785,ZONE-D,Walnut Blight,mild,True,bactericide,125.0,True,7.0,True
+DIS-00443,2026-02-11,WN-2024-3726,ZONE-A,Crown Rot,moderate,True,insecticide,354.0,True,7.0,True
+DIS-00444,2026-02-11,WN-2024-0919,ZONE-B,Powdery Mildew,moderate,True,bactericide,384.0,True,24.0,True
+DIS-00445,2026-02-12,WN-2024-3368,ZONE-C,Walnut Blight,mild,True,bactericide,328.0,True,7.0,True
+DIS-00446,2026-02-12,WN-2024-1939,ZONE-D,Walnut Blight,mild,True,bactericide,476.0,False,,False
+DIS-00447,2026-02-12,WN-2024-4854,ZONE-F,Anthracnose,mild,True,fungicide,281.0,True,15.0,True
+DIS-00448,2026-02-14,WN-2024-1500,ZONE-E,Walnut Blight,mild,True,fungicide,342.0,True,13.0,True
+DIS-00449,2026-02-15,WN-2024-4031,ZONE-C,Walnut Blight,mild,True,bactericide,212.0,True,13.0,True
+DIS-00450,2026-02-15,WN-2024-2228,ZONE-D,Walnut Blight,mild,True,insecticide,413.0,True,13.0,True
+DIS-00451,2026-02-19,WN-2024-4531,ZONE-F,Anthracnose,severe,True,bactericide,338.0,True,27.0,True
+DIS-00452,2026-02-22,WN-2024-2636,ZONE-F,Walnut Blight,mild,True,fungicide,474.0,False,,False
+DIS-00453,2026-02-24,WN-2024-1655,ZONE-C,Root Rot,mild,True,fungicide,407.0,False,,False
+DIS-00454,2026-02-25,WN-2024-4819,ZONE-D,Anthracnose,moderate,True,cultural_practice,293.0,True,7.0,True
+DIS-00455,2026-02-26,WN-2024-4432,ZONE-E,Root Rot,mild,True,insecticide,293.0,True,24.0,True
+DIS-00456,2026-03-02,WN-2024-4814,ZONE-A,Powdery Mildew,mild,True,bactericide,440.0,True,23.0,True
+DIS-00457,2026-03-02,WN-2024-1889,ZONE-B,Powdery Mildew,severe,True,cultural_practice,136.0,False,,True
+DIS-00458,2026-03-03,WN-2024-4006,ZONE-F,Anthracnose,moderate,False,,0.0,False,,False
+DIS-00459,2026-03-05,WN-2024-3544,ZONE-B,Anthracnose,moderate,True,cultural_practice,468.0,True,15.0,True
+DIS-00460,2026-03-05,WN-2024-1408,ZONE-D,Walnut Blight,severe,False,,0.0,False,,True
+DIS-00461,2026-03-05,WN-2024-1958,ZONE-B,Crown Rot,mild,True,cultural_practice,464.0,True,11.0,True
+DIS-00462,2026-03-07,WN-2024-1320,ZONE-E,Powdery Mildew,mild,True,cultural_practice,354.0,True,8.0,True
+DIS-00463,2026-03-08,WN-2024-3804,ZONE-F,Root Rot,mild,False,,0.0,False,,False
+DIS-00464,2026-03-08,WN-2024-0015,ZONE-A,Crown Rot,moderate,True,insecticide,202.0,True,17.0,True
+DIS-00465,2026-03-11,WN-2024-2697,ZONE-F,Anthracnose,mild,True,bactericide,161.0,True,24.0,True
+DIS-00466,2026-03-20,WN-2024-4280,ZONE-A,Powdery Mildew,mild,True,fungicide,485.0,True,23.0,True
+DIS-00467,2026-03-22,WN-2024-4779,ZONE-B,Walnut Blight,mild,True,fungicide,291.0,True,12.0,True
+DIS-00468,2026-03-23,WN-2024-3708,ZONE-E,Root Rot,moderate,True,cultural_practice,170.0,True,26.0,True
+DIS-00469,2026-03-26,WN-2024-3582,ZONE-F,Anthracnose,moderate,True,insecticide,241.0,False,,False
+DIS-00470,2026-03-26,WN-2024-4145,ZONE-A,Root Rot,moderate,True,cultural_practice,226.0,True,25.0,True
+DIS-00471,2026-03-27,WN-2024-4366,ZONE-C,Root Rot,mild,True,cultural_practice,197.0,True,8.0,True
+DIS-00472,2026-04-01,WN-2024-4899,ZONE-E,Root Rot,mild,True,fungicide,166.0,True,7.0,True
+DIS-00473,2026-04-06,WN-2024-0142,ZONE-C,Powdery Mildew,moderate,True,insecticide,402.0,True,14.0,True
+DIS-00474,2026-04-09,WN-2024-3576,ZONE-A,Root Rot,mild,True,cultural_practice,156.0,True,8.0,True

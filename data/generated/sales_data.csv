@@ -1,0 +1,915 @@
+order_id,date,customer_name,variety_name,variety_code,quality_grade,quantity,unit_price,total_amount,payment_status,amount_paid,amount_pending,delivery_status
+ORD-00001,2025-04-10,Mountain View Nurseries,Local Variety,LV,A,20,1600,32000,partial,22256.0,9744.0,delivered
+ORD-00002,2025-04-10,Alpine Agriculture,Local Variety,LV,A,20,1600,32000,paid,32000.0,0.0,delivered
+ORD-00003,2025-04-10,Valley Green Farms,Local Variety,LV,A,15,1600,24000,paid,24000.0,0.0,processing
+ORD-00004,2025-04-10,Nature's Best Nursery,Pusa Kanchan,PK,B,15,2025,30375,partial,18439.0,11936.0,delivered
+ORD-00005,2025-04-10,Rural Development Society,Pusa Kanchan,PK,A+,10,3510,35100,pending,0.0,35100.0,delivered
+ORD-00006,2025-04-10,Green Earth Foundation,Chandler,CH,B,15,1875,28125,paid,28125.0,0.0,processing
+ORD-00007,2025-04-10,Valley Green Farms,Pusa Kanchan,PK,A,15,2700,40500,paid,40500.0,0.0,delivered
+ORD-00008,2025-04-10,Green Earth Foundation,Franquette,FR,A,5,2300,11500,paid,11500.0,0.0,delivered
+ORD-00009,2025-04-11,Green Earth Foundation,Chandler,CH,C,20,1250,25000,partial,16564.0,8436.0,delivered
+ORD-00010,2025-04-11,Nature's Best Nursery,Local Variety,LV,A+,20,2080,41600,paid,41600.0,0.0,delivered
+ORD-00011,2025-04-12,Eco Green Farms,Local Variety,LV,A,100,1600,160000,paid,160000.0,0.0,delivered
+ORD-00012,2025-04-12,Fruit Valley Co-op,Pusa Kanchan,PK,A,5,2700,13500,paid,13500.0,0.0,in_transit
+ORD-00013,2025-04-12,Highland Plantations,Kashmiri Walnut,KW,A,10,3000,30000,pending,0.0,30000.0,processing
+ORD-00014,2025-04-12,Government Agriculture Dept,Pusa Kanchan,PK,A,20,2700,54000,paid,54000.0,0.0,delivered
+ORD-00015,2025-04-12,Individual - Farmer,Chandler,CH,B,10,1875,18750,paid,18750.0,0.0,delivered
+ORD-00016,2025-04-13,Himalayan Horticulture,Pusa Kanchan,PK,A,10,2700,27000,paid,27000.0,0.0,delivered
+ORD-00017,2025-04-13,Green Earth Foundation,Franquette,FR,C,10,1150,11500,pending,0.0,11500.0,in_transit
+ORD-00018,2025-04-13,Highland Plantations,Local Variety,LV,A,25,1600,40000,paid,40000.0,0.0,delivered
+ORD-00019,2025-04-14,Valley Green Farms,Local Variety,LV,A,5,1600,8000,partial,4866.0,3134.0,processing
+ORD-00020,2025-04-14,Fruit Valley Co-op,Pusa Kanchan,PK,A,20,2700,54000,pending,0.0,54000.0,delivered
+ORD-00021,2025-04-14,Alpine Agriculture,Pusa Kanchan,PK,A+,100,3510,351000,paid,351000.0,0.0,processing
+ORD-00022,2025-04-15,University Research Farm,Pusa Kanchan,PK,B,20,2025,40500,paid,40500.0,0.0,delivered
+ORD-00023,2025-04-15,Alpine Agriculture,Chandler,CH,A+,10,3250,32500,pending,0.0,32500.0,delivered
+ORD-00024,2025-04-15,Export - Dubai Traders,Local Variety,LV,A,5,1600,8000,partial,4430.0,3570.0,delivered
+ORD-00025,2025-04-15,Eco Green Farms,Local Variety,LV,B,20,1200,24000,paid,24000.0,0.0,delivered
+ORD-00026,2025-04-15,Nature's Best Nursery,Local Variety,LV,C,20,800,16000,partial,5338.0,10662.0,delivered
+ORD-00027,2025-04-16,Himalayan Horticulture,Pusa Kanchan,PK,A+,5,3510,17550,pending,0.0,17550.0,in_transit
+ORD-00028,2025-04-16,Kashmir Orchards Ltd,Franquette,FR,A,20,2300,46000,paid,46000.0,0.0,delivered
+ORD-00029,2025-04-16,Eco Green Farms,Kashmiri Walnut,KW,A+,15,3900,58500,pending,0.0,58500.0,delivered
+ORD-00030,2025-04-16,Mountain View Nurseries,Franquette,FR,C,20,1150,23000,paid,23000.0,0.0,processing
+ORD-00031,2025-04-16,Individual - Farmer,Chandler,CH,A+,100,3250,325000,paid,325000.0,0.0,delivered
+ORD-00032,2025-04-16,Individual - Farmer,Chandler,CH,B,20,1875,37500,pending,0.0,37500.0,in_transit
+ORD-00033,2025-04-16,Rural Development Society,Chandler,CH,A+,25,3250,81250,paid,81250.0,0.0,delivered
+ORD-00034,2025-04-16,Alpine Agriculture,Pusa Kanchan,PK,A,10,2700,27000,paid,27000.0,0.0,delivered
+ORD-00035,2025-04-17,Kashmir Orchards Ltd,Kashmiri Walnut,KW,A,100,3000,300000,paid,300000.0,0.0,delivered
+ORD-00036,2025-04-17,Nature's Best Nursery,Local Variety,LV,A,20,1600,32000,partial,14353.0,17647.0,in_transit
+ORD-00037,2025-04-17,Himalayan Horticulture,Kashmiri Walnut,KW,A,5,3000,15000,paid,15000.0,0.0,delivered
+ORD-00038,2025-04-18,Alpine Agriculture,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,processing
+ORD-00039,2025-04-18,Fruit Valley Co-op,Pusa Kanchan,PK,C,15,1350,20250,paid,20250.0,0.0,delivered
+ORD-00040,2025-04-18,Highland Plantations,Chandler,CH,A,50,2500,125000,paid,125000.0,0.0,processing
+ORD-00041,2025-04-19,Individual - Farmer,Chandler,CH,B,50,1875,93750,pending,0.0,93750.0,delivered
+ORD-00042,2025-04-19,Highland Plantations,Kashmiri Walnut,KW,B,50,2250,112500,paid,112500.0,0.0,delivered
+ORD-00043,2025-04-19,Eco Green Farms,Pusa Kanchan,PK,A,20,2700,54000,pending,0.0,54000.0,delivered
+ORD-00044,2025-04-19,Fruit Valley Co-op,Franquette,FR,C,10,1150,11500,paid,11500.0,0.0,delivered
+ORD-00045,2025-04-19,Eco Green Farms,Franquette,FR,A,5,2300,11500,paid,11500.0,0.0,delivered
+ORD-00046,2025-04-19,Highland Plantations,Local Variety,LV,A,15,1600,24000,paid,24000.0,0.0,delivered
+ORD-00047,2025-04-20,Alpine Agriculture,Pusa Kanchan,PK,A+,15,3510,52650,pending,0.0,52650.0,delivered
+ORD-00048,2025-04-20,Individual - Farmer,Chandler,CH,A,5,2500,12500,pending,0.0,12500.0,delivered
+ORD-00049,2025-04-22,Valley Green Farms,Local Variety,LV,B,15,1200,18000,paid,18000.0,0.0,delivered
+ORD-00050,2025-04-22,University Research Farm,Local Variety,LV,A+,15,2080,31200,paid,31200.0,0.0,delivered
+ORD-00051,2025-04-22,Individual - Farmer,Kashmiri Walnut,KW,A,15,3000,45000,paid,45000.0,0.0,delivered
+ORD-00052,2025-04-22,University Research Farm,Chandler,CH,A,15,2500,37500,paid,37500.0,0.0,delivered
+ORD-00053,2025-04-22,Individual - Farmer,Kashmiri Walnut,KW,B,50,2250,112500,paid,112500.0,0.0,delivered
+ORD-00054,2025-04-22,Highland Plantations,Chandler,CH,B,5,1875,9375,paid,9375.0,0.0,delivered
+ORD-00055,2025-04-23,Nature's Best Nursery,Kashmiri Walnut,KW,B,15,2250,33750,paid,33750.0,0.0,delivered
+ORD-00056,2025-04-23,Individual - Farmer,Pusa Kanchan,PK,A,10,2700,27000,paid,27000.0,0.0,in_transit
+ORD-00057,2025-04-23,University Research Farm,Chandler,CH,A,25,2500,62500,paid,62500.0,0.0,delivered
+ORD-00058,2025-04-23,Valley Green Farms,Local Variety,LV,A,10,1600,16000,paid,16000.0,0.0,delivered
+ORD-00059,2025-04-23,Himalayan Horticulture,Franquette,FR,A+,10,2990,29900,partial,13891.0,16009.0,delivered
+ORD-00060,2025-04-23,University Research Farm,Franquette,FR,A,10,2300,23000,paid,23000.0,0.0,delivered
+ORD-00061,2025-04-23,Fruit Valley Co-op,Kashmiri Walnut,KW,A,25,3000,75000,paid,75000.0,0.0,in_transit
+ORD-00062,2025-04-24,Rural Development Society,Pusa Kanchan,PK,A+,50,3510,175500,paid,175500.0,0.0,delivered
+ORD-00063,2025-04-24,Government Agriculture Dept,Kashmiri Walnut,KW,A+,10,3900,39000,paid,39000.0,0.0,in_transit
+ORD-00064,2025-04-24,Mountain View Nurseries,Local Variety,LV,A,100,1600,160000,paid,160000.0,0.0,delivered
+ORD-00065,2025-04-24,Nature's Best Nursery,Local Variety,LV,A,10,1600,16000,partial,7061.0,8939.0,processing
+ORD-00066,2025-04-24,Highland Plantations,Franquette,FR,B,5,1725,8625,pending,0.0,8625.0,delivered
+ORD-00067,2025-04-24,Government Agriculture Dept,Local Variety,LV,A+,10,2080,20800,partial,7389.0,13411.0,delivered
+ORD-00068,2025-04-24,Alpine Agriculture,Pusa Kanchan,PK,C,15,1350,20250,paid,20250.0,0.0,delivered
+ORD-00069,2025-04-25,Nature's Best Nursery,Kashmiri Walnut,KW,C,5,1500,7500,paid,7500.0,0.0,delivered
+ORD-00070,2025-04-25,Himalayan Horticulture,Local Variety,LV,B,10,1200,12000,paid,12000.0,0.0,delivered
+ORD-00071,2025-04-25,Government Agriculture Dept,Kashmiri Walnut,KW,A+,10,3900,39000,paid,39000.0,0.0,delivered
+ORD-00072,2025-04-25,Himalayan Horticulture,Local Variety,LV,A,10,1600,16000,partial,10723.0,5277.0,delivered
+ORD-00073,2025-04-26,Mountain View Nurseries,Franquette,FR,A,20,2300,46000,partial,23687.0,22313.0,delivered
+ORD-00074,2025-04-26,Fruit Valley Co-op,Chandler,CH,B,10,1875,18750,pending,0.0,18750.0,processing
+ORD-00075,2025-04-26,Alpine Agriculture,Pusa Kanchan,PK,A,15,2700,40500,paid,40500.0,0.0,in_transit
+ORD-00076,2025-04-26,Nature's Best Nursery,Local Variety,LV,A,15,1600,24000,paid,24000.0,0.0,delivered
+ORD-00077,2025-04-27,Mountain View Nurseries,Chandler,CH,B,20,1875,37500,paid,37500.0,0.0,processing
+ORD-00078,2025-04-28,Highland Plantations,Kashmiri Walnut,KW,B,25,2250,56250,paid,56250.0,0.0,delivered
+ORD-00079,2025-04-28,Rural Development Society,Pusa Kanchan,PK,A+,25,3510,87750,partial,29711.0,58039.0,delivered
+ORD-00080,2025-04-28,Highland Plantations,Franquette,FR,A,10,2300,23000,paid,23000.0,0.0,delivered
+ORD-00081,2025-04-28,Green Earth Foundation,Franquette,FR,B,10,1725,17250,paid,17250.0,0.0,delivered
+ORD-00082,2025-04-28,Himalayan Horticulture,Franquette,FR,A,10,2300,23000,partial,11800.0,11200.0,delivered
+ORD-00083,2025-04-28,Alpine Agriculture,Franquette,FR,B,50,1725,86250,paid,86250.0,0.0,in_transit
+ORD-00084,2025-04-29,Himalayan Horticulture,Franquette,FR,A,5,2300,11500,paid,11500.0,0.0,processing
+ORD-00085,2025-04-29,Individual - Farmer,Franquette,FR,A,10,2300,23000,paid,23000.0,0.0,delivered
+ORD-00086,2025-04-29,Individual - Farmer,Kashmiri Walnut,KW,B,25,2250,56250,pending,0.0,56250.0,delivered
+ORD-00087,2025-04-29,Fruit Valley Co-op,Chandler,CH,A+,5,3250,16250,pending,0.0,16250.0,delivered
+ORD-00088,2025-04-29,Alpine Agriculture,Local Variety,LV,A+,20,2080,41600,paid,41600.0,0.0,delivered
+ORD-00089,2025-04-29,Individual - Farmer,Local Variety,LV,A,25,1600,40000,pending,0.0,40000.0,in_transit
+ORD-00090,2025-04-30,Export - Dubai Traders,Chandler,CH,A,15,2500,37500,paid,37500.0,0.0,delivered
+ORD-00091,2025-04-30,Kashmir Orchards Ltd,Chandler,CH,B,15,1875,28125,partial,11808.0,16317.0,delivered
+ORD-00092,2025-05-01,Government Agriculture Dept,Local Variety,LV,A,20,1600,32000,partial,12885.0,19115.0,delivered
+ORD-00093,2025-05-01,Kashmir Orchards Ltd,Local Variety,LV,B,15,1200,18000,pending,0.0,18000.0,delivered
+ORD-00094,2025-05-01,Highland Plantations,Pusa Kanchan,PK,A+,25,3510,87750,paid,87750.0,0.0,delivered
+ORD-00095,2025-05-01,Kashmir Orchards Ltd,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,in_transit
+ORD-00096,2025-05-01,Kashmir Orchards Ltd,Kashmiri Walnut,KW,A,25,3000,75000,paid,75000.0,0.0,delivered
+ORD-00097,2025-05-01,Rural Development Society,Local Variety,LV,B,15,1200,18000,paid,18000.0,0.0,delivered
+ORD-00098,2025-05-01,Fruit Valley Co-op,Local Variety,LV,A+,10,2080,20800,pending,0.0,20800.0,delivered
+ORD-00099,2025-05-01,Himalayan Horticulture,Kashmiri Walnut,KW,A,25,3000,75000,paid,75000.0,0.0,delivered
+ORD-00100,2025-05-02,Himalayan Horticulture,Chandler,CH,B,20,1875,37500,paid,37500.0,0.0,delivered
+ORD-00101,2025-05-02,Eco Green Farms,Kashmiri Walnut,KW,C,15,1500,22500,paid,22500.0,0.0,delivered
+ORD-00102,2025-05-03,Alpine Agriculture,Local Variety,LV,B,10,1200,12000,pending,0.0,12000.0,in_transit
+ORD-00103,2025-05-03,University Research Farm,Kashmiri Walnut,KW,B,25,2250,56250,partial,21483.0,34767.0,delivered
+ORD-00104,2025-05-03,Kashmir Orchards Ltd,Local Variety,LV,A+,20,2080,41600,pending,0.0,41600.0,delivered
+ORD-00105,2025-05-03,Rural Development Society,Local Variety,LV,A,50,1600,80000,paid,80000.0,0.0,in_transit
+ORD-00106,2025-05-03,University Research Farm,Chandler,CH,A,50,2500,125000,paid,125000.0,0.0,delivered
+ORD-00107,2025-05-03,Fruit Valley Co-op,Franquette,FR,B,20,1725,34500,paid,34500.0,0.0,processing
+ORD-00108,2025-05-04,Mountain View Nurseries,Chandler,CH,B,10,1875,18750,paid,18750.0,0.0,delivered
+ORD-00109,2025-05-04,Rural Development Society,Kashmiri Walnut,KW,A,10,3000,30000,paid,30000.0,0.0,delivered
+ORD-00110,2025-05-04,Nature's Best Nursery,Franquette,FR,A,20,2300,46000,paid,46000.0,0.0,delivered
+ORD-00111,2025-05-05,Export - Dubai Traders,Pusa Kanchan,PK,A+,50,3510,175500,paid,175500.0,0.0,delivered
+ORD-00112,2025-05-05,Alpine Agriculture,Pusa Kanchan,PK,B,20,2025,40500,paid,40500.0,0.0,delivered
+ORD-00113,2025-05-05,Individual - Farmer,Chandler,CH,A,20,2500,50000,paid,50000.0,0.0,delivered
+ORD-00114,2025-05-05,Highland Plantations,Pusa Kanchan,PK,A,5,2700,13500,paid,13500.0,0.0,delivered
+ORD-00115,2025-05-05,Nature's Best Nursery,Pusa Kanchan,PK,B,10,2025,20250,paid,20250.0,0.0,processing
+ORD-00116,2025-05-05,University Research Farm,Kashmiri Walnut,KW,C,15,1500,22500,partial,15676.0,6824.0,delivered
+ORD-00117,2025-05-05,Eco Green Farms,Chandler,CH,A,20,2500,50000,pending,0.0,50000.0,delivered
+ORD-00118,2025-05-05,Government Agriculture Dept,Chandler,CH,C,15,1250,18750,pending,0.0,18750.0,delivered
+ORD-00119,2025-05-05,Kashmir Orchards Ltd,Local Variety,LV,A,25,1600,40000,paid,40000.0,0.0,delivered
+ORD-00120,2025-05-06,Rural Development Society,Franquette,FR,A+,10,2990,29900,paid,29900.0,0.0,in_transit
+ORD-00121,2025-05-07,Kashmir Orchards Ltd,Chandler,CH,A,20,2500,50000,pending,0.0,50000.0,delivered
+ORD-00122,2025-05-07,Rural Development Society,Local Variety,LV,B,15,1200,18000,pending,0.0,18000.0,in_transit
+ORD-00123,2025-05-07,Export - Dubai Traders,Franquette,FR,A,25,2300,57500,paid,57500.0,0.0,delivered
+ORD-00124,2025-05-07,Government Agriculture Dept,Chandler,CH,A,20,2500,50000,partial,18622.0,31378.0,delivered
+ORD-00125,2025-05-07,Fruit Valley Co-op,Kashmiri Walnut,KW,A,5,3000,15000,pending,0.0,15000.0,in_transit
+ORD-00126,2025-05-08,Highland Plantations,Local Variety,LV,B,50,1200,60000,paid,60000.0,0.0,delivered
+ORD-00127,2025-05-08,University Research Farm,Franquette,FR,A+,20,2990,59800,paid,59800.0,0.0,delivered
+ORD-00128,2025-05-08,Himalayan Horticulture,Chandler,CH,A,25,2500,62500,paid,62500.0,0.0,delivered
+ORD-00129,2025-05-09,Eco Green Farms,Local Variety,LV,B,10,1200,12000,pending,0.0,12000.0,delivered
+ORD-00130,2025-05-09,Highland Plantations,Local Variety,LV,A+,15,2080,31200,paid,31200.0,0.0,processing
+ORD-00131,2025-05-09,Mountain View Nurseries,Kashmiri Walnut,KW,B,20,2250,45000,pending,0.0,45000.0,in_transit
+ORD-00132,2025-05-09,Fruit Valley Co-op,Chandler,CH,A,25,2500,62500,pending,0.0,62500.0,delivered
+ORD-00133,2025-05-10,Eco Green Farms,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,delivered
+ORD-00134,2025-05-10,Valley Green Farms,Chandler,CH,A+,20,3250,65000,paid,65000.0,0.0,delivered
+ORD-00135,2025-05-10,Green Earth Foundation,Chandler,CH,A,25,2500,62500,partial,42825.0,19675.0,processing
+ORD-00136,2025-05-11,University Research Farm,Pusa Kanchan,PK,B,15,2025,30375,pending,0.0,30375.0,delivered
+ORD-00137,2025-05-11,Highland Plantations,Kashmiri Walnut,KW,A,10,3000,30000,partial,20795.0,9205.0,in_transit
+ORD-00138,2025-05-12,Himalayan Horticulture,Chandler,CH,A,10,2500,25000,pending,0.0,25000.0,delivered
+ORD-00139,2025-05-13,Himalayan Horticulture,Kashmiri Walnut,KW,A,5,3000,15000,paid,15000.0,0.0,delivered
+ORD-00140,2025-05-13,Government Agriculture Dept,Franquette,FR,A+,10,2990,29900,paid,29900.0,0.0,delivered
+ORD-00141,2025-05-14,Kashmir Orchards Ltd,Kashmiri Walnut,KW,A,5,3000,15000,pending,0.0,15000.0,delivered
+ORD-00142,2025-05-14,Eco Green Farms,Kashmiri Walnut,KW,A,15,3000,45000,paid,45000.0,0.0,processing
+ORD-00143,2025-05-14,Alpine Agriculture,Chandler,CH,A,15,2500,37500,paid,37500.0,0.0,delivered
+ORD-00144,2025-05-14,Mountain View Nurseries,Pusa Kanchan,PK,C,20,1350,27000,paid,27000.0,0.0,delivered
+ORD-00145,2025-05-14,University Research Farm,Franquette,FR,A,50,2300,115000,paid,115000.0,0.0,delivered
+ORD-00146,2025-05-14,Government Agriculture Dept,Kashmiri Walnut,KW,A,25,3000,75000,paid,75000.0,0.0,delivered
+ORD-00147,2025-05-14,Government Agriculture Dept,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,processing
+ORD-00148,2025-05-14,Highland Plantations,Pusa Kanchan,PK,B,25,2025,50625,paid,50625.0,0.0,delivered
+ORD-00149,2025-05-14,Nature's Best Nursery,Chandler,CH,B,5,1875,9375,partial,5541.0,3834.0,delivered
+ORD-00150,2025-05-14,University Research Farm,Franquette,FR,A+,20,2990,59800,paid,59800.0,0.0,delivered
+ORD-00151,2025-05-14,Government Agriculture Dept,Pusa Kanchan,PK,A,25,2700,67500,partial,33492.0,34008.0,processing
+ORD-00152,2025-05-15,Fruit Valley Co-op,Kashmiri Walnut,KW,C,15,1500,22500,paid,22500.0,0.0,delivered
+ORD-00153,2025-05-15,Nature's Best Nursery,Kashmiri Walnut,KW,A,15,3000,45000,pending,0.0,45000.0,delivered
+ORD-00154,2025-05-15,Alpine Agriculture,Chandler,CH,A,25,2500,62500,paid,62500.0,0.0,delivered
+ORD-00155,2025-05-15,Green Earth Foundation,Local Variety,LV,B,10,1200,12000,pending,0.0,12000.0,delivered
+ORD-00156,2025-05-15,Nature's Best Nursery,Franquette,FR,A,10,2300,23000,paid,23000.0,0.0,delivered
+ORD-00157,2025-05-15,Himalayan Horticulture,Chandler,CH,A+,20,3250,65000,paid,65000.0,0.0,delivered
+ORD-00158,2025-05-15,Fruit Valley Co-op,Franquette,FR,A,15,2300,34500,partial,12029.0,22471.0,delivered
+ORD-00159,2025-05-16,Himalayan Horticulture,Local Variety,LV,B,10,1200,12000,paid,12000.0,0.0,in_transit
+ORD-00160,2025-05-16,Fruit Valley Co-op,Chandler,CH,C,25,1250,31250,pending,0.0,31250.0,delivered
+ORD-00161,2025-05-16,Rural Development Society,Chandler,CH,A,5,2500,12500,paid,12500.0,0.0,in_transit
+ORD-00162,2025-05-16,Nature's Best Nursery,Franquette,FR,A,15,2300,34500,paid,34500.0,0.0,delivered
+ORD-00163,2025-05-17,Fruit Valley Co-op,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,delivered
+ORD-00164,2025-05-17,Eco Green Farms,Kashmiri Walnut,KW,B,15,2250,33750,pending,0.0,33750.0,delivered
+ORD-00165,2025-05-17,Fruit Valley Co-op,Pusa Kanchan,PK,B,50,2025,101250,partial,70308.0,30942.0,delivered
+ORD-00166,2025-05-19,Green Earth Foundation,Local Variety,LV,B,20,1200,24000,paid,24000.0,0.0,in_transit
+ORD-00167,2025-05-19,Individual - Farmer,Pusa Kanchan,PK,B,50,2025,101250,paid,101250.0,0.0,delivered
+ORD-00168,2025-05-19,Alpine Agriculture,Kashmiri Walnut,KW,A+,10,3900,39000,paid,39000.0,0.0,delivered
+ORD-00169,2025-05-19,Government Agriculture Dept,Local Variety,LV,A,25,1600,40000,pending,0.0,40000.0,delivered
+ORD-00170,2025-05-19,Individual - Farmer,Local Variety,LV,A+,15,2080,31200,pending,0.0,31200.0,delivered
+ORD-00171,2025-05-19,Kashmir Orchards Ltd,Franquette,FR,B,10,1725,17250,pending,0.0,17250.0,delivered
+ORD-00172,2025-05-20,Highland Plantations,Franquette,FR,A,5,2300,11500,partial,6791.0,4709.0,delivered
+ORD-00173,2025-05-21,Alpine Agriculture,Chandler,CH,B,25,1875,46875,paid,46875.0,0.0,delivered
+ORD-00174,2025-05-21,Nature's Best Nursery,Pusa Kanchan,PK,C,50,1350,67500,paid,67500.0,0.0,delivered
+ORD-00175,2025-05-21,Fruit Valley Co-op,Kashmiri Walnut,KW,A,100,3000,300000,partial,143333.0,156667.0,processing
+ORD-00176,2025-05-21,University Research Farm,Chandler,CH,A,10,2500,25000,partial,9668.0,15332.0,delivered
+ORD-00177,2025-05-21,Eco Green Farms,Kashmiri Walnut,KW,A,10,3000,30000,paid,30000.0,0.0,delivered
+ORD-00178,2025-05-22,Fruit Valley Co-op,Franquette,FR,B,20,1725,34500,paid,34500.0,0.0,in_transit
+ORD-00179,2025-05-22,Himalayan Horticulture,Kashmiri Walnut,KW,B,100,2250,225000,pending,0.0,225000.0,delivered
+ORD-00180,2025-05-22,Highland Plantations,Franquette,FR,A,15,2300,34500,partial,21739.0,12761.0,delivered
+ORD-00181,2025-05-23,Mountain View Nurseries,Franquette,FR,B,20,1725,34500,pending,0.0,34500.0,delivered
+ORD-00182,2025-05-23,Government Agriculture Dept,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,processing
+ORD-00183,2025-05-23,Himalayan Horticulture,Local Variety,LV,A+,5,2080,10400,paid,10400.0,0.0,processing
+ORD-00184,2025-05-23,Valley Green Farms,Local Variety,LV,A,20,1600,32000,paid,32000.0,0.0,delivered
+ORD-00185,2025-05-23,Highland Plantations,Chandler,CH,A+,100,3250,325000,paid,325000.0,0.0,processing
+ORD-00186,2025-05-23,University Research Farm,Kashmiri Walnut,KW,A,15,3000,45000,paid,45000.0,0.0,delivered
+ORD-00187,2025-05-24,Kashmir Orchards Ltd,Franquette,FR,C,10,1150,11500,partial,4444.0,7056.0,in_transit
+ORD-00188,2025-05-24,Individual - Farmer,Chandler,CH,A,15,2500,37500,pending,0.0,37500.0,delivered
+ORD-00189,2025-05-24,Eco Green Farms,Chandler,CH,A,100,2500,250000,pending,0.0,250000.0,in_transit
+ORD-00190,2025-05-24,Government Agriculture Dept,Pusa Kanchan,PK,A+,10,3510,35100,paid,35100.0,0.0,in_transit
+ORD-00191,2025-05-24,Government Agriculture Dept,Kashmiri Walnut,KW,B,15,2250,33750,pending,0.0,33750.0,delivered
+ORD-00192,2025-05-24,Government Agriculture Dept,Chandler,CH,A,5,2500,12500,paid,12500.0,0.0,in_transit
+ORD-00193,2025-05-25,Export - Dubai Traders,Local Variety,LV,A,25,1600,40000,paid,40000.0,0.0,processing
+ORD-00194,2025-05-25,University Research Farm,Pusa Kanchan,PK,B,15,2025,30375,partial,9455.0,20920.0,processing
+ORD-00195,2025-05-25,Fruit Valley Co-op,Kashmiri Walnut,KW,A,10,3000,30000,paid,30000.0,0.0,delivered
+ORD-00196,2025-05-25,University Research Farm,Kashmiri Walnut,KW,B,5,2250,11250,paid,11250.0,0.0,in_transit
+ORD-00197,2025-05-26,Rural Development Society,Kashmiri Walnut,KW,B,5,2250,11250,paid,11250.0,0.0,processing
+ORD-00198,2025-05-26,Valley Green Farms,Franquette,FR,A,15,2300,34500,paid,34500.0,0.0,processing
+ORD-00199,2025-05-27,Green Earth Foundation,Franquette,FR,B,15,1725,25875,partial,17713.0,8162.0,delivered
+ORD-00200,2025-05-27,Government Agriculture Dept,Chandler,CH,B,20,1875,37500,paid,37500.0,0.0,delivered
+ORD-00201,2025-05-28,Eco Green Farms,Kashmiri Walnut,KW,A,10,3000,30000,paid,30000.0,0.0,delivered
+ORD-00202,2025-05-28,Fruit Valley Co-op,Kashmiri Walnut,KW,A,10,3000,30000,paid,30000.0,0.0,processing
+ORD-00203,2025-05-28,Rural Development Society,Local Variety,LV,A,20,1600,32000,partial,16249.0,15751.0,delivered
+ORD-00204,2025-05-28,Government Agriculture Dept,Kashmiri Walnut,KW,A,5,3000,15000,partial,5903.0,9097.0,delivered
+ORD-00205,2025-05-29,Individual - Farmer,Local Variety,LV,A+,10,2080,20800,paid,20800.0,0.0,delivered
+ORD-00206,2025-05-29,Green Earth Foundation,Local Variety,LV,A+,20,2080,41600,pending,0.0,41600.0,delivered
+ORD-00207,2025-05-29,Valley Green Farms,Pusa Kanchan,PK,A,5,2700,13500,partial,8681.0,4819.0,delivered
+ORD-00208,2025-05-29,Highland Plantations,Chandler,CH,A,15,2500,37500,paid,37500.0,0.0,delivered
+ORD-00209,2025-05-29,Valley Green Farms,Local Variety,LV,A,10,1600,16000,pending,0.0,16000.0,in_transit
+ORD-00210,2025-05-30,Fruit Valley Co-op,Chandler,CH,A,15,2500,37500,paid,37500.0,0.0,processing
+ORD-00211,2025-05-30,Rural Development Society,Franquette,FR,A,10,2300,23000,paid,23000.0,0.0,delivered
+ORD-00212,2025-05-30,Eco Green Farms,Local Variety,LV,A+,5,2080,10400,paid,10400.0,0.0,in_transit
+ORD-00213,2025-05-31,Mountain View Nurseries,Local Variety,LV,C,10,800,8000,pending,0.0,8000.0,delivered
+ORD-00214,2025-05-31,Kashmir Orchards Ltd,Chandler,CH,A,15,2500,37500,paid,37500.0,0.0,processing
+ORD-00215,2025-05-31,University Research Farm,Franquette,FR,A,10,2300,23000,paid,23000.0,0.0,delivered
+ORD-00216,2025-05-31,Fruit Valley Co-op,Franquette,FR,C,20,1150,23000,paid,23000.0,0.0,delivered
+ORD-00217,2025-05-31,Eco Green Farms,Franquette,FR,B,15,1725,25875,paid,25875.0,0.0,processing
+ORD-00218,2025-05-31,Alpine Agriculture,Franquette,FR,A,50,2300,115000,pending,0.0,115000.0,in_transit
+ORD-00219,2025-06-01,Rural Development Society,Chandler,CH,B,10,1875,18750,pending,0.0,18750.0,delivered
+ORD-00220,2025-06-02,Kashmir Orchards Ltd,Chandler,CH,C,20,1250,25000,pending,0.0,25000.0,delivered
+ORD-00221,2025-06-02,Mountain View Nurseries,Kashmiri Walnut,KW,A,15,3000,45000,pending,0.0,45000.0,processing
+ORD-00222,2025-06-02,Government Agriculture Dept,Kashmiri Walnut,KW,A,10,3000,30000,paid,30000.0,0.0,processing
+ORD-00223,2025-06-04,University Research Farm,Local Variety,LV,B,5,1200,6000,paid,6000.0,0.0,processing
+ORD-00224,2025-06-06,Valley Green Farms,Pusa Kanchan,PK,B,20,2025,40500,pending,0.0,40500.0,delivered
+ORD-00225,2025-06-06,Valley Green Farms,Franquette,FR,A,100,2300,230000,paid,230000.0,0.0,delivered
+ORD-00226,2025-06-07,Rural Development Society,Franquette,FR,A,20,2300,46000,pending,0.0,46000.0,delivered
+ORD-00227,2025-06-08,Fruit Valley Co-op,Pusa Kanchan,PK,B,20,2025,40500,paid,40500.0,0.0,in_transit
+ORD-00228,2025-06-09,Fruit Valley Co-op,Franquette,FR,A,15,2300,34500,paid,34500.0,0.0,in_transit
+ORD-00229,2025-06-13,Individual - Farmer,Chandler,CH,A,25,2500,62500,partial,29381.0,33119.0,delivered
+ORD-00230,2025-06-13,Rural Development Society,Chandler,CH,B,15,1875,28125,paid,28125.0,0.0,delivered
+ORD-00231,2025-06-13,Export - Dubai Traders,Kashmiri Walnut,KW,A,10,3000,30000,partial,14086.0,15914.0,delivered
+ORD-00232,2025-06-14,Highland Plantations,Chandler,CH,A,15,2500,37500,paid,37500.0,0.0,processing
+ORD-00233,2025-06-19,Rural Development Society,Kashmiri Walnut,KW,A,25,3000,75000,paid,75000.0,0.0,delivered
+ORD-00234,2025-06-20,Highland Plantations,Kashmiri Walnut,KW,A+,25,3900,97500,paid,97500.0,0.0,delivered
+ORD-00235,2025-06-21,Government Agriculture Dept,Chandler,CH,A,50,2500,125000,paid,125000.0,0.0,delivered
+ORD-00236,2025-06-23,Rural Development Society,Kashmiri Walnut,KW,A,10,3000,30000,partial,19422.0,10578.0,delivered
+ORD-00237,2025-06-23,Kashmir Orchards Ltd,Local Variety,LV,B,25,1200,30000,paid,30000.0,0.0,in_transit
+ORD-00238,2025-06-24,Government Agriculture Dept,Kashmiri Walnut,KW,A+,10,3900,39000,pending,0.0,39000.0,delivered
+ORD-00239,2025-06-24,Eco Green Farms,Franquette,FR,A,10,2300,23000,partial,10455.0,12545.0,delivered
+ORD-00240,2025-06-24,University Research Farm,Pusa Kanchan,PK,A,5,2700,13500,paid,13500.0,0.0,delivered
+ORD-00241,2025-06-25,Rural Development Society,Franquette,FR,B,15,1725,25875,paid,25875.0,0.0,delivered
+ORD-00242,2025-06-26,Mountain View Nurseries,Kashmiri Walnut,KW,A,10,3000,30000,paid,30000.0,0.0,delivered
+ORD-00243,2025-06-27,Fruit Valley Co-op,Local Variety,LV,A,15,1600,24000,paid,24000.0,0.0,in_transit
+ORD-00244,2025-06-27,Nature's Best Nursery,Kashmiri Walnut,KW,A,15,3000,45000,partial,23016.0,21984.0,in_transit
+ORD-00245,2025-06-28,Himalayan Horticulture,Kashmiri Walnut,KW,B,5,2250,11250,pending,0.0,11250.0,processing
+ORD-00246,2025-06-28,Nature's Best Nursery,Franquette,FR,A+,10,2990,29900,pending,0.0,29900.0,delivered
+ORD-00247,2025-06-28,Valley Green Farms,Pusa Kanchan,PK,A,10,2700,27000,paid,27000.0,0.0,in_transit
+ORD-00248,2025-06-28,Individual - Farmer,Chandler,CH,C,15,1250,18750,paid,18750.0,0.0,delivered
+ORD-00249,2025-06-29,Rural Development Society,Pusa Kanchan,PK,A,15,2700,40500,pending,0.0,40500.0,delivered
+ORD-00250,2025-07-01,Rural Development Society,Local Variety,LV,A+,5,2080,10400,pending,0.0,10400.0,delivered
+ORD-00251,2025-07-01,Export - Dubai Traders,Kashmiri Walnut,KW,A,15,3000,45000,partial,29460.0,15540.0,delivered
+ORD-00252,2025-07-01,Government Agriculture Dept,Chandler,CH,A,10,2500,25000,partial,10159.0,14841.0,processing
+ORD-00253,2025-07-03,Nature's Best Nursery,Pusa Kanchan,PK,B,10,2025,20250,partial,10791.0,9459.0,in_transit
+ORD-00254,2025-07-07,Fruit Valley Co-op,Chandler,CH,A,20,2500,50000,paid,50000.0,0.0,delivered
+ORD-00255,2025-07-08,Nature's Best Nursery,Pusa Kanchan,PK,A,50,2700,135000,pending,0.0,135000.0,processing
+ORD-00256,2025-07-08,Mountain View Nurseries,Chandler,CH,A,20,2500,50000,paid,50000.0,0.0,delivered
+ORD-00257,2025-07-08,Fruit Valley Co-op,Pusa Kanchan,PK,A,25,2700,67500,pending,0.0,67500.0,delivered
+ORD-00258,2025-07-09,Eco Green Farms,Kashmiri Walnut,KW,A+,15,3900,58500,paid,58500.0,0.0,delivered
+ORD-00259,2025-07-09,Export - Dubai Traders,Pusa Kanchan,PK,A,15,2700,40500,partial,25014.0,15486.0,delivered
+ORD-00260,2025-07-11,Alpine Agriculture,Chandler,CH,C,100,1250,125000,paid,125000.0,0.0,in_transit
+ORD-00261,2025-07-11,Highland Plantations,Pusa Kanchan,PK,A,15,2700,40500,paid,40500.0,0.0,delivered
+ORD-00262,2025-07-11,Fruit Valley Co-op,Franquette,FR,B,20,1725,34500,paid,34500.0,0.0,in_transit
+ORD-00263,2025-07-12,Government Agriculture Dept,Local Variety,LV,A,15,1600,24000,paid,24000.0,0.0,delivered
+ORD-00264,2025-07-13,Rural Development Society,Pusa Kanchan,PK,A,20,2700,54000,paid,54000.0,0.0,delivered
+ORD-00265,2025-07-14,Export - Dubai Traders,Franquette,FR,B,15,1725,25875,pending,0.0,25875.0,delivered
+ORD-00266,2025-07-14,Fruit Valley Co-op,Franquette,FR,A,10,2300,23000,pending,0.0,23000.0,in_transit
+ORD-00267,2025-07-14,Rural Development Society,Pusa Kanchan,PK,A,10,2700,27000,paid,27000.0,0.0,delivered
+ORD-00268,2025-07-17,Kashmir Orchards Ltd,Kashmiri Walnut,KW,B,20,2250,45000,paid,45000.0,0.0,delivered
+ORD-00269,2025-07-19,University Research Farm,Chandler,CH,C,20,1250,25000,partial,9179.0,15821.0,delivered
+ORD-00270,2025-07-20,Individual - Farmer,Local Variety,LV,A,10,1600,16000,pending,0.0,16000.0,delivered
+ORD-00271,2025-07-21,Rural Development Society,Franquette,FR,A,15,2300,34500,paid,34500.0,0.0,delivered
+ORD-00272,2025-07-22,Alpine Agriculture,Kashmiri Walnut,KW,B,5,2250,11250,partial,4986.0,6264.0,delivered
+ORD-00273,2025-07-24,Fruit Valley Co-op,Kashmiri Walnut,KW,A,5,3000,15000,paid,15000.0,0.0,delivered
+ORD-00274,2025-07-25,Individual - Farmer,Local Variety,LV,A+,15,2080,31200,partial,17847.0,13353.0,delivered
+ORD-00275,2025-07-25,Alpine Agriculture,Pusa Kanchan,PK,A,20,2700,54000,paid,54000.0,0.0,delivered
+ORD-00276,2025-07-27,Valley Green Farms,Kashmiri Walnut,KW,A,20,3000,60000,paid,60000.0,0.0,delivered
+ORD-00277,2025-07-29,Alpine Agriculture,Kashmiri Walnut,KW,B,5,2250,11250,pending,0.0,11250.0,delivered
+ORD-00278,2025-07-30,Individual - Farmer,Kashmiri Walnut,KW,A,25,3000,75000,pending,0.0,75000.0,delivered
+ORD-00279,2025-07-30,Alpine Agriculture,Franquette,FR,A+,10,2990,29900,paid,29900.0,0.0,delivered
+ORD-00280,2025-07-30,Nature's Best Nursery,Chandler,CH,A,25,2500,62500,pending,0.0,62500.0,delivered
+ORD-00281,2025-07-31,Alpine Agriculture,Chandler,CH,A,15,2500,37500,pending,0.0,37500.0,delivered
+ORD-00282,2025-07-31,Kashmir Orchards Ltd,Chandler,CH,A,50,2500,125000,paid,125000.0,0.0,delivered
+ORD-00283,2025-08-01,Rural Development Society,Franquette,FR,A+,15,2990,44850,paid,44850.0,0.0,processing
+ORD-00284,2025-08-02,Valley Green Farms,Kashmiri Walnut,KW,B,15,2250,33750,partial,13357.0,20393.0,processing
+ORD-00285,2025-08-02,Fruit Valley Co-op,Franquette,FR,A,10,2300,23000,pending,0.0,23000.0,delivered
+ORD-00286,2025-08-03,Export - Dubai Traders,Local Variety,LV,A+,25,2080,52000,pending,0.0,52000.0,delivered
+ORD-00287,2025-08-04,Himalayan Horticulture,Pusa Kanchan,PK,A,10,2700,27000,partial,10318.0,16682.0,delivered
+ORD-00288,2025-08-04,Valley Green Farms,Local Variety,LV,A,25,1600,40000,paid,40000.0,0.0,delivered
+ORD-00289,2025-08-05,Himalayan Horticulture,Pusa Kanchan,PK,A,100,2700,270000,pending,0.0,270000.0,delivered
+ORD-00290,2025-08-06,Valley Green Farms,Local Variety,LV,A,10,1600,16000,paid,16000.0,0.0,delivered
+ORD-00291,2025-08-06,Mountain View Nurseries,Kashmiri Walnut,KW,A+,5,3900,19500,paid,19500.0,0.0,processing
+ORD-00292,2025-08-07,Himalayan Horticulture,Kashmiri Walnut,KW,B,10,2250,22500,partial,11860.0,10640.0,processing
+ORD-00293,2025-08-07,Mountain View Nurseries,Kashmiri Walnut,KW,B,10,2250,22500,pending,0.0,22500.0,delivered
+ORD-00294,2025-08-07,Valley Green Farms,Chandler,CH,A,20,2500,50000,paid,50000.0,0.0,delivered
+ORD-00295,2025-08-09,Himalayan Horticulture,Kashmiri Walnut,KW,A,25,3000,75000,pending,0.0,75000.0,delivered
+ORD-00296,2025-08-09,Nature's Best Nursery,Chandler,CH,A,25,2500,62500,paid,62500.0,0.0,in_transit
+ORD-00297,2025-08-09,Mountain View Nurseries,Pusa Kanchan,PK,A,100,2700,270000,paid,270000.0,0.0,processing
+ORD-00298,2025-08-10,Highland Plantations,Chandler,CH,C,15,1250,18750,partial,11261.0,7489.0,in_transit
+ORD-00299,2025-08-11,Individual - Farmer,Kashmiri Walnut,KW,A+,20,3900,78000,paid,78000.0,0.0,delivered
+ORD-00300,2025-08-12,Highland Plantations,Kashmiri Walnut,KW,A,25,3000,75000,partial,45065.0,29935.0,delivered
+ORD-00301,2025-08-12,Fruit Valley Co-op,Kashmiri Walnut,KW,A,100,3000,300000,paid,300000.0,0.0,delivered
+ORD-00302,2025-08-14,Mountain View Nurseries,Chandler,CH,A,25,2500,62500,paid,62500.0,0.0,delivered
+ORD-00303,2025-08-19,Individual - Farmer,Franquette,FR,A,10,2300,23000,pending,0.0,23000.0,processing
+ORD-00304,2025-08-19,Export - Dubai Traders,Pusa Kanchan,PK,A,10,2700,27000,paid,27000.0,0.0,delivered
+ORD-00305,2025-08-20,Individual - Farmer,Kashmiri Walnut,KW,A,25,3000,75000,paid,75000.0,0.0,in_transit
+ORD-00306,2025-08-20,Valley Green Farms,Pusa Kanchan,PK,A+,15,3510,52650,partial,23131.0,29519.0,delivered
+ORD-00307,2025-08-20,Export - Dubai Traders,Franquette,FR,A,5,2300,11500,paid,11500.0,0.0,delivered
+ORD-00308,2025-08-22,Government Agriculture Dept,Pusa Kanchan,PK,C,25,1350,33750,paid,33750.0,0.0,delivered
+ORD-00309,2025-08-22,University Research Farm,Kashmiri Walnut,KW,A,5,3000,15000,pending,0.0,15000.0,delivered
+ORD-00310,2025-08-24,Fruit Valley Co-op,Pusa Kanchan,PK,B,5,2025,10125,pending,0.0,10125.0,delivered
+ORD-00311,2025-08-24,Fruit Valley Co-op,Local Variety,LV,A,25,1600,40000,paid,40000.0,0.0,in_transit
+ORD-00312,2025-08-26,Fruit Valley Co-op,Franquette,FR,A,10,2300,23000,pending,0.0,23000.0,delivered
+ORD-00313,2025-08-29,Kashmir Orchards Ltd,Kashmiri Walnut,KW,A,50,3000,150000,paid,150000.0,0.0,in_transit
+ORD-00314,2025-08-30,Eco Green Farms,Chandler,CH,A,25,2500,62500,paid,62500.0,0.0,delivered
+ORD-00315,2025-08-31,Export - Dubai Traders,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,processing
+ORD-00316,2025-08-31,Green Earth Foundation,Kashmiri Walnut,KW,C,10,1500,15000,paid,15000.0,0.0,delivered
+ORD-00317,2025-09-01,Mountain View Nurseries,Chandler,CH,A,20,2500,50000,paid,50000.0,0.0,in_transit
+ORD-00318,2025-09-01,Highland Plantations,Franquette,FR,A,100,2300,230000,paid,230000.0,0.0,in_transit
+ORD-00319,2025-09-01,Nature's Best Nursery,Franquette,FR,A,20,2300,46000,paid,46000.0,0.0,delivered
+ORD-00320,2025-09-01,Nature's Best Nursery,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,processing
+ORD-00321,2025-09-02,Valley Green Farms,Pusa Kanchan,PK,A,15,2700,40500,paid,40500.0,0.0,delivered
+ORD-00322,2025-09-02,Kashmir Orchards Ltd,Kashmiri Walnut,KW,B,10,2250,22500,paid,22500.0,0.0,delivered
+ORD-00323,2025-09-03,Mountain View Nurseries,Pusa Kanchan,PK,A,5,2700,13500,paid,13500.0,0.0,processing
+ORD-00324,2025-09-03,Green Earth Foundation,Chandler,CH,C,50,1250,62500,paid,62500.0,0.0,delivered
+ORD-00325,2025-09-03,University Research Farm,Franquette,FR,A+,15,2990,44850,pending,0.0,44850.0,processing
+ORD-00326,2025-09-03,Nature's Best Nursery,Chandler,CH,B,20,1875,37500,paid,37500.0,0.0,delivered
+ORD-00327,2025-09-03,Valley Green Farms,Chandler,CH,A,100,2500,250000,pending,0.0,250000.0,delivered
+ORD-00328,2025-09-03,Kashmir Orchards Ltd,Chandler,CH,B,5,1875,9375,paid,9375.0,0.0,delivered
+ORD-00329,2025-09-03,Himalayan Horticulture,Pusa Kanchan,PK,A+,15,3510,52650,paid,52650.0,0.0,delivered
+ORD-00330,2025-09-04,Eco Green Farms,Local Variety,LV,A,20,1600,32000,pending,0.0,32000.0,in_transit
+ORD-00331,2025-09-04,Alpine Agriculture,Kashmiri Walnut,KW,A,20,3000,60000,paid,60000.0,0.0,in_transit
+ORD-00332,2025-09-04,Rural Development Society,Local Variety,LV,A,15,1600,24000,pending,0.0,24000.0,delivered
+ORD-00333,2025-09-05,Eco Green Farms,Pusa Kanchan,PK,A+,20,3510,70200,paid,70200.0,0.0,delivered
+ORD-00334,2025-09-05,Rural Development Society,Local Variety,LV,A,25,1600,40000,paid,40000.0,0.0,in_transit
+ORD-00335,2025-09-05,Nature's Best Nursery,Chandler,CH,B,10,1875,18750,paid,18750.0,0.0,delivered
+ORD-00336,2025-09-05,Rural Development Society,Local Variety,LV,A,10,1600,16000,paid,16000.0,0.0,delivered
+ORD-00337,2025-09-06,Green Earth Foundation,Chandler,CH,A,25,2500,62500,partial,33964.0,28536.0,delivered
+ORD-00338,2025-09-06,Himalayan Horticulture,Local Variety,LV,A,50,1600,80000,pending,0.0,80000.0,delivered
+ORD-00339,2025-09-07,Export - Dubai Traders,Chandler,CH,B,5,1875,9375,paid,9375.0,0.0,delivered
+ORD-00340,2025-09-07,Nature's Best Nursery,Franquette,FR,A,10,2300,23000,paid,23000.0,0.0,delivered
+ORD-00341,2025-09-07,Rural Development Society,Local Variety,LV,A,10,1600,16000,pending,0.0,16000.0,delivered
+ORD-00342,2025-09-08,Kashmir Orchards Ltd,Franquette,FR,B,15,1725,25875,pending,0.0,25875.0,delivered
+ORD-00343,2025-09-09,Fruit Valley Co-op,Pusa Kanchan,PK,B,100,2025,202500,paid,202500.0,0.0,delivered
+ORD-00344,2025-09-09,Individual - Farmer,Chandler,CH,A,100,2500,250000,partial,142604.0,107396.0,delivered
+ORD-00345,2025-09-10,Alpine Agriculture,Local Variety,LV,A+,10,2080,20800,paid,20800.0,0.0,delivered
+ORD-00346,2025-09-10,University Research Farm,Pusa Kanchan,PK,B,10,2025,20250,paid,20250.0,0.0,delivered
+ORD-00347,2025-09-10,Eco Green Farms,Chandler,CH,B,10,1875,18750,paid,18750.0,0.0,delivered
+ORD-00348,2025-09-11,Alpine Agriculture,Chandler,CH,A,50,2500,125000,paid,125000.0,0.0,delivered
+ORD-00349,2025-09-11,University Research Farm,Chandler,CH,B,100,1875,187500,partial,108943.0,78557.0,in_transit
+ORD-00350,2025-09-11,Kashmir Orchards Ltd,Pusa Kanchan,PK,A,15,2700,40500,paid,40500.0,0.0,in_transit
+ORD-00351,2025-09-11,Valley Green Farms,Kashmiri Walnut,KW,A,10,3000,30000,paid,30000.0,0.0,delivered
+ORD-00352,2025-09-12,Green Earth Foundation,Chandler,CH,B,5,1875,9375,paid,9375.0,0.0,delivered
+ORD-00353,2025-09-12,Rural Development Society,Pusa Kanchan,PK,B,10,2025,20250,paid,20250.0,0.0,processing
+ORD-00354,2025-09-13,Valley Green Farms,Franquette,FR,A,5,2300,11500,paid,11500.0,0.0,delivered
+ORD-00355,2025-09-13,Mountain View Nurseries,Pusa Kanchan,PK,B,5,2025,10125,pending,0.0,10125.0,delivered
+ORD-00356,2025-09-14,Mountain View Nurseries,Pusa Kanchan,PK,B,5,2025,10125,paid,10125.0,0.0,delivered
+ORD-00357,2025-09-14,Himalayan Horticulture,Kashmiri Walnut,KW,A+,5,3900,19500,pending,0.0,19500.0,in_transit
+ORD-00358,2025-09-14,Green Earth Foundation,Franquette,FR,B,5,1725,8625,pending,0.0,8625.0,delivered
+ORD-00359,2025-09-15,Kashmir Orchards Ltd,Franquette,FR,A,50,2300,115000,paid,115000.0,0.0,processing
+ORD-00360,2025-09-16,Individual - Farmer,Kashmiri Walnut,KW,A,50,3000,150000,pending,0.0,150000.0,in_transit
+ORD-00361,2025-09-17,Kashmir Orchards Ltd,Kashmiri Walnut,KW,A,15,3000,45000,paid,45000.0,0.0,delivered
+ORD-00362,2025-09-17,Individual - Farmer,Pusa Kanchan,PK,A+,15,3510,52650,paid,52650.0,0.0,delivered
+ORD-00363,2025-09-17,Green Earth Foundation,Kashmiri Walnut,KW,A,20,3000,60000,partial,35343.0,24657.0,delivered
+ORD-00364,2025-09-18,Export - Dubai Traders,Pusa Kanchan,PK,A,100,2700,270000,paid,270000.0,0.0,delivered
+ORD-00365,2025-09-18,University Research Farm,Pusa Kanchan,PK,A,10,2700,27000,partial,11679.0,15321.0,delivered
+ORD-00366,2025-09-18,Individual - Farmer,Franquette,FR,A+,10,2990,29900,paid,29900.0,0.0,processing
+ORD-00367,2025-09-19,Eco Green Farms,Local Variety,LV,A+,10,2080,20800,pending,0.0,20800.0,delivered
+ORD-00368,2025-09-19,University Research Farm,Local Variety,LV,B,15,1200,18000,partial,9952.0,8048.0,in_transit
+ORD-00369,2025-09-19,Nature's Best Nursery,Kashmiri Walnut,KW,B,50,2250,112500,paid,112500.0,0.0,processing
+ORD-00370,2025-09-20,Alpine Agriculture,Pusa Kanchan,PK,B,15,2025,30375,pending,0.0,30375.0,delivered
+ORD-00371,2025-09-21,Government Agriculture Dept,Local Variety,LV,B,50,1200,60000,paid,60000.0,0.0,delivered
+ORD-00372,2025-09-21,Fruit Valley Co-op,Chandler,CH,A,20,2500,50000,partial,27061.0,22939.0,delivered
+ORD-00373,2025-09-21,Nature's Best Nursery,Local Variety,LV,C,20,800,16000,paid,16000.0,0.0,delivered
+ORD-00374,2025-09-21,Individual - Farmer,Franquette,FR,B,5,1725,8625,paid,8625.0,0.0,delivered
+ORD-00375,2025-09-23,Mountain View Nurseries,Chandler,CH,A,5,2500,12500,paid,12500.0,0.0,delivered
+ORD-00376,2025-09-23,Individual - Farmer,Kashmiri Walnut,KW,C,15,1500,22500,pending,0.0,22500.0,processing
+ORD-00377,2025-09-24,Mountain View Nurseries,Chandler,CH,B,10,1875,18750,paid,18750.0,0.0,delivered
+ORD-00378,2025-09-24,Alpine Agriculture,Local Variety,LV,B,10,1200,12000,paid,12000.0,0.0,delivered
+ORD-00379,2025-09-24,Individual - Farmer,Franquette,FR,B,20,1725,34500,partial,13399.0,21101.0,delivered
+ORD-00380,2025-09-24,Mountain View Nurseries,Local Variety,LV,A+,10,2080,20800,paid,20800.0,0.0,delivered
+ORD-00381,2025-09-24,Nature's Best Nursery,Chandler,CH,A,5,2500,12500,paid,12500.0,0.0,delivered
+ORD-00382,2025-09-24,Mountain View Nurseries,Pusa Kanchan,PK,B,25,2025,50625,partial,33939.0,16686.0,processing
+ORD-00383,2025-09-24,Government Agriculture Dept,Franquette,FR,B,15,1725,25875,paid,25875.0,0.0,delivered
+ORD-00384,2025-09-24,Eco Green Farms,Kashmiri Walnut,KW,A,20,3000,60000,pending,0.0,60000.0,in_transit
+ORD-00385,2025-09-25,University Research Farm,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,delivered
+ORD-00386,2025-09-25,Export - Dubai Traders,Franquette,FR,A,50,2300,115000,paid,115000.0,0.0,delivered
+ORD-00387,2025-09-26,Himalayan Horticulture,Pusa Kanchan,PK,A,10,2700,27000,paid,27000.0,0.0,delivered
+ORD-00388,2025-09-26,Highland Plantations,Franquette,FR,A+,5,2990,14950,pending,0.0,14950.0,processing
+ORD-00389,2025-09-26,Himalayan Horticulture,Chandler,CH,C,20,1250,25000,paid,25000.0,0.0,delivered
+ORD-00390,2025-09-26,Highland Plantations,Chandler,CH,A,15,2500,37500,partial,25207.0,12293.0,delivered
+ORD-00391,2025-09-26,Individual - Farmer,Chandler,CH,B,5,1875,9375,partial,5316.0,4059.0,in_transit
+ORD-00392,2025-09-26,Highland Plantations,Chandler,CH,A,25,2500,62500,pending,0.0,62500.0,delivered
+ORD-00393,2025-09-27,Valley Green Farms,Local Variety,LV,B,10,1200,12000,paid,12000.0,0.0,processing
+ORD-00394,2025-09-28,Alpine Agriculture,Local Variety,LV,B,20,1200,24000,partial,13260.0,10740.0,delivered
+ORD-00395,2025-09-28,Government Agriculture Dept,Pusa Kanchan,PK,A+,25,3510,87750,partial,34733.0,53017.0,delivered
+ORD-00396,2025-09-28,Alpine Agriculture,Franquette,FR,A,15,2300,34500,pending,0.0,34500.0,delivered
+ORD-00397,2025-09-28,Eco Green Farms,Local Variety,LV,A,50,1600,80000,paid,80000.0,0.0,delivered
+ORD-00398,2025-09-29,Alpine Agriculture,Local Variety,LV,A+,15,2080,31200,partial,14181.0,17019.0,delivered
+ORD-00399,2025-09-30,Nature's Best Nursery,Franquette,FR,B,100,1725,172500,paid,172500.0,0.0,delivered
+ORD-00400,2025-09-30,University Research Farm,Kashmiri Walnut,KW,B,50,2250,112500,paid,112500.0,0.0,delivered
+ORD-00401,2025-09-30,Fruit Valley Co-op,Local Variety,LV,A,10,1600,16000,paid,16000.0,0.0,delivered
+ORD-00402,2025-09-30,Himalayan Horticulture,Pusa Kanchan,PK,B,25,2025,50625,pending,0.0,50625.0,delivered
+ORD-00403,2025-09-30,Eco Green Farms,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,delivered
+ORD-00404,2025-10-01,Export - Dubai Traders,Chandler,CH,B,100,1875,187500,partial,94148.0,93352.0,delivered
+ORD-00405,2025-10-01,Green Earth Foundation,Franquette,FR,B,15,1725,25875,paid,25875.0,0.0,delivered
+ORD-00406,2025-10-01,Alpine Agriculture,Franquette,FR,B,100,1725,172500,pending,0.0,172500.0,delivered
+ORD-00407,2025-10-02,Highland Plantations,Local Variety,LV,B,5,1200,6000,partial,2606.0,3394.0,delivered
+ORD-00408,2025-10-02,Eco Green Farms,Local Variety,LV,A,5,1600,8000,pending,0.0,8000.0,in_transit
+ORD-00409,2025-10-03,Highland Plantations,Franquette,FR,A,20,2300,46000,paid,46000.0,0.0,delivered
+ORD-00410,2025-10-03,Mountain View Nurseries,Franquette,FR,A,20,2300,46000,paid,46000.0,0.0,delivered
+ORD-00411,2025-10-03,Green Earth Foundation,Chandler,CH,B,5,1875,9375,pending,0.0,9375.0,delivered
+ORD-00412,2025-10-04,Himalayan Horticulture,Pusa Kanchan,PK,A,50,2700,135000,paid,135000.0,0.0,delivered
+ORD-00413,2025-10-04,Valley Green Farms,Pusa Kanchan,PK,A+,50,3510,175500,paid,175500.0,0.0,delivered
+ORD-00414,2025-10-05,Government Agriculture Dept,Kashmiri Walnut,KW,B,100,2250,225000,pending,0.0,225000.0,delivered
+ORD-00415,2025-10-05,Government Agriculture Dept,Pusa Kanchan,PK,B,20,2025,40500,pending,0.0,40500.0,delivered
+ORD-00416,2025-10-05,Alpine Agriculture,Pusa Kanchan,PK,B,50,2025,101250,pending,0.0,101250.0,processing
+ORD-00417,2025-10-05,Valley Green Farms,Franquette,FR,A+,15,2990,44850,paid,44850.0,0.0,delivered
+ORD-00418,2025-10-06,Export - Dubai Traders,Local Variety,LV,A,20,1600,32000,pending,0.0,32000.0,delivered
+ORD-00419,2025-10-07,Alpine Agriculture,Franquette,FR,B,50,1725,86250,paid,86250.0,0.0,in_transit
+ORD-00420,2025-10-07,Nature's Best Nursery,Pusa Kanchan,PK,C,10,1350,13500,paid,13500.0,0.0,delivered
+ORD-00421,2025-10-08,Individual - Farmer,Local Variety,LV,A,20,1600,32000,paid,32000.0,0.0,delivered
+ORD-00422,2025-10-08,University Research Farm,Pusa Kanchan,PK,A,20,2700,54000,paid,54000.0,0.0,in_transit
+ORD-00423,2025-10-09,Himalayan Horticulture,Franquette,FR,A,15,2300,34500,paid,34500.0,0.0,delivered
+ORD-00424,2025-10-09,Rural Development Society,Local Variety,LV,A+,15,2080,31200,paid,31200.0,0.0,delivered
+ORD-00425,2025-10-09,Himalayan Horticulture,Chandler,CH,A,50,2500,125000,paid,125000.0,0.0,processing
+ORD-00426,2025-10-09,Fruit Valley Co-op,Kashmiri Walnut,KW,C,10,1500,15000,paid,15000.0,0.0,processing
+ORD-00427,2025-10-10,Highland Plantations,Local Variety,LV,A,5,1600,8000,pending,0.0,8000.0,delivered
+ORD-00428,2025-10-10,Valley Green Farms,Local Variety,LV,A,15,1600,24000,paid,24000.0,0.0,delivered
+ORD-00429,2025-10-11,Fruit Valley Co-op,Chandler,CH,C,10,1250,12500,pending,0.0,12500.0,processing
+ORD-00430,2025-10-11,Mountain View Nurseries,Kashmiri Walnut,KW,C,10,1500,15000,pending,0.0,15000.0,delivered
+ORD-00431,2025-10-11,Green Earth Foundation,Pusa Kanchan,PK,A+,10,3510,35100,paid,35100.0,0.0,in_transit
+ORD-00432,2025-10-12,University Research Farm,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,delivered
+ORD-00433,2025-10-12,Valley Green Farms,Pusa Kanchan,PK,B,5,2025,10125,paid,10125.0,0.0,delivered
+ORD-00434,2025-10-12,University Research Farm,Chandler,CH,B,5,1875,9375,paid,9375.0,0.0,delivered
+ORD-00435,2025-10-13,Green Earth Foundation,Kashmiri Walnut,KW,A,20,3000,60000,paid,60000.0,0.0,delivered
+ORD-00436,2025-10-13,Rural Development Society,Local Variety,LV,A+,10,2080,20800,partial,13222.0,7578.0,processing
+ORD-00437,2025-10-13,Alpine Agriculture,Local Variety,LV,A,15,1600,24000,paid,24000.0,0.0,delivered
+ORD-00438,2025-10-13,University Research Farm,Chandler,CH,A+,15,3250,48750,pending,0.0,48750.0,delivered
+ORD-00439,2025-10-13,Export - Dubai Traders,Local Variety,LV,B,5,1200,6000,paid,6000.0,0.0,delivered
+ORD-00440,2025-10-14,Government Agriculture Dept,Franquette,FR,B,10,1725,17250,paid,17250.0,0.0,in_transit
+ORD-00441,2025-10-15,University Research Farm,Pusa Kanchan,PK,A+,5,3510,17550,pending,0.0,17550.0,processing
+ORD-00442,2025-10-15,Highland Plantations,Kashmiri Walnut,KW,C,5,1500,7500,paid,7500.0,0.0,delivered
+ORD-00443,2025-10-16,Eco Green Farms,Pusa Kanchan,PK,A,25,2700,67500,pending,0.0,67500.0,processing
+ORD-00444,2025-10-16,Fruit Valley Co-op,Pusa Kanchan,PK,A,20,2700,54000,pending,0.0,54000.0,delivered
+ORD-00445,2025-10-17,University Research Farm,Pusa Kanchan,PK,A,20,2700,54000,paid,54000.0,0.0,delivered
+ORD-00446,2025-10-17,Eco Green Farms,Local Variety,LV,C,5,800,4000,paid,4000.0,0.0,delivered
+ORD-00447,2025-10-17,Nature's Best Nursery,Pusa Kanchan,PK,C,50,1350,67500,pending,0.0,67500.0,processing
+ORD-00448,2025-10-18,Highland Plantations,Kashmiri Walnut,KW,B,10,2250,22500,paid,22500.0,0.0,in_transit
+ORD-00449,2025-10-18,Export - Dubai Traders,Chandler,CH,B,15,1875,28125,paid,28125.0,0.0,delivered
+ORD-00450,2025-10-19,Export - Dubai Traders,Pusa Kanchan,PK,A,15,2700,40500,pending,0.0,40500.0,delivered
+ORD-00451,2025-10-19,University Research Farm,Kashmiri Walnut,KW,B,5,2250,11250,pending,0.0,11250.0,processing
+ORD-00452,2025-10-19,Nature's Best Nursery,Kashmiri Walnut,KW,A,50,3000,150000,paid,150000.0,0.0,in_transit
+ORD-00453,2025-10-19,Export - Dubai Traders,Pusa Kanchan,PK,A,100,2700,270000,paid,270000.0,0.0,delivered
+ORD-00454,2025-10-19,Fruit Valley Co-op,Franquette,FR,B,10,1725,17250,paid,17250.0,0.0,delivered
+ORD-00455,2025-10-21,Highland Plantations,Local Variety,LV,A,100,1600,160000,paid,160000.0,0.0,in_transit
+ORD-00456,2025-10-21,Rural Development Society,Franquette,FR,A,10,2300,23000,paid,23000.0,0.0,in_transit
+ORD-00457,2025-10-21,University Research Farm,Chandler,CH,A+,15,3250,48750,paid,48750.0,0.0,delivered
+ORD-00458,2025-10-21,Valley Green Farms,Local Variety,LV,A,15,1600,24000,paid,24000.0,0.0,processing
+ORD-00459,2025-10-22,Highland Plantations,Chandler,CH,A+,15,3250,48750,paid,48750.0,0.0,delivered
+ORD-00460,2025-10-22,Himalayan Horticulture,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,delivered
+ORD-00461,2025-10-22,Kashmir Orchards Ltd,Franquette,FR,B,10,1725,17250,partial,10362.0,6888.0,delivered
+ORD-00462,2025-10-23,Highland Plantations,Local Variety,LV,B,50,1200,60000,paid,60000.0,0.0,delivered
+ORD-00463,2025-10-24,Rural Development Society,Franquette,FR,B,50,1725,86250,paid,86250.0,0.0,delivered
+ORD-00464,2025-10-24,Himalayan Horticulture,Franquette,FR,B,10,1725,17250,partial,8751.0,8499.0,delivered
+ORD-00465,2025-10-25,Eco Green Farms,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,in_transit
+ORD-00466,2025-10-25,Nature's Best Nursery,Local Variety,LV,A,10,1600,16000,pending,0.0,16000.0,delivered
+ORD-00467,2025-10-25,Nature's Best Nursery,Franquette,FR,A+,5,2990,14950,partial,6559.0,8391.0,in_transit
+ORD-00468,2025-10-26,Mountain View Nurseries,Kashmiri Walnut,KW,B,10,2250,22500,paid,22500.0,0.0,processing
+ORD-00469,2025-10-26,Himalayan Horticulture,Kashmiri Walnut,KW,A,15,3000,45000,pending,0.0,45000.0,delivered
+ORD-00470,2025-10-26,Green Earth Foundation,Kashmiri Walnut,KW,B,20,2250,45000,paid,45000.0,0.0,delivered
+ORD-00471,2025-10-26,Mountain View Nurseries,Local Variety,LV,A,15,1600,24000,paid,24000.0,0.0,delivered
+ORD-00472,2025-10-26,University Research Farm,Kashmiri Walnut,KW,A,10,3000,30000,paid,30000.0,0.0,delivered
+ORD-00473,2025-10-26,Government Agriculture Dept,Kashmiri Walnut,KW,C,20,1500,30000,paid,30000.0,0.0,in_transit
+ORD-00474,2025-10-27,University Research Farm,Kashmiri Walnut,KW,B,20,2250,45000,pending,0.0,45000.0,delivered
+ORD-00475,2025-10-27,Nature's Best Nursery,Local Variety,LV,B,20,1200,24000,partial,12293.0,11707.0,delivered
+ORD-00476,2025-10-28,Fruit Valley Co-op,Kashmiri Walnut,KW,B,15,2250,33750,paid,33750.0,0.0,delivered
+ORD-00477,2025-10-28,Rural Development Society,Local Variety,LV,B,50,1200,60000,partial,19925.0,40075.0,delivered
+ORD-00478,2025-10-28,Fruit Valley Co-op,Franquette,FR,B,20,1725,34500,pending,0.0,34500.0,processing
+ORD-00479,2025-10-28,Export - Dubai Traders,Pusa Kanchan,PK,B,5,2025,10125,partial,4170.0,5955.0,delivered
+ORD-00480,2025-10-28,Government Agriculture Dept,Pusa Kanchan,PK,A,10,2700,27000,paid,27000.0,0.0,delivered
+ORD-00481,2025-10-29,Highland Plantations,Franquette,FR,A,10,2300,23000,paid,23000.0,0.0,delivered
+ORD-00482,2025-10-29,Highland Plantations,Chandler,CH,A,15,2500,37500,paid,37500.0,0.0,delivered
+ORD-00483,2025-10-30,Mountain View Nurseries,Pusa Kanchan,PK,B,5,2025,10125,paid,10125.0,0.0,delivered
+ORD-00484,2025-10-30,Valley Green Farms,Kashmiri Walnut,KW,A,20,3000,60000,paid,60000.0,0.0,delivered
+ORD-00485,2025-10-30,Nature's Best Nursery,Local Variety,LV,A,25,1600,40000,partial,25157.0,14843.0,in_transit
+ORD-00486,2025-10-31,Highland Plantations,Local Variety,LV,A,10,1600,16000,partial,7845.0,8155.0,processing
+ORD-00487,2025-10-31,Highland Plantations,Kashmiri Walnut,KW,B,25,2250,56250,paid,56250.0,0.0,delivered
+ORD-00488,2025-10-31,Individual - Farmer,Pusa Kanchan,PK,B,50,2025,101250,pending,0.0,101250.0,processing
+ORD-00489,2025-10-31,University Research Farm,Kashmiri Walnut,KW,A+,20,3900,78000,pending,0.0,78000.0,in_transit
+ORD-00490,2025-10-31,Green Earth Foundation,Kashmiri Walnut,KW,C,10,1500,15000,paid,15000.0,0.0,delivered
+ORD-00491,2025-11-01,Export - Dubai Traders,Franquette,FR,C,10,1150,11500,pending,0.0,11500.0,delivered
+ORD-00492,2025-11-01,Green Earth Foundation,Kashmiri Walnut,KW,B,50,2250,112500,pending,0.0,112500.0,delivered
+ORD-00493,2025-11-01,Highland Plantations,Pusa Kanchan,PK,A,50,2700,135000,partial,43066.0,91934.0,delivered
+ORD-00494,2025-11-02,Export - Dubai Traders,Franquette,FR,B,10,1725,17250,paid,17250.0,0.0,in_transit
+ORD-00495,2025-11-02,Alpine Agriculture,Chandler,CH,C,20,1250,25000,paid,25000.0,0.0,delivered
+ORD-00496,2025-11-03,University Research Farm,Chandler,CH,A,15,2500,37500,paid,37500.0,0.0,in_transit
+ORD-00497,2025-11-03,Alpine Agriculture,Local Variety,LV,A,10,1600,16000,pending,0.0,16000.0,in_transit
+ORD-00498,2025-11-04,Valley Green Farms,Franquette,FR,A,10,2300,23000,partial,9538.0,13462.0,delivered
+ORD-00499,2025-11-04,Export - Dubai Traders,Kashmiri Walnut,KW,C,25,1500,37500,paid,37500.0,0.0,delivered
+ORD-00500,2025-11-04,Individual - Farmer,Kashmiri Walnut,KW,B,10,2250,22500,paid,22500.0,0.0,delivered
+ORD-00501,2025-11-04,Nature's Best Nursery,Chandler,CH,B,10,1875,18750,paid,18750.0,0.0,delivered
+ORD-00502,2025-11-05,Himalayan Horticulture,Pusa Kanchan,PK,B,15,2025,30375,paid,30375.0,0.0,delivered
+ORD-00503,2025-11-05,Kashmir Orchards Ltd,Franquette,FR,A,20,2300,46000,paid,46000.0,0.0,delivered
+ORD-00504,2025-11-05,Green Earth Foundation,Local Variety,LV,A,15,1600,24000,pending,0.0,24000.0,in_transit
+ORD-00505,2025-11-05,Himalayan Horticulture,Pusa Kanchan,PK,A,50,2700,135000,pending,0.0,135000.0,delivered
+ORD-00506,2025-11-06,Highland Plantations,Kashmiri Walnut,KW,A+,5,3900,19500,partial,8567.0,10933.0,delivered
+ORD-00507,2025-11-06,Himalayan Horticulture,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,delivered
+ORD-00508,2025-11-06,Valley Green Farms,Chandler,CH,A+,5,3250,16250,paid,16250.0,0.0,delivered
+ORD-00509,2025-11-06,Kashmir Orchards Ltd,Pusa Kanchan,PK,A,100,2700,270000,pending,0.0,270000.0,delivered
+ORD-00510,2025-11-07,Himalayan Horticulture,Chandler,CH,C,5,1250,6250,paid,6250.0,0.0,delivered
+ORD-00511,2025-11-07,Eco Green Farms,Chandler,CH,A,5,2500,12500,paid,12500.0,0.0,delivered
+ORD-00512,2025-11-07,Highland Plantations,Pusa Kanchan,PK,C,15,1350,20250,paid,20250.0,0.0,delivered
+ORD-00513,2025-11-07,Valley Green Farms,Pusa Kanchan,PK,A,50,2700,135000,paid,135000.0,0.0,delivered
+ORD-00514,2025-11-07,Valley Green Farms,Kashmiri Walnut,KW,B,25,2250,56250,pending,0.0,56250.0,delivered
+ORD-00515,2025-11-08,Export - Dubai Traders,Kashmiri Walnut,KW,A,20,3000,60000,partial,27137.0,32863.0,in_transit
+ORD-00516,2025-11-08,Green Earth Foundation,Franquette,FR,A,15,2300,34500,pending,0.0,34500.0,delivered
+ORD-00517,2025-11-08,Nature's Best Nursery,Chandler,CH,A+,5,3250,16250,paid,16250.0,0.0,in_transit
+ORD-00518,2025-11-08,Kashmir Orchards Ltd,Franquette,FR,A,25,2300,57500,paid,57500.0,0.0,delivered
+ORD-00519,2025-11-08,Green Earth Foundation,Local Variety,LV,A,50,1600,80000,paid,80000.0,0.0,delivered
+ORD-00520,2025-11-09,Eco Green Farms,Chandler,CH,A,25,2500,62500,paid,62500.0,0.0,processing
+ORD-00521,2025-11-09,Green Earth Foundation,Franquette,FR,A+,20,2990,59800,paid,59800.0,0.0,in_transit
+ORD-00522,2025-11-09,Fruit Valley Co-op,Franquette,FR,B,20,1725,34500,paid,34500.0,0.0,in_transit
+ORD-00523,2025-11-09,Valley Green Farms,Kashmiri Walnut,KW,A,10,3000,30000,paid,30000.0,0.0,processing
+ORD-00524,2025-11-09,Export - Dubai Traders,Kashmiri Walnut,KW,B,5,2250,11250,paid,11250.0,0.0,delivered
+ORD-00525,2025-11-09,Rural Development Society,Pusa Kanchan,PK,A,5,2700,13500,pending,0.0,13500.0,delivered
+ORD-00526,2025-11-10,Rural Development Society,Pusa Kanchan,PK,A,20,2700,54000,paid,54000.0,0.0,delivered
+ORD-00527,2025-11-11,Eco Green Farms,Franquette,FR,B,10,1725,17250,paid,17250.0,0.0,delivered
+ORD-00528,2025-11-11,Mountain View Nurseries,Chandler,CH,A+,15,3250,48750,paid,48750.0,0.0,delivered
+ORD-00529,2025-11-11,Valley Green Farms,Local Variety,LV,A+,15,2080,31200,paid,31200.0,0.0,delivered
+ORD-00530,2025-11-12,Export - Dubai Traders,Kashmiri Walnut,KW,A,10,3000,30000,pending,0.0,30000.0,delivered
+ORD-00531,2025-11-12,Mountain View Nurseries,Pusa Kanchan,PK,B,50,2025,101250,paid,101250.0,0.0,delivered
+ORD-00532,2025-11-12,Kashmir Orchards Ltd,Pusa Kanchan,PK,B,5,2025,10125,partial,3873.0,6252.0,delivered
+ORD-00533,2025-11-12,Mountain View Nurseries,Kashmiri Walnut,KW,C,15,1500,22500,paid,22500.0,0.0,delivered
+ORD-00534,2025-11-13,Export - Dubai Traders,Kashmiri Walnut,KW,A+,20,3900,78000,paid,78000.0,0.0,delivered
+ORD-00535,2025-11-13,University Research Farm,Kashmiri Walnut,KW,A,5,3000,15000,paid,15000.0,0.0,delivered
+ORD-00536,2025-11-14,Rural Development Society,Pusa Kanchan,PK,B,20,2025,40500,partial,27371.0,13129.0,in_transit
+ORD-00537,2025-11-14,Green Earth Foundation,Chandler,CH,B,5,1875,9375,pending,0.0,9375.0,delivered
+ORD-00538,2025-11-14,University Research Farm,Pusa Kanchan,PK,A,25,2700,67500,paid,67500.0,0.0,delivered
+ORD-00539,2025-11-15,Mountain View Nurseries,Pusa Kanchan,PK,B,10,2025,20250,pending,0.0,20250.0,delivered
+ORD-00540,2025-11-15,University Research Farm,Local Variety,LV,A,20,1600,32000,pending,0.0,32000.0,delivered
+ORD-00541,2025-11-16,Government Agriculture Dept,Local Variety,LV,A,20,1600,32000,paid,32000.0,0.0,delivered
+ORD-00542,2025-11-16,Individual - Farmer,Chandler,CH,A,10,2500,25000,pending,0.0,25000.0,delivered
+ORD-00543,2025-11-16,Individual - Farmer,Kashmiri Walnut,KW,A,15,3000,45000,pending,0.0,45000.0,delivered
+ORD-00544,2025-11-17,Export - Dubai Traders,Kashmiri Walnut,KW,A,10,3000,30000,paid,30000.0,0.0,in_transit
+ORD-00545,2025-11-17,Himalayan Horticulture,Local Variety,LV,A,15,1600,24000,paid,24000.0,0.0,delivered
+ORD-00546,2025-11-17,Himalayan Horticulture,Pusa Kanchan,PK,A,20,2700,54000,paid,54000.0,0.0,delivered
+ORD-00547,2025-11-18,Kashmir Orchards Ltd,Pusa Kanchan,PK,A,10,2700,27000,paid,27000.0,0.0,delivered
+ORD-00548,2025-11-18,Kashmir Orchards Ltd,Local Variety,LV,C,20,800,16000,paid,16000.0,0.0,delivered
+ORD-00549,2025-11-18,Mountain View Nurseries,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,delivered
+ORD-00550,2025-11-19,Mountain View Nurseries,Kashmiri Walnut,KW,A,20,3000,60000,partial,29644.0,30356.0,in_transit
+ORD-00551,2025-11-19,Eco Green Farms,Kashmiri Walnut,KW,A,5,3000,15000,paid,15000.0,0.0,delivered
+ORD-00552,2025-11-19,Kashmir Orchards Ltd,Local Variety,LV,A+,20,2080,41600,pending,0.0,41600.0,delivered
+ORD-00553,2025-11-19,Kashmir Orchards Ltd,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,delivered
+ORD-00554,2025-11-19,Alpine Agriculture,Chandler,CH,C,15,1250,18750,partial,10169.0,8581.0,delivered
+ORD-00555,2025-11-19,Alpine Agriculture,Pusa Kanchan,PK,A,50,2700,135000,paid,135000.0,0.0,in_transit
+ORD-00556,2025-11-20,Highland Plantations,Local Variety,LV,A,20,1600,32000,partial,18237.0,13763.0,delivered
+ORD-00557,2025-11-21,Eco Green Farms,Chandler,CH,A+,10,3250,32500,paid,32500.0,0.0,delivered
+ORD-00558,2025-11-21,Fruit Valley Co-op,Chandler,CH,A,20,2500,50000,partial,21753.0,28247.0,processing
+ORD-00559,2025-11-21,Export - Dubai Traders,Kashmiri Walnut,KW,A+,100,3900,390000,partial,127327.0,262673.0,delivered
+ORD-00560,2025-11-21,Valley Green Farms,Kashmiri Walnut,KW,A,15,3000,45000,paid,45000.0,0.0,delivered
+ORD-00561,2025-11-21,Eco Green Farms,Pusa Kanchan,PK,B,20,2025,40500,paid,40500.0,0.0,in_transit
+ORD-00562,2025-11-22,Rural Development Society,Local Variety,LV,B,100,1200,120000,pending,0.0,120000.0,delivered
+ORD-00563,2025-11-22,Fruit Valley Co-op,Franquette,FR,B,5,1725,8625,partial,3083.0,5542.0,in_transit
+ORD-00564,2025-11-22,Green Earth Foundation,Pusa Kanchan,PK,A,5,2700,13500,paid,13500.0,0.0,in_transit
+ORD-00565,2025-11-22,Himalayan Horticulture,Franquette,FR,C,50,1150,57500,pending,0.0,57500.0,in_transit
+ORD-00566,2025-11-22,Green Earth Foundation,Kashmiri Walnut,KW,A,15,3000,45000,paid,45000.0,0.0,delivered
+ORD-00567,2025-11-23,Himalayan Horticulture,Franquette,FR,A,50,2300,115000,pending,0.0,115000.0,delivered
+ORD-00568,2025-11-23,Fruit Valley Co-op,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,delivered
+ORD-00569,2025-11-23,Fruit Valley Co-op,Local Variety,LV,A,10,1600,16000,partial,9877.0,6123.0,delivered
+ORD-00570,2025-11-24,Export - Dubai Traders,Pusa Kanchan,PK,A,20,2700,54000,paid,54000.0,0.0,delivered
+ORD-00571,2025-11-24,Individual - Farmer,Kashmiri Walnut,KW,A+,25,3900,97500,partial,36948.0,60552.0,delivered
+ORD-00572,2025-11-24,Valley Green Farms,Local Variety,LV,A,50,1600,80000,paid,80000.0,0.0,delivered
+ORD-00573,2025-11-25,Alpine Agriculture,Kashmiri Walnut,KW,A,20,3000,60000,pending,0.0,60000.0,delivered
+ORD-00574,2025-11-25,Export - Dubai Traders,Chandler,CH,A,50,2500,125000,pending,0.0,125000.0,in_transit
+ORD-00575,2025-11-26,Fruit Valley Co-op,Local Variety,LV,C,5,800,4000,partial,1304.0,2696.0,delivered
+ORD-00576,2025-11-26,Nature's Best Nursery,Pusa Kanchan,PK,A,15,2700,40500,paid,40500.0,0.0,delivered
+ORD-00577,2025-11-27,Individual - Farmer,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,delivered
+ORD-00578,2025-11-27,Government Agriculture Dept,Local Variety,LV,B,10,1200,12000,paid,12000.0,0.0,processing
+ORD-00579,2025-11-28,Export - Dubai Traders,Local Variety,LV,A+,15,2080,31200,paid,31200.0,0.0,processing
+ORD-00580,2025-11-29,Government Agriculture Dept,Local Variety,LV,A+,10,2080,20800,paid,20800.0,0.0,delivered
+ORD-00581,2025-11-29,Export - Dubai Traders,Pusa Kanchan,PK,A,5,2700,13500,paid,13500.0,0.0,delivered
+ORD-00582,2025-11-30,Mountain View Nurseries,Kashmiri Walnut,KW,A,25,3000,75000,partial,35450.0,39550.0,delivered
+ORD-00583,2025-11-30,Government Agriculture Dept,Kashmiri Walnut,KW,A+,15,3900,58500,paid,58500.0,0.0,delivered
+ORD-00584,2025-11-30,Kashmir Orchards Ltd,Pusa Kanchan,PK,A,100,2700,270000,partial,148170.0,121830.0,delivered
+ORD-00585,2025-11-30,Export - Dubai Traders,Pusa Kanchan,PK,B,10,2025,20250,partial,12407.0,7843.0,delivered
+ORD-00586,2025-12-01,Alpine Agriculture,Kashmiri Walnut,KW,A,10,3000,30000,paid,30000.0,0.0,delivered
+ORD-00587,2025-12-01,Eco Green Farms,Kashmiri Walnut,KW,A,10,3000,30000,pending,0.0,30000.0,in_transit
+ORD-00588,2025-12-01,Individual - Farmer,Chandler,CH,B,5,1875,9375,paid,9375.0,0.0,delivered
+ORD-00589,2025-12-02,Mountain View Nurseries,Chandler,CH,B,25,1875,46875,partial,17179.0,29696.0,processing
+ORD-00590,2025-12-02,Green Earth Foundation,Local Variety,LV,C,5,800,4000,pending,0.0,4000.0,delivered
+ORD-00591,2025-12-03,Kashmir Orchards Ltd,Pusa Kanchan,PK,A+,5,3510,17550,partial,5969.0,11581.0,in_transit
+ORD-00592,2025-12-03,Alpine Agriculture,Chandler,CH,A+,15,3250,48750,partial,16918.0,31832.0,processing
+ORD-00593,2025-12-03,Rural Development Society,Pusa Kanchan,PK,A,15,2700,40500,paid,40500.0,0.0,delivered
+ORD-00594,2025-12-03,Eco Green Farms,Franquette,FR,A+,5,2990,14950,pending,0.0,14950.0,delivered
+ORD-00595,2025-12-04,Alpine Agriculture,Pusa Kanchan,PK,A,5,2700,13500,partial,4509.0,8991.0,delivered
+ORD-00596,2025-12-05,Eco Green Farms,Franquette,FR,A+,20,2990,59800,paid,59800.0,0.0,delivered
+ORD-00597,2025-12-05,Government Agriculture Dept,Franquette,FR,A+,20,2990,59800,pending,0.0,59800.0,in_transit
+ORD-00598,2025-12-05,University Research Farm,Local Variety,LV,B,20,1200,24000,paid,24000.0,0.0,delivered
+ORD-00599,2025-12-06,Highland Plantations,Kashmiri Walnut,KW,A,100,3000,300000,paid,300000.0,0.0,delivered
+ORD-00600,2025-12-06,Government Agriculture Dept,Chandler,CH,A,15,2500,37500,paid,37500.0,0.0,delivered
+ORD-00601,2025-12-06,Rural Development Society,Local Variety,LV,A,10,1600,16000,paid,16000.0,0.0,in_transit
+ORD-00602,2025-12-07,University Research Farm,Kashmiri Walnut,KW,A+,20,3900,78000,pending,0.0,78000.0,in_transit
+ORD-00603,2025-12-07,Eco Green Farms,Local Variety,LV,B,10,1200,12000,pending,0.0,12000.0,delivered
+ORD-00604,2025-12-07,Fruit Valley Co-op,Kashmiri Walnut,KW,A,20,3000,60000,paid,60000.0,0.0,delivered
+ORD-00605,2025-12-08,Rural Development Society,Franquette,FR,B,15,1725,25875,pending,0.0,25875.0,in_transit
+ORD-00606,2025-12-08,Alpine Agriculture,Chandler,CH,C,50,1250,62500,paid,62500.0,0.0,delivered
+ORD-00607,2025-12-08,Nature's Best Nursery,Local Variety,LV,B,5,1200,6000,paid,6000.0,0.0,in_transit
+ORD-00608,2025-12-08,Government Agriculture Dept,Kashmiri Walnut,KW,B,10,2250,22500,paid,22500.0,0.0,delivered
+ORD-00609,2025-12-08,Kashmir Orchards Ltd,Franquette,FR,B,25,1725,43125,paid,43125.0,0.0,delivered
+ORD-00610,2025-12-09,Nature's Best Nursery,Franquette,FR,B,5,1725,8625,partial,5087.0,3538.0,delivered
+ORD-00611,2025-12-09,Rural Development Society,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,delivered
+ORD-00612,2025-12-09,Alpine Agriculture,Kashmiri Walnut,KW,B,20,2250,45000,partial,14957.0,30043.0,processing
+ORD-00613,2025-12-09,Himalayan Horticulture,Local Variety,LV,C,25,800,20000,paid,20000.0,0.0,in_transit
+ORD-00614,2025-12-09,Valley Green Farms,Kashmiri Walnut,KW,A,5,3000,15000,paid,15000.0,0.0,delivered
+ORD-00615,2025-12-09,Government Agriculture Dept,Kashmiri Walnut,KW,C,15,1500,22500,pending,0.0,22500.0,delivered
+ORD-00616,2025-12-10,Himalayan Horticulture,Franquette,FR,C,5,1150,5750,paid,5750.0,0.0,delivered
+ORD-00617,2025-12-10,Export - Dubai Traders,Franquette,FR,B,20,1725,34500,pending,0.0,34500.0,delivered
+ORD-00618,2025-12-10,Green Earth Foundation,Kashmiri Walnut,KW,C,25,1500,37500,pending,0.0,37500.0,in_transit
+ORD-00619,2025-12-12,Highland Plantations,Franquette,FR,A,25,2300,57500,pending,0.0,57500.0,processing
+ORD-00620,2025-12-13,Alpine Agriculture,Chandler,CH,A,5,2500,12500,paid,12500.0,0.0,delivered
+ORD-00621,2025-12-14,University Research Farm,Local Variety,LV,A+,10,2080,20800,pending,0.0,20800.0,delivered
+ORD-00622,2025-12-14,Eco Green Farms,Kashmiri Walnut,KW,A,20,3000,60000,paid,60000.0,0.0,in_transit
+ORD-00623,2025-12-14,University Research Farm,Kashmiri Walnut,KW,B,10,2250,22500,partial,12501.0,9999.0,processing
+ORD-00624,2025-12-15,Nature's Best Nursery,Chandler,CH,B,15,1875,28125,paid,28125.0,0.0,delivered
+ORD-00625,2025-12-16,Government Agriculture Dept,Local Variety,LV,A+,10,2080,20800,pending,0.0,20800.0,processing
+ORD-00626,2025-12-16,Valley Green Farms,Local Variety,LV,B,100,1200,120000,partial,49208.0,70792.0,processing
+ORD-00627,2025-12-18,Fruit Valley Co-op,Chandler,CH,A+,20,3250,65000,partial,31830.0,33170.0,processing
+ORD-00628,2025-12-18,Individual - Farmer,Franquette,FR,A,15,2300,34500,paid,34500.0,0.0,delivered
+ORD-00629,2025-12-18,Fruit Valley Co-op,Kashmiri Walnut,KW,A,50,3000,150000,pending,0.0,150000.0,in_transit
+ORD-00630,2025-12-18,Highland Plantations,Chandler,CH,B,25,1875,46875,paid,46875.0,0.0,delivered
+ORD-00631,2025-12-19,University Research Farm,Franquette,FR,A,25,2300,57500,pending,0.0,57500.0,delivered
+ORD-00632,2025-12-20,Rural Development Society,Pusa Kanchan,PK,A,25,2700,67500,paid,67500.0,0.0,delivered
+ORD-00633,2025-12-20,Green Earth Foundation,Kashmiri Walnut,KW,A+,25,3900,97500,paid,97500.0,0.0,delivered
+ORD-00634,2025-12-21,University Research Farm,Kashmiri Walnut,KW,B,5,2250,11250,paid,11250.0,0.0,in_transit
+ORD-00635,2025-12-21,Export - Dubai Traders,Pusa Kanchan,PK,A,20,2700,54000,paid,54000.0,0.0,delivered
+ORD-00636,2025-12-21,Government Agriculture Dept,Pusa Kanchan,PK,A+,5,3510,17550,pending,0.0,17550.0,delivered
+ORD-00637,2025-12-21,Himalayan Horticulture,Local Variety,LV,B,5,1200,6000,paid,6000.0,0.0,delivered
+ORD-00638,2025-12-21,Green Earth Foundation,Local Variety,LV,A,20,1600,32000,partial,12798.0,19202.0,delivered
+ORD-00639,2025-12-21,Himalayan Horticulture,Franquette,FR,B,10,1725,17250,pending,0.0,17250.0,delivered
+ORD-00640,2025-12-22,Kashmir Orchards Ltd,Franquette,FR,A,25,2300,57500,paid,57500.0,0.0,delivered
+ORD-00641,2025-12-23,Kashmir Orchards Ltd,Chandler,CH,B,50,1875,93750,pending,0.0,93750.0,delivered
+ORD-00642,2025-12-23,Fruit Valley Co-op,Franquette,FR,C,5,1150,5750,paid,5750.0,0.0,delivered
+ORD-00643,2025-12-23,Rural Development Society,Local Variety,LV,A+,10,2080,20800,pending,0.0,20800.0,delivered
+ORD-00644,2025-12-24,Export - Dubai Traders,Chandler,CH,A,25,2500,62500,pending,0.0,62500.0,processing
+ORD-00645,2025-12-26,Nature's Best Nursery,Chandler,CH,C,5,1250,6250,paid,6250.0,0.0,in_transit
+ORD-00646,2025-12-26,Green Earth Foundation,Kashmiri Walnut,KW,A,5,3000,15000,paid,15000.0,0.0,in_transit
+ORD-00647,2025-12-27,Export - Dubai Traders,Pusa Kanchan,PK,C,25,1350,33750,partial,17730.0,16020.0,processing
+ORD-00648,2025-12-28,Eco Green Farms,Kashmiri Walnut,KW,A,10,3000,30000,pending,0.0,30000.0,delivered
+ORD-00649,2025-12-28,Rural Development Society,Kashmiri Walnut,KW,B,25,2250,56250,paid,56250.0,0.0,delivered
+ORD-00650,2025-12-28,Highland Plantations,Chandler,CH,A,25,2500,62500,paid,62500.0,0.0,delivered
+ORD-00651,2025-12-29,Government Agriculture Dept,Kashmiri Walnut,KW,B,15,2250,33750,paid,33750.0,0.0,delivered
+ORD-00652,2025-12-29,Eco Green Farms,Franquette,FR,B,15,1725,25875,pending,0.0,25875.0,in_transit
+ORD-00653,2025-12-29,Government Agriculture Dept,Kashmiri Walnut,KW,B,5,2250,11250,paid,11250.0,0.0,delivered
+ORD-00654,2025-12-31,Valley Green Farms,Kashmiri Walnut,KW,B,5,2250,11250,paid,11250.0,0.0,processing
+ORD-00655,2025-12-31,Export - Dubai Traders,Pusa Kanchan,PK,A+,5,3510,17550,paid,17550.0,0.0,processing
+ORD-00656,2025-12-31,Valley Green Farms,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,delivered
+ORD-00657,2026-01-01,Alpine Agriculture,Kashmiri Walnut,KW,A,25,3000,75000,pending,0.0,75000.0,delivered
+ORD-00658,2026-01-02,Alpine Agriculture,Local Variety,LV,A,100,1600,160000,paid,160000.0,0.0,delivered
+ORD-00659,2026-01-02,Valley Green Farms,Kashmiri Walnut,KW,B,10,2250,22500,paid,22500.0,0.0,delivered
+ORD-00660,2026-01-02,Export - Dubai Traders,Chandler,CH,B,10,1875,18750,pending,0.0,18750.0,delivered
+ORD-00661,2026-01-03,Mountain View Nurseries,Franquette,FR,A,10,2300,23000,paid,23000.0,0.0,delivered
+ORD-00662,2026-01-03,Fruit Valley Co-op,Franquette,FR,A,10,2300,23000,paid,23000.0,0.0,in_transit
+ORD-00663,2026-01-04,University Research Farm,Franquette,FR,A,50,2300,115000,paid,115000.0,0.0,processing
+ORD-00664,2026-01-04,University Research Farm,Local Variety,LV,A,15,1600,24000,pending,0.0,24000.0,delivered
+ORD-00665,2026-01-06,Valley Green Farms,Kashmiri Walnut,KW,B,100,2250,225000,pending,0.0,225000.0,delivered
+ORD-00666,2026-01-06,Kashmir Orchards Ltd,Kashmiri Walnut,KW,A,25,3000,75000,partial,35319.0,39681.0,delivered
+ORD-00667,2026-01-06,Highland Plantations,Chandler,CH,B,10,1875,18750,paid,18750.0,0.0,delivered
+ORD-00668,2026-01-07,Export - Dubai Traders,Local Variety,LV,B,10,1200,12000,paid,12000.0,0.0,delivered
+ORD-00669,2026-01-07,Highland Plantations,Pusa Kanchan,PK,C,10,1350,13500,paid,13500.0,0.0,processing
+ORD-00670,2026-01-08,Government Agriculture Dept,Pusa Kanchan,PK,B,10,2025,20250,paid,20250.0,0.0,delivered
+ORD-00671,2026-01-08,Individual - Farmer,Chandler,CH,C,5,1250,6250,paid,6250.0,0.0,delivered
+ORD-00672,2026-01-08,Nature's Best Nursery,Chandler,CH,A,15,2500,37500,paid,37500.0,0.0,delivered
+ORD-00673,2026-01-09,Export - Dubai Traders,Local Variety,LV,B,50,1200,60000,paid,60000.0,0.0,delivered
+ORD-00674,2026-01-10,University Research Farm,Pusa Kanchan,PK,A,50,2700,135000,paid,135000.0,0.0,processing
+ORD-00675,2026-01-10,Individual - Farmer,Kashmiri Walnut,KW,A,50,3000,150000,pending,0.0,150000.0,delivered
+ORD-00676,2026-01-10,Fruit Valley Co-op,Pusa Kanchan,PK,A,15,2700,40500,paid,40500.0,0.0,delivered
+ORD-00677,2026-01-11,Government Agriculture Dept,Kashmiri Walnut,KW,A+,50,3900,195000,pending,0.0,195000.0,delivered
+ORD-00678,2026-01-12,Highland Plantations,Kashmiri Walnut,KW,A+,5,3900,19500,pending,0.0,19500.0,processing
+ORD-00679,2026-01-12,Export - Dubai Traders,Local Variety,LV,A,15,1600,24000,pending,0.0,24000.0,delivered
+ORD-00680,2026-01-13,Kashmir Orchards Ltd,Franquette,FR,B,20,1725,34500,pending,0.0,34500.0,in_transit
+ORD-00681,2026-01-13,Highland Plantations,Pusa Kanchan,PK,A,25,2700,67500,pending,0.0,67500.0,delivered
+ORD-00682,2026-01-14,Highland Plantations,Kashmiri Walnut,KW,A,20,3000,60000,paid,60000.0,0.0,delivered
+ORD-00683,2026-01-14,Valley Green Farms,Kashmiri Walnut,KW,B,50,2250,112500,pending,0.0,112500.0,delivered
+ORD-00684,2026-01-14,Mountain View Nurseries,Franquette,FR,A,50,2300,115000,pending,0.0,115000.0,processing
+ORD-00685,2026-01-14,University Research Farm,Franquette,FR,B,10,1725,17250,pending,0.0,17250.0,processing
+ORD-00686,2026-01-15,Himalayan Horticulture,Pusa Kanchan,PK,A,15,2700,40500,paid,40500.0,0.0,delivered
+ORD-00687,2026-01-15,Kashmir Orchards Ltd,Kashmiri Walnut,KW,A,25,3000,75000,partial,30784.0,44216.0,delivered
+ORD-00688,2026-01-16,Alpine Agriculture,Franquette,FR,A,5,2300,11500,pending,0.0,11500.0,delivered
+ORD-00689,2026-01-17,Fruit Valley Co-op,Kashmiri Walnut,KW,A,10,3000,30000,partial,20639.0,9361.0,delivered
+ORD-00690,2026-01-17,Kashmir Orchards Ltd,Pusa Kanchan,PK,A,10,2700,27000,partial,15437.0,11563.0,delivered
+ORD-00691,2026-01-18,Government Agriculture Dept,Pusa Kanchan,PK,B,10,2025,20250,paid,20250.0,0.0,processing
+ORD-00692,2026-01-18,Rural Development Society,Franquette,FR,A,5,2300,11500,paid,11500.0,0.0,processing
+ORD-00693,2026-01-19,Valley Green Farms,Local Variety,LV,B,5,1200,6000,paid,6000.0,0.0,delivered
+ORD-00694,2026-01-19,Individual - Farmer,Franquette,FR,A+,5,2990,14950,paid,14950.0,0.0,delivered
+ORD-00695,2026-01-20,Himalayan Horticulture,Chandler,CH,A,20,2500,50000,paid,50000.0,0.0,delivered
+ORD-00696,2026-01-20,Export - Dubai Traders,Pusa Kanchan,PK,A,25,2700,67500,pending,0.0,67500.0,processing
+ORD-00697,2026-01-20,University Research Farm,Chandler,CH,B,50,1875,93750,paid,93750.0,0.0,processing
+ORD-00698,2026-01-21,Alpine Agriculture,Kashmiri Walnut,KW,A,20,3000,60000,partial,18817.0,41183.0,delivered
+ORD-00699,2026-01-22,Fruit Valley Co-op,Franquette,FR,B,5,1725,8625,pending,0.0,8625.0,delivered
+ORD-00700,2026-01-23,Himalayan Horticulture,Kashmiri Walnut,KW,A,15,3000,45000,paid,45000.0,0.0,delivered
+ORD-00701,2026-01-25,Kashmir Orchards Ltd,Kashmiri Walnut,KW,B,15,2250,33750,partial,12347.0,21403.0,delivered
+ORD-00702,2026-01-25,Individual - Farmer,Pusa Kanchan,PK,A+,15,3510,52650,paid,52650.0,0.0,delivered
+ORD-00703,2026-01-25,Green Earth Foundation,Kashmiri Walnut,KW,A+,15,3900,58500,paid,58500.0,0.0,delivered
+ORD-00704,2026-01-25,Alpine Agriculture,Kashmiri Walnut,KW,B,10,2250,22500,pending,0.0,22500.0,in_transit
+ORD-00705,2026-01-25,Eco Green Farms,Kashmiri Walnut,KW,A,15,3000,45000,paid,45000.0,0.0,processing
+ORD-00706,2026-01-27,Himalayan Horticulture,Local Variety,LV,A,20,1600,32000,partial,16344.0,15656.0,delivered
+ORD-00707,2026-01-27,Green Earth Foundation,Kashmiri Walnut,KW,B,10,2250,22500,paid,22500.0,0.0,delivered
+ORD-00708,2026-01-27,Individual - Farmer,Chandler,CH,A,5,2500,12500,paid,12500.0,0.0,delivered
+ORD-00709,2026-01-28,Alpine Agriculture,Chandler,CH,A,25,2500,62500,partial,41286.0,21214.0,delivered
+ORD-00710,2026-01-30,Fruit Valley Co-op,Local Variety,LV,A,15,1600,24000,paid,24000.0,0.0,delivered
+ORD-00711,2026-01-30,Rural Development Society,Local Variety,LV,A+,50,2080,104000,paid,104000.0,0.0,delivered
+ORD-00712,2026-01-31,Fruit Valley Co-op,Kashmiri Walnut,KW,A+,10,3900,39000,partial,26910.0,12090.0,delivered
+ORD-00713,2026-01-31,Individual - Farmer,Kashmiri Walnut,KW,B,15,2250,33750,paid,33750.0,0.0,delivered
+ORD-00714,2026-02-01,Eco Green Farms,Local Variety,LV,A,25,1600,40000,partial,20141.0,19859.0,delivered
+ORD-00715,2026-02-01,Valley Green Farms,Franquette,FR,B,10,1725,17250,paid,17250.0,0.0,delivered
+ORD-00716,2026-02-01,Valley Green Farms,Chandler,CH,A,5,2500,12500,paid,12500.0,0.0,delivered
+ORD-00717,2026-02-02,Green Earth Foundation,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,processing
+ORD-00718,2026-02-04,Himalayan Horticulture,Kashmiri Walnut,KW,B,20,2250,45000,paid,45000.0,0.0,delivered
+ORD-00719,2026-02-04,Government Agriculture Dept,Kashmiri Walnut,KW,C,15,1500,22500,pending,0.0,22500.0,in_transit
+ORD-00720,2026-02-05,Mountain View Nurseries,Kashmiri Walnut,KW,C,50,1500,75000,paid,75000.0,0.0,processing
+ORD-00721,2026-02-05,Kashmir Orchards Ltd,Franquette,FR,A,20,2300,46000,paid,46000.0,0.0,delivered
+ORD-00722,2026-02-05,Rural Development Society,Kashmiri Walnut,KW,A,20,3000,60000,partial,22806.0,37194.0,delivered
+ORD-00723,2026-02-06,Fruit Valley Co-op,Pusa Kanchan,PK,B,10,2025,20250,partial,10992.0,9258.0,in_transit
+ORD-00724,2026-02-06,University Research Farm,Franquette,FR,A,10,2300,23000,pending,0.0,23000.0,processing
+ORD-00725,2026-02-07,Eco Green Farms,Kashmiri Walnut,KW,A,10,3000,30000,partial,19921.0,10079.0,delivered
+ORD-00726,2026-02-07,Nature's Best Nursery,Franquette,FR,B,5,1725,8625,pending,0.0,8625.0,delivered
+ORD-00727,2026-02-07,Himalayan Horticulture,Franquette,FR,A,25,2300,57500,partial,25337.0,32163.0,delivered
+ORD-00728,2026-02-08,Valley Green Farms,Kashmiri Walnut,KW,A,15,3000,45000,pending,0.0,45000.0,delivered
+ORD-00729,2026-02-08,Nature's Best Nursery,Franquette,FR,A,25,2300,57500,paid,57500.0,0.0,delivered
+ORD-00730,2026-02-09,Alpine Agriculture,Kashmiri Walnut,KW,C,5,1500,7500,paid,7500.0,0.0,delivered
+ORD-00731,2026-02-09,Export - Dubai Traders,Chandler,CH,A,5,2500,12500,pending,0.0,12500.0,processing
+ORD-00732,2026-02-10,Fruit Valley Co-op,Franquette,FR,C,15,1150,17250,pending,0.0,17250.0,delivered
+ORD-00733,2026-02-10,Kashmir Orchards Ltd,Local Variety,LV,A,50,1600,80000,paid,80000.0,0.0,delivered
+ORD-00734,2026-02-11,Fruit Valley Co-op,Pusa Kanchan,PK,A,15,2700,40500,pending,0.0,40500.0,processing
+ORD-00735,2026-02-12,Alpine Agriculture,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,delivered
+ORD-00736,2026-02-12,University Research Farm,Kashmiri Walnut,KW,B,10,2250,22500,paid,22500.0,0.0,delivered
+ORD-00737,2026-02-12,Export - Dubai Traders,Local Variety,LV,C,20,800,16000,pending,0.0,16000.0,processing
+ORD-00738,2026-02-13,University Research Farm,Chandler,CH,B,15,1875,28125,pending,0.0,28125.0,delivered
+ORD-00739,2026-02-14,Export - Dubai Traders,Chandler,CH,B,50,1875,93750,pending,0.0,93750.0,delivered
+ORD-00740,2026-02-14,Green Earth Foundation,Local Variety,LV,B,10,1200,12000,paid,12000.0,0.0,in_transit
+ORD-00741,2026-02-15,Valley Green Farms,Pusa Kanchan,PK,B,5,2025,10125,pending,0.0,10125.0,processing
+ORD-00742,2026-02-16,Government Agriculture Dept,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,processing
+ORD-00743,2026-02-16,Himalayan Horticulture,Pusa Kanchan,PK,B,10,2025,20250,pending,0.0,20250.0,delivered
+ORD-00744,2026-02-18,Nature's Best Nursery,Franquette,FR,A,10,2300,23000,pending,0.0,23000.0,delivered
+ORD-00745,2026-02-19,Kashmir Orchards Ltd,Kashmiri Walnut,KW,A+,10,3900,39000,paid,39000.0,0.0,delivered
+ORD-00746,2026-02-19,Government Agriculture Dept,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,delivered
+ORD-00747,2026-02-19,Export - Dubai Traders,Local Variety,LV,A+,5,2080,10400,paid,10400.0,0.0,in_transit
+ORD-00748,2026-02-20,Green Earth Foundation,Pusa Kanchan,PK,A,10,2700,27000,pending,0.0,27000.0,delivered
+ORD-00749,2026-02-20,Individual - Farmer,Franquette,FR,A+,100,2990,299000,paid,299000.0,0.0,in_transit
+ORD-00750,2026-02-20,Eco Green Farms,Kashmiri Walnut,KW,A,10,3000,30000,paid,30000.0,0.0,processing
+ORD-00751,2026-02-20,Eco Green Farms,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,delivered
+ORD-00752,2026-02-21,Kashmir Orchards Ltd,Franquette,FR,A,10,2300,23000,pending,0.0,23000.0,processing
+ORD-00753,2026-02-21,Kashmir Orchards Ltd,Local Variety,LV,A+,10,2080,20800,paid,20800.0,0.0,delivered
+ORD-00754,2026-02-21,Kashmir Orchards Ltd,Franquette,FR,A+,10,2990,29900,paid,29900.0,0.0,delivered
+ORD-00755,2026-02-22,Green Earth Foundation,Pusa Kanchan,PK,A+,10,3510,35100,paid,35100.0,0.0,delivered
+ORD-00756,2026-02-22,Kashmir Orchards Ltd,Franquette,FR,B,20,1725,34500,paid,34500.0,0.0,processing
+ORD-00757,2026-02-24,Alpine Agriculture,Franquette,FR,A,100,2300,230000,pending,0.0,230000.0,delivered
+ORD-00758,2026-02-24,Eco Green Farms,Kashmiri Walnut,KW,B,20,2250,45000,paid,45000.0,0.0,delivered
+ORD-00759,2026-02-24,Eco Green Farms,Chandler,CH,B,10,1875,18750,pending,0.0,18750.0,delivered
+ORD-00760,2026-02-25,Eco Green Farms,Pusa Kanchan,PK,B,10,2025,20250,paid,20250.0,0.0,delivered
+ORD-00761,2026-02-25,Green Earth Foundation,Pusa Kanchan,PK,A,15,2700,40500,pending,0.0,40500.0,delivered
+ORD-00762,2026-02-26,University Research Farm,Pusa Kanchan,PK,C,5,1350,6750,paid,6750.0,0.0,in_transit
+ORD-00763,2026-02-27,Fruit Valley Co-op,Local Variety,LV,A,100,1600,160000,pending,0.0,160000.0,in_transit
+ORD-00764,2026-02-28,Alpine Agriculture,Franquette,FR,A,15,2300,34500,paid,34500.0,0.0,delivered
+ORD-00765,2026-03-01,Green Earth Foundation,Pusa Kanchan,PK,B,25,2025,50625,partial,15308.0,35317.0,delivered
+ORD-00766,2026-03-01,Rural Development Society,Pusa Kanchan,PK,A,20,2700,54000,paid,54000.0,0.0,delivered
+ORD-00767,2026-03-01,Fruit Valley Co-op,Kashmiri Walnut,KW,A,5,3000,15000,paid,15000.0,0.0,in_transit
+ORD-00768,2026-03-01,Mountain View Nurseries,Local Variety,LV,A,50,1600,80000,partial,36384.0,43616.0,delivered
+ORD-00769,2026-03-01,Green Earth Foundation,Kashmiri Walnut,KW,A,5,3000,15000,paid,15000.0,0.0,delivered
+ORD-00770,2026-03-01,Eco Green Farms,Pusa Kanchan,PK,A+,15,3510,52650,paid,52650.0,0.0,delivered
+ORD-00771,2026-03-02,Fruit Valley Co-op,Local Variety,LV,B,20,1200,24000,paid,24000.0,0.0,delivered
+ORD-00772,2026-03-02,Individual - Farmer,Pusa Kanchan,PK,C,25,1350,33750,paid,33750.0,0.0,delivered
+ORD-00773,2026-03-02,Rural Development Society,Chandler,CH,A+,15,3250,48750,paid,48750.0,0.0,delivered
+ORD-00774,2026-03-02,Green Earth Foundation,Local Variety,LV,A,5,1600,8000,partial,2733.0,5267.0,delivered
+ORD-00775,2026-03-02,Mountain View Nurseries,Kashmiri Walnut,KW,A,10,3000,30000,paid,30000.0,0.0,delivered
+ORD-00776,2026-03-03,Export - Dubai Traders,Franquette,FR,A,5,2300,11500,pending,0.0,11500.0,delivered
+ORD-00777,2026-03-03,Himalayan Horticulture,Pusa Kanchan,PK,C,15,1350,20250,paid,20250.0,0.0,delivered
+ORD-00778,2026-03-03,Kashmir Orchards Ltd,Franquette,FR,A+,10,2990,29900,paid,29900.0,0.0,delivered
+ORD-00779,2026-03-04,University Research Farm,Chandler,CH,A+,100,3250,325000,pending,0.0,325000.0,delivered
+ORD-00780,2026-03-04,Himalayan Horticulture,Pusa Kanchan,PK,A,5,2700,13500,paid,13500.0,0.0,delivered
+ORD-00781,2026-03-04,Mountain View Nurseries,Chandler,CH,B,15,1875,28125,paid,28125.0,0.0,delivered
+ORD-00782,2026-03-04,Alpine Agriculture,Pusa Kanchan,PK,A,25,2700,67500,paid,67500.0,0.0,delivered
+ORD-00783,2026-03-05,University Research Farm,Chandler,CH,B,10,1875,18750,pending,0.0,18750.0,in_transit
+ORD-00784,2026-03-07,Eco Green Farms,Chandler,CH,C,5,1250,6250,paid,6250.0,0.0,delivered
+ORD-00785,2026-03-07,Mountain View Nurseries,Kashmiri Walnut,KW,C,20,1500,30000,paid,30000.0,0.0,delivered
+ORD-00786,2026-03-07,Mountain View Nurseries,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,delivered
+ORD-00787,2026-03-07,Nature's Best Nursery,Kashmiri Walnut,KW,B,15,2250,33750,partial,13739.0,20011.0,in_transit
+ORD-00788,2026-03-07,Green Earth Foundation,Pusa Kanchan,PK,A,25,2700,67500,pending,0.0,67500.0,delivered
+ORD-00789,2026-03-07,Rural Development Society,Kashmiri Walnut,KW,A,15,3000,45000,partial,31334.0,13666.0,delivered
+ORD-00790,2026-03-08,Individual - Farmer,Local Variety,LV,B,25,1200,30000,paid,30000.0,0.0,processing
+ORD-00791,2026-03-08,Government Agriculture Dept,Kashmiri Walnut,KW,A,50,3000,150000,paid,150000.0,0.0,in_transit
+ORD-00792,2026-03-08,Valley Green Farms,Kashmiri Walnut,KW,A+,10,3900,39000,paid,39000.0,0.0,delivered
+ORD-00793,2026-03-08,Eco Green Farms,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,delivered
+ORD-00794,2026-03-08,Government Agriculture Dept,Local Variety,LV,B,10,1200,12000,paid,12000.0,0.0,processing
+ORD-00795,2026-03-08,Individual - Farmer,Franquette,FR,B,10,1725,17250,pending,0.0,17250.0,in_transit
+ORD-00796,2026-03-09,Kashmir Orchards Ltd,Local Variety,LV,A,10,1600,16000,partial,7906.0,8094.0,delivered
+ORD-00797,2026-03-09,Eco Green Farms,Local Variety,LV,C,20,800,16000,pending,0.0,16000.0,delivered
+ORD-00798,2026-03-10,Alpine Agriculture,Franquette,FR,B,5,1725,8625,paid,8625.0,0.0,delivered
+ORD-00799,2026-03-10,Individual - Farmer,Franquette,FR,C,10,1150,11500,paid,11500.0,0.0,delivered
+ORD-00800,2026-03-10,Fruit Valley Co-op,Pusa Kanchan,PK,A,15,2700,40500,partial,25532.0,14968.0,delivered
+ORD-00801,2026-03-10,Himalayan Horticulture,Franquette,FR,A,20,2300,46000,paid,46000.0,0.0,delivered
+ORD-00802,2026-03-10,Highland Plantations,Chandler,CH,A,20,2500,50000,partial,26062.0,23938.0,processing
+ORD-00803,2026-03-10,Government Agriculture Dept,Kashmiri Walnut,KW,C,10,1500,15000,paid,15000.0,0.0,delivered
+ORD-00804,2026-03-11,Rural Development Society,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,delivered
+ORD-00805,2026-03-11,Himalayan Horticulture,Kashmiri Walnut,KW,A,20,3000,60000,paid,60000.0,0.0,delivered
+ORD-00806,2026-03-12,Himalayan Horticulture,Local Variety,LV,B,10,1200,12000,paid,12000.0,0.0,processing
+ORD-00807,2026-03-12,Valley Green Farms,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,delivered
+ORD-00808,2026-03-12,Export - Dubai Traders,Local Variety,LV,A,25,1600,40000,paid,40000.0,0.0,delivered
+ORD-00809,2026-03-12,Valley Green Farms,Kashmiri Walnut,KW,B,20,2250,45000,pending,0.0,45000.0,delivered
+ORD-00810,2026-03-13,University Research Farm,Kashmiri Walnut,KW,C,15,1500,22500,paid,22500.0,0.0,delivered
+ORD-00811,2026-03-13,University Research Farm,Chandler,CH,A,20,2500,50000,paid,50000.0,0.0,delivered
+ORD-00812,2026-03-14,Himalayan Horticulture,Chandler,CH,A,5,2500,12500,partial,7776.0,4724.0,in_transit
+ORD-00813,2026-03-14,Alpine Agriculture,Kashmiri Walnut,KW,B,20,2250,45000,paid,45000.0,0.0,delivered
+ORD-00814,2026-03-14,Individual - Farmer,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,processing
+ORD-00815,2026-03-14,Highland Plantations,Franquette,FR,B,15,1725,25875,partial,9809.0,16066.0,delivered
+ORD-00816,2026-03-14,Mountain View Nurseries,Chandler,CH,A,10,2500,25000,pending,0.0,25000.0,delivered
+ORD-00817,2026-03-14,Mountain View Nurseries,Chandler,CH,A,15,2500,37500,paid,37500.0,0.0,delivered
+ORD-00818,2026-03-14,Export - Dubai Traders,Kashmiri Walnut,KW,C,25,1500,37500,pending,0.0,37500.0,delivered
+ORD-00819,2026-03-14,Himalayan Horticulture,Franquette,FR,A,10,2300,23000,paid,23000.0,0.0,delivered
+ORD-00820,2026-03-15,Government Agriculture Dept,Franquette,FR,A,15,2300,34500,paid,34500.0,0.0,delivered
+ORD-00821,2026-03-15,Eco Green Farms,Kashmiri Walnut,KW,B,20,2250,45000,paid,45000.0,0.0,in_transit
+ORD-00822,2026-03-15,Fruit Valley Co-op,Franquette,FR,A,15,2300,34500,paid,34500.0,0.0,processing
+ORD-00823,2026-03-15,Kashmir Orchards Ltd,Franquette,FR,C,20,1150,23000,partial,9814.0,13186.0,delivered
+ORD-00824,2026-03-16,Eco Green Farms,Local Variety,LV,C,15,800,12000,partial,7598.0,4402.0,delivered
+ORD-00825,2026-03-16,Nature's Best Nursery,Chandler,CH,A,10,2500,25000,pending,0.0,25000.0,delivered
+ORD-00826,2026-03-16,Himalayan Horticulture,Kashmiri Walnut,KW,A+,15,3900,58500,pending,0.0,58500.0,delivered
+ORD-00827,2026-03-16,Individual - Farmer,Kashmiri Walnut,KW,A,15,3000,45000,pending,0.0,45000.0,delivered
+ORD-00828,2026-03-17,University Research Farm,Kashmiri Walnut,KW,A,25,3000,75000,partial,41378.0,33622.0,delivered
+ORD-00829,2026-03-17,Government Agriculture Dept,Kashmiri Walnut,KW,B,50,2250,112500,paid,112500.0,0.0,delivered
+ORD-00830,2026-03-17,University Research Farm,Local Variety,LV,B,15,1200,18000,paid,18000.0,0.0,delivered
+ORD-00831,2026-03-18,Himalayan Horticulture,Pusa Kanchan,PK,A+,20,3510,70200,paid,70200.0,0.0,delivered
+ORD-00832,2026-03-18,Himalayan Horticulture,Chandler,CH,B,100,1875,187500,pending,0.0,187500.0,in_transit
+ORD-00833,2026-03-18,Eco Green Farms,Pusa Kanchan,PK,A,15,2700,40500,partial,16560.0,23940.0,delivered
+ORD-00834,2026-03-18,Nature's Best Nursery,Chandler,CH,B,15,1875,28125,partial,13192.0,14933.0,delivered
+ORD-00835,2026-03-18,Green Earth Foundation,Local Variety,LV,A,20,1600,32000,paid,32000.0,0.0,delivered
+ORD-00836,2026-03-18,Mountain View Nurseries,Pusa Kanchan,PK,A,10,2700,27000,pending,0.0,27000.0,delivered
+ORD-00837,2026-03-19,Eco Green Farms,Pusa Kanchan,PK,A,10,2700,27000,paid,27000.0,0.0,processing
+ORD-00838,2026-03-19,Kashmir Orchards Ltd,Local Variety,LV,A,10,1600,16000,partial,9761.0,6239.0,delivered
+ORD-00839,2026-03-19,Export - Dubai Traders,Franquette,FR,A+,50,2990,149500,paid,149500.0,0.0,delivered
+ORD-00840,2026-03-19,Fruit Valley Co-op,Pusa Kanchan,PK,A,15,2700,40500,paid,40500.0,0.0,delivered
+ORD-00841,2026-03-20,Valley Green Farms,Franquette,FR,B,10,1725,17250,paid,17250.0,0.0,delivered
+ORD-00842,2026-03-20,Eco Green Farms,Pusa Kanchan,PK,A,15,2700,40500,pending,0.0,40500.0,delivered
+ORD-00843,2026-03-20,Fruit Valley Co-op,Kashmiri Walnut,KW,A,25,3000,75000,paid,75000.0,0.0,delivered
+ORD-00844,2026-03-20,Fruit Valley Co-op,Franquette,FR,C,10,1150,11500,paid,11500.0,0.0,in_transit
+ORD-00845,2026-03-20,Alpine Agriculture,Chandler,CH,A,20,2500,50000,paid,50000.0,0.0,delivered
+ORD-00846,2026-03-21,Valley Green Farms,Chandler,CH,A,10,2500,25000,partial,8258.0,16742.0,in_transit
+ORD-00847,2026-03-21,Nature's Best Nursery,Kashmiri Walnut,KW,C,5,1500,7500,pending,0.0,7500.0,in_transit
+ORD-00848,2026-03-21,Nature's Best Nursery,Kashmiri Walnut,KW,C,10,1500,15000,partial,6606.0,8394.0,delivered
+ORD-00849,2026-03-21,Government Agriculture Dept,Pusa Kanchan,PK,A,100,2700,270000,paid,270000.0,0.0,delivered
+ORD-00850,2026-03-21,Nature's Best Nursery,Chandler,CH,B,50,1875,93750,paid,93750.0,0.0,delivered
+ORD-00851,2026-03-22,Highland Plantations,Chandler,CH,A,20,2500,50000,pending,0.0,50000.0,delivered
+ORD-00852,2026-03-23,Eco Green Farms,Local Variety,LV,C,20,800,16000,paid,16000.0,0.0,delivered
+ORD-00853,2026-03-23,Fruit Valley Co-op,Franquette,FR,A,15,2300,34500,paid,34500.0,0.0,delivered
+ORD-00854,2026-03-23,Himalayan Horticulture,Kashmiri Walnut,KW,A,50,3000,150000,partial,77855.0,72145.0,delivered
+ORD-00855,2026-03-24,Rural Development Society,Kashmiri Walnut,KW,A+,50,3900,195000,partial,98517.0,96483.0,in_transit
+ORD-00856,2026-03-24,Rural Development Society,Local Variety,LV,A+,25,2080,52000,paid,52000.0,0.0,in_transit
+ORD-00857,2026-03-24,Export - Dubai Traders,Kashmiri Walnut,KW,B,5,2250,11250,pending,0.0,11250.0,delivered
+ORD-00858,2026-03-25,Mountain View Nurseries,Local Variety,LV,A+,10,2080,20800,paid,20800.0,0.0,in_transit
+ORD-00859,2026-03-25,Green Earth Foundation,Chandler,CH,A,10,2500,25000,paid,25000.0,0.0,delivered
+ORD-00860,2026-03-25,Valley Green Farms,Franquette,FR,A+,10,2990,29900,pending,0.0,29900.0,processing
+ORD-00861,2026-03-25,Individual - Farmer,Local Variety,LV,B,10,1200,12000,pending,0.0,12000.0,delivered
+ORD-00862,2026-03-25,Mountain View Nurseries,Chandler,CH,B,5,1875,9375,paid,9375.0,0.0,delivered
+ORD-00863,2026-03-26,Green Earth Foundation,Chandler,CH,B,10,1875,18750,pending,0.0,18750.0,delivered
+ORD-00864,2026-03-26,Kashmir Orchards Ltd,Franquette,FR,A+,5,2990,14950,partial,9893.0,5057.0,delivered
+ORD-00865,2026-03-27,Rural Development Society,Pusa Kanchan,PK,B,15,2025,30375,paid,30375.0,0.0,delivered
+ORD-00866,2026-03-27,Kashmir Orchards Ltd,Local Variety,LV,B,10,1200,12000,paid,12000.0,0.0,delivered
+ORD-00867,2026-03-27,Eco Green Farms,Pusa Kanchan,PK,A,25,2700,67500,paid,67500.0,0.0,delivered
+ORD-00868,2026-03-27,Green Earth Foundation,Kashmiri Walnut,KW,B,20,2250,45000,pending,0.0,45000.0,in_transit
+ORD-00869,2026-03-27,Mountain View Nurseries,Franquette,FR,A,10,2300,23000,paid,23000.0,0.0,delivered
+ORD-00870,2026-03-28,Mountain View Nurseries,Local Variety,LV,A,15,1600,24000,paid,24000.0,0.0,delivered
+ORD-00871,2026-03-28,Rural Development Society,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,delivered
+ORD-00872,2026-03-28,Green Earth Foundation,Kashmiri Walnut,KW,A+,10,3900,39000,paid,39000.0,0.0,delivered
+ORD-00873,2026-03-29,Government Agriculture Dept,Chandler,CH,B,5,1875,9375,paid,9375.0,0.0,delivered
+ORD-00874,2026-03-29,Highland Plantations,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,delivered
+ORD-00875,2026-03-29,Individual - Farmer,Kashmiri Walnut,KW,A,25,3000,75000,pending,0.0,75000.0,delivered
+ORD-00876,2026-03-30,Valley Green Farms,Pusa Kanchan,PK,A,50,2700,135000,partial,47372.0,87628.0,in_transit
+ORD-00877,2026-03-30,Highland Plantations,Franquette,FR,B,10,1725,17250,paid,17250.0,0.0,in_transit
+ORD-00878,2026-03-30,Alpine Agriculture,Franquette,FR,A,15,2300,34500,paid,34500.0,0.0,delivered
+ORD-00879,2026-03-30,Nature's Best Nursery,Pusa Kanchan,PK,A+,5,3510,17550,pending,0.0,17550.0,delivered
+ORD-00880,2026-03-30,Fruit Valley Co-op,Local Variety,LV,C,10,800,8000,pending,0.0,8000.0,delivered
+ORD-00881,2026-03-31,University Research Farm,Local Variety,LV,A,20,1600,32000,paid,32000.0,0.0,delivered
+ORD-00882,2026-03-31,University Research Farm,Kashmiri Walnut,KW,A+,5,3900,19500,paid,19500.0,0.0,delivered
+ORD-00883,2026-03-31,Himalayan Horticulture,Chandler,CH,A,20,2500,50000,pending,0.0,50000.0,delivered
+ORD-00884,2026-04-01,Nature's Best Nursery,Chandler,CH,B,15,1875,28125,paid,28125.0,0.0,delivered
+ORD-00885,2026-04-01,Nature's Best Nursery,Franquette,FR,A,20,2300,46000,paid,46000.0,0.0,in_transit
+ORD-00886,2026-04-01,Fruit Valley Co-op,Pusa Kanchan,PK,B,10,2025,20250,pending,0.0,20250.0,in_transit
+ORD-00887,2026-04-01,Eco Green Farms,Pusa Kanchan,PK,B,10,2025,20250,paid,20250.0,0.0,processing
+ORD-00888,2026-04-02,Green Earth Foundation,Local Variety,LV,B,50,1200,60000,paid,60000.0,0.0,delivered
+ORD-00889,2026-04-02,Rural Development Society,Kashmiri Walnut,KW,B,15,2250,33750,partial,20533.0,13217.0,in_transit
+ORD-00890,2026-04-02,Mountain View Nurseries,Pusa Kanchan,PK,A,25,2700,67500,paid,67500.0,0.0,delivered
+ORD-00891,2026-04-02,University Research Farm,Local Variety,LV,A,10,1600,16000,partial,9896.0,6104.0,delivered
+ORD-00892,2026-04-03,University Research Farm,Pusa Kanchan,PK,A,5,2700,13500,partial,6265.0,7235.0,delivered
+ORD-00893,2026-04-03,Mountain View Nurseries,Pusa Kanchan,PK,B,20,2025,40500,paid,40500.0,0.0,delivered
+ORD-00894,2026-04-03,Export - Dubai Traders,Pusa Kanchan,PK,A+,15,3510,52650,paid,52650.0,0.0,in_transit
+ORD-00895,2026-04-03,Green Earth Foundation,Kashmiri Walnut,KW,C,10,1500,15000,partial,9006.0,5994.0,processing
+ORD-00896,2026-04-03,Nature's Best Nursery,Kashmiri Walnut,KW,A,50,3000,150000,paid,150000.0,0.0,in_transit
+ORD-00897,2026-04-04,Eco Green Farms,Chandler,CH,B,15,1875,28125,paid,28125.0,0.0,processing
+ORD-00898,2026-04-04,Fruit Valley Co-op,Local Variety,LV,A,5,1600,8000,paid,8000.0,0.0,delivered
+ORD-00899,2026-04-05,Individual - Farmer,Pusa Kanchan,PK,A,5,2700,13500,paid,13500.0,0.0,delivered
+ORD-00900,2026-04-05,University Research Farm,Franquette,FR,A+,5,2990,14950,partial,9560.0,5390.0,processing
+ORD-00901,2026-04-06,Green Earth Foundation,Local Variety,LV,B,5,1200,6000,pending,0.0,6000.0,delivered
+ORD-00902,2026-04-06,Alpine Agriculture,Chandler,CH,B,5,1875,9375,paid,9375.0,0.0,delivered
+ORD-00903,2026-04-06,Valley Green Farms,Local Variety,LV,A+,15,2080,31200,pending,0.0,31200.0,delivered
+ORD-00904,2026-04-07,Nature's Best Nursery,Local Variety,LV,A,20,1600,32000,paid,32000.0,0.0,delivered
+ORD-00905,2026-04-07,University Research Farm,Kashmiri Walnut,KW,B,15,2250,33750,paid,33750.0,0.0,delivered
+ORD-00906,2026-04-07,Government Agriculture Dept,Franquette,FR,C,25,1150,28750,paid,28750.0,0.0,delivered
+ORD-00907,2026-04-08,Government Agriculture Dept,Pusa Kanchan,PK,A,50,2700,135000,pending,0.0,135000.0,delivered
+ORD-00908,2026-04-08,Nature's Best Nursery,Franquette,FR,A,10,2300,23000,paid,23000.0,0.0,delivered
+ORD-00909,2026-04-08,Fruit Valley Co-op,Franquette,FR,A+,10,2990,29900,pending,0.0,29900.0,delivered
+ORD-00910,2026-04-08,Mountain View Nurseries,Pusa Kanchan,PK,B,5,2025,10125,paid,10125.0,0.0,processing
+ORD-00911,2026-04-08,Nature's Best Nursery,Franquette,FR,C,5,1150,5750,pending,0.0,5750.0,delivered
+ORD-00912,2026-04-08,University Research Farm,Local Variety,LV,A,5,1600,8000,pending,0.0,8000.0,delivered
+ORD-00913,2026-04-09,Fruit Valley Co-op,Chandler,CH,A,20,2500,50000,paid,50000.0,0.0,in_transit
+ORD-00914,2026-04-09,Himalayan Horticulture,Pusa Kanchan,PK,A,10,2700,27000,partial,8675.0,18325.0,processing

@@ -23,6 +23,14 @@ DISEASE_CLASSES = [
     "Powdery Mildew"
 ]
 
+DISEASE_TREATMENTS = {
+    "Healthy": "No treatment required. Maintain current environmental monitoring and soil nutrition balance.",
+    "Walnut Blight": "Apply copper-based fungicides immediately. Prune backend infected branches and ensure low humidity in the canopy via spacing.",
+    "Crown Rot": "Urgent: Reduce irrigation. Improve soil drainage and avoid pooling water around the plant base. Consider localized fungicide drench.",
+    "Anthracnose": "Remove and destroy infected foliage. Improve air circulation and apply organic neem oil or potassium bicarbonate.",
+    "Powdery Mildew": "Apply systematic fungicide or a mixture of baking soda and water. Increase sunlight exposure and maintain dry leaves."
+}
+
 class DiseaseVisionService:
     def __init__(self):
         self.model_loaded = False
@@ -77,6 +85,7 @@ class DiseaseVisionService:
             return {
                 "primary_diagnosis": "Walnut Blight",
                 "confidence_score": 0.88,
+                "treatment_recommendation": DISEASE_TREATMENTS["Walnut Blight"],
                 "all_probabilities": [
                     {"disease": "Walnut Blight", "probability": 0.88},
                     {"disease": "Healthy", "probability": 0.05},
@@ -109,6 +118,7 @@ class DiseaseVisionService:
         return {
             "primary_diagnosis": primary_diagnosis["disease"],
             "confidence_score": primary_diagnosis["probability"],
+            "treatment_recommendation": DISEASE_TREATMENTS.get(primary_diagnosis["disease"], "No specific treatment available."),
             "all_probabilities": results
         }
 

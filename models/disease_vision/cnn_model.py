@@ -1,37 +1,28 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
+from torchvision import models
 
 class PlantDiseaseCNN(nn.Module):
     """
-    A lightweight Convolutional Neural Network for detecting plant diseases from images.
+    A high-performance Vision model based on the ShuffleNetV2 architecture.
+    Optimized for 'Edge AI' (Farm tablets) to provide high accuracy with 
+    extremely low latency.
     """
     def __init__(self, num_classes=5):
         super(PlantDiseaseCNN, self).__init__()
-        # Input channels: 3 (RGB), Output: 16 channels, Kernel Size: 3x3
-        self.conv1 = nn.Conv2d(3, 16, kernel_size=3, padding=1)
-        self.conv2 = nn.Conv2d(16, 32, kernel_size=3, padding=1)
-        self.conv3 = nn.Conv2d(32, 64, kernel_size=3, padding=1)
-        self.pool = nn.MaxPool2d(2, 2)
         
-        # After 3 max pools of 2x2 on a 224x224 image:
-        # 224 -> 112 -> 56 -> 28. Output size: 64 channels * 28 * 28
-        self.fc1 = nn.Linear(64 * 28 * 28, 512)
-        self.fc2 = nn.Linear(512, num_classes)
+        # Load the ShuffleNetV2 backbone
+        # We use x1.0 for a balance of speed and deep feature extraction
+        # Set weights=None initially; weights will be loaded during fine-tuning
+        self.backbone = models.shufflenet_v2_x1_0(weights=None)
         
-        # Dropout to prevent overfitting
-        self.dropout = nn.Dropout(0.5)
+        # Replace the final fully connected layer (linear) to match our plant disease classes
+        # ShuffleNetV2 x1.0 uses 1024 output features before the final classifier
+        num_ftrs = self.backbone.fc.in_features
+        self.backbone.fc = nn.Sequential(
+            nn.Dropout(0.2),
+            nn.Linear(num_ftrs, num_classes)
+        )
 
     def forward(self, x):
-        # Convolutional layers with ReLU activation and Max Pooling
-        x = self.pool(F.relu(self.conv1(x)))
-        x = self.pool(F.relu(self.conv2(x)))
-        x = self.pool(F.relu(self.conv3(x)))
-        
-        # Flatten the tensor for the fully connected layers
-        x = x.view(-1, 64 * 28 * 28)
-        
-        x = F.relu(self.fc1(x))
-        x = self.dropout(x)
-        x = self.fc2(x)
-        return x
+        return self.backbone(x)

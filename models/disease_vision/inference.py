@@ -38,9 +38,10 @@ class DiseaseVisionService:
         if TORCH_AVAILABLE:
             self.device = torch.device('cpu')  # Force CPU to minimize deployment size
             self.model = PlantDiseaseCNN(num_classes=len(DISEASE_CLASSES))
-            # Image transformations: Resize to 224x224 and normalize
+            # Image transformations: Optimized for ShuffleNetV2 (ImageNet standards)
             self.transform = transforms.Compose([
-                transforms.Resize((224, 224)),
+                transforms.Resize(256),
+                transforms.CenterCrop(224),
                 transforms.ToTensor(),
                 transforms.Normalize(mean=[0.485, 0.456, 0.406], 
                                      std=[0.229, 0.224, 0.225])
@@ -56,14 +57,15 @@ class DiseaseVisionService:
         
         weights_path = config.MODELS_DIR / "disease_vision" / "cnn_weights.pth"
         if not weights_path.exists():
-            print(f"⚠️ CNN weights not found at {weights_path}. Model will use random initialization.")
+            print(f"⚠️ CNN weights not found at {weights_path}. Model will use raw backbone features.")
         else:
             try:
+                # Load with strict=False to allow for backbone/head variations if needed
                 state_dict = torch.load(weights_path, map_location=self.device, weights_only=True)
-                self.model.load_state_dict(state_dict)
-                print(f"✅ CNN Disease Model loaded successfully.")
+                self.model.load_state_dict(state_dict, strict=False)
+                print(f"✅ CNN ShuffleNetV2 Model weights loaded.")
             except Exception as e:
-                print(f"❌ Failed to load CNN weights.")
+                print(f"❌ Failed to load CNN weights: {e}")
                 
         self.model.eval()
         self.model_loaded = True

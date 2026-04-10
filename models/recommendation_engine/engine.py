@@ -64,10 +64,10 @@ class RecommendationEngine:
                             for rec in analysis.get("recommendations", []):
                                 urgent.append(ActionItem(
                                     priority="urgent",
-                                    category="environmental",
-                                    title=rec.get("action", "Environmental Alert"),
+                                    category="comfort",
+                                    title=rec.get("action", "Growing Area Alert"),
                                     description=f"Zone {zone['name']}: {rec.get('method', '')}",
-                                    impact=rec.get("impact", "Prevent crop damage"),
+                                    impact=rec.get("impact", "Keep plants comfortable"),
                                     estimated_cost=f"₹{rec.get('estimated_cost', 0):,}" if rec.get("estimated_cost") else None,
                                 ).model_dump())
                         elif analysis.get("overall_status") == "needs_attention":
@@ -108,8 +108,8 @@ class RecommendationEngine:
                         if risk.get("risk_level") in ["critical", "high"]:
                             urgent.append(ActionItem(
                                 priority="urgent",
-                                category="plant_health",
-                                title=f"Disease Risk: {risk['disease_name']}",
+                                category="wellness",
+                                title=f"Risk of Sickness: {risk['disease_name']}",
                                 description=f"Zone {zone['name']} - Risk Score: {risk['risk_score']}",
                                 impact=f"Prevention cost: {risk.get('prevention_cost', 'N/A')} vs outbreak cost: {risk.get('treatment_cost_if_outbreak', 'N/A')}",
                                 estimated_cost=risk.get("prevention_cost"),
@@ -223,10 +223,10 @@ class RecommendationEngine:
 
         # Performance snapshot
         performance = {
-            "plant_health": "Good",
-            "environmental": "Monitoring",
-            "workforce": "Active",
-            "financial": "On Track",
+            "plant_wellness": "Good",
+            "growing_comfort": "Monitoring",
+            "team_activity": "Active",
+            "money_tracking": "On Track",
         }
 
         return DailyReport(

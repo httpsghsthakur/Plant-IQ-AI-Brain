@@ -12,11 +12,11 @@ supabase: Client = None
 if config.SUPABASE_URL and config.SUPABASE_KEY:
     try:
         supabase = create_client(config.SUPABASE_URL, config.SUPABASE_KEY)
-        print("✅ Supabase client initialized successfully")
+        print("[V] Supabase client initialized successfully")
     except Exception as e:
-        print(f"⚠️ Failed to initialize Supabase client: {e}")
+        print(f"[!] Failed to initialize Supabase client: {e}")
 else:
-    print("⚠️ SUPABASE_URL or SUPABASE_KEY not set in environment or config")
+    print("[!] SUPABASE_URL or SUPABASE_KEY not set in environment or config")
 
 def get_supabase() -> Client:
     """Returns the initialized Supabase client."""

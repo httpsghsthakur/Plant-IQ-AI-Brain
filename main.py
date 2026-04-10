@@ -75,6 +75,7 @@ from api.routes.financial import router as financial_router
 from api.routes.anomaly import router as anomaly_router
 from api.routes.recommendations import router as rec_router
 from api.routes.disease_vision import router as vision_router
+from api.routes.chat import router as chat_router
 
 app.include_router(health_router)
 app.include_router(dashboard_router)
@@ -88,6 +89,7 @@ app.include_router(financial_router)
 app.include_router(anomaly_router)
 app.include_router(rec_router)
 app.include_router(vision_router)
+app.include_router(chat_router)
 
 
 @app.get("/", tags=["Root"])
@@ -117,6 +119,7 @@ async def root():
             "anomaly_detection": "/api/ai/anomalies/report",
             "pricing": "/api/ai/recommend/pricing",
             "disease_vision_cnn": "/api/ai/vision/disease",
+            "chat_advisor": "/api/ai/chat",
             "worker_burnout_v2": "/api/ai/predict/worker-burnout",
         },
     }

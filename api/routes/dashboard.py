@@ -49,11 +49,11 @@ async def get_dashboard_summary(nursery_id: str = Query(...)) -> Dict[str, Any]:
 
     return {
         "status": "success",
-        "system_health_score": max(0, health_score),
-        "active_alerts": active_alerts,
+        "nursery_wellness_score": max(0, health_score),
+        "urgent_care_alerts": active_alerts,
         "summary": {
-            "tracked_zones": 4, # Mock summary for UI stats
-            "active_tasks": len(data.get("task", [])),
-            "sensor_node_status": "Operational"
+            "growing_areas": 4, 
+            "pending_daily_tasks": len(data.get("task", [])),
+            "sensor_system_health": "All systems running smoothly"
         }
     }

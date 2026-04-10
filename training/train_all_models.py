@@ -21,34 +21,45 @@ def train_all():
     config.MODELS_DIR.mkdir(parents=True, exist_ok=True)
 
     # ─── Load or Generate Data ──────────────────────────────────────
-    data_files = {
-        "sensor": config.DATA_DIR / "sensor_data.csv",
-        "plant_inventory": config.DATA_DIR / "plant_inventory.csv",
-        "growth": config.DATA_DIR / "growth_measurements.csv",
-        "disease": config.DATA_DIR / "disease_records.csv",
-        "graft": config.DATA_DIR / "graft_records.csv",
-        "attendance": config.DATA_DIR / "attendance_records.csv",
-        "task": config.DATA_DIR / "task_records.csv",
-        "sales": config.DATA_DIR / "sales_data.csv",
-        "expense": config.DATA_DIR / "expense_data.csv",
-        "inventory": config.DATA_DIR / "inventory_data.csv",
-    }
-
-    # Check if data exists, generate if not
-    missing = [k for k, v in data_files.items() if not v.exists()]
-    if missing:
-        print("\n[!] Missing data files")
-        print("   Generating all training data first...\n")
-        from data.generators.generate_all import generate_all
-        generate_all()
-        print()
-
-    # Load all datasets
-    print("\n[V] Loading datasets...")
-    data = {}
-    for key, path in data_files.items():
-        data[key] = pd.read_csv(path)
-        print(f"   v {key}: {len(data[key]):,} rows")
+    from services.data_service import data_service
+    
+    # Use a default nursery ID if not provided via environment or CLI
+    nursery_id = config.SUPABASE_URL.split("//")[1].split(".")[0] if "supabase" in config.SUPABASE_URL else "default_nursery"
+    # Overwrite if provided in env
+    nursery_id = sys.argv[1] if len(sys.argv) > 1 else nursery_id
+    
+    print(f"\n📂 Fetching live data from Database for Nursery: {nursery_id}...")
+    try:
+        data = data_service.load_nursery_data(nursery_id)
+        print("   ✅ Data loaded successfully from Supabase")
+        
+        # Log counts
+        for key, df in data.items():
+            print(f"   v {key}: {len(df):,}")
+            
+    except Exception as e:
+        print(f"   ❌ Database fetch failed: {e}")
+        print("   ⚠️ Falling back to local CSV files if available...")
+        data_files = {
+            "sensor": config.DATA_DIR / "sensor_data.csv",
+            "plant_inventory": config.DATA_DIR / "plant_inventory.csv",
+            "growth": config.DATA_DIR / "growth_measurements.csv",
+            "disease": config.DATA_DIR / "disease_records.csv",
+            "graft": config.DATA_DIR / "graft_records.csv",
+            "attendance": config.DATA_DIR / "attendance_records.csv",
+            "task": config.DATA_DIR / "task_records.csv",
+            "sales": config.DATA_DIR / "sales_data.csv",
+            "expense": config.DATA_DIR / "expense_data.csv",
+            "inventory": config.DATA_DIR / "inventory_data.csv",
+        }
+        data = {}
+        for key, path in data_files.items():
+            if path.exists():
+                data[key] = pd.read_csv(path)
+                print(f"   v {key}: {len(data[key]):,} rows (local)")
+            else:
+                data[key] = pd.DataFrame()
+                print(f"   ⚠️ {key}: missing local CSV")
 
     metrics = {}
 

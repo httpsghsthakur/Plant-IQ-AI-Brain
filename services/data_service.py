@@ -223,12 +223,12 @@ class DataService:
 
             self._cache[nursery_id] = db_data
             self._cache_timestamp[nursery_id] = datetime.now()
-            print(f"📦 Fetched live data from Supabase for nursery: {nursery_id}")
+            print(f"[V] Fetched live data from Supabase for nursery: {nursery_id}")
 
             return db_data
 
         except Exception as e:
-            print(f"❌ Error fetching from Supabase for nursery {nursery_id}: {e}")
+            print(f"[!] Error fetching from Supabase for nursery {nursery_id}: {e}")
             raise Exception(f"Database error: {e}")
 
 

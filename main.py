@@ -73,6 +73,7 @@ from api.routes.yield_forecast import router as yield_router
 from api.routes.financial import router as financial_router
 from api.routes.anomaly import router as anomaly_router
 from api.routes.recommendations import router as rec_router
+from api.routes.disease_vision import router as vision_router
 
 app.include_router(health_router)
 app.include_router(env_router)
@@ -84,6 +85,7 @@ app.include_router(yield_router)
 app.include_router(financial_router)
 app.include_router(anomaly_router)
 app.include_router(rec_router)
+app.include_router(vision_router)
 
 
 @app.get("/", tags=["Root"])
@@ -112,6 +114,7 @@ async def root():
             "financial_analysis": "/api/ai/analyze/financials",
             "anomaly_detection": "/api/ai/anomalies/report",
             "pricing": "/api/ai/recommend/pricing",
+            "disease_vision_cnn": "/api/ai/vision/disease",
         },
     }
 

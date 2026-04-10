@@ -1,0 +1,56 @@
+# ==============================================================================
+# PLANTIQ AI FRONTEND INTEGRATION PROMPT
+# Instructions: Copy everything below this line and paste it into Cursor/Copilot/ChatGPT.
+# ==============================================================================
+
+Act as an Expert Frontend Architect and Senior React Developer specializing in highly visual, data-heavy dashboards and AI tool integrations. 
+
+Your objective is to update and integrate my existing PlantIQ React codebase with our newly deployed, live Python FastAPI Machine Learning backend (The "PlantIQ AI Brain").
+
+### 1. SYSTEM CONTEXT
+PlantIQ is a multi-tenant, intelligent nursery management SaaS. The frontend (which you are updating) handles the UI. The backend you are integrating is a specialized AI engine running 8 Machine Learning models (XGBoost, Isolation Forests, Random Forests) analyzing live Supabase data to yield real-time predictions, forecasts, and anomaly detection. 
+The AI Brain is fully deployed and accessible at: `https://plant-iq-ai-brain.onrender.com/api`
+
+### 2. STRICT INTEGRATION RULES
+Before writing any UI components, you must establish the data layer following these absolute rules:
+* **The Multi-Tenancy Rule:** The AI Brain processes data dynamically per nursery. ALL requests to the AI Brain MUST include the `nursery_id` query parameter (e.g., `?nursery_id={user_nursery}`). Extract this from the global context/Supabase session.
+* **The Security Rule:** You must append the Supabase JWT to the `Authorization` header as `Bearer <token>` on every request.
+* **The Networking Tool:** I want you to create an Axios interceptor (or custom fetch wrapper) specifically for `https://plant-iq-ai-brain.onrender.com/api`. This wrapper should automatically append the `nursery_id` and the JWT to prevent code duplication in the UI. Call this file `src/services/aiBrainApi.js`.
+* **State Management:** Use standard React Hooks, but for API fetching use React Query (or SWR) to cache this AI data so the UI doesn't stutter, and provide `isLoading` skeleton states.
+
+### 3. API SCHEMA & FEATURE MAPPING
+You need to create components that hook into the following endpoints. Below is the exact data structure you will receive and how I want it visualized.
+
+#### A. Main AI Dashboard Overview
+* **Endpoint:** `GET /ai/dashboard`
+* **Response:** `{ system_health_score: float, active_alerts: [{id, message, severity}], timestamp }`
+* **UI Action:** Update the `DashboardHome` component. Create a large, premium circular progress chart for the `system_health_score`. Under it, create an `AlertTicker` component that maps through the `active_alerts`. If severity="critical", pulse it red using Tailwind.
+
+#### B. Environmental & Irrigation Analytics
+* **Endpoint:** `GET /ai/analyze/environment`
+* **Response:** `{ risk_level: string, predictions: { temp_trend: float, moisture_trend: float }, recommendations: [string] }`
+* **UI Action:** Update the environmental zones page. Add an "AI Inference Panel" showing glassmorphism stat cards for the predicted trends, and actionable bullet points mapping the `recommendations`.
+
+#### C. Plant Health & Disease Risk
+* **Endpoint:** `GET /ai/predict/disease-risk/{zone_id}`
+* **Response:** `{ zone_id: string, outbreak_probability: float, high_risk_diseases: [{disease, probability, severity}] }`
+* **UI Action:** On the specific Zone detail view, create a high-contrast Warning Card using Tailwind. If `outbreak_probability` > 0.5, display a "CRITICAL RISK" banner with the affected disease names.
+
+#### D. Yield & Production Forecasting
+* **Endpoint:** `GET /ai/forecast/production`
+* **Response:** `{ forecast_months: [string], predicted_yield: [int], confidence_intervals_lower: [int], confidence_intervals_upper: [int] }`
+* **UI Action:** Create a new `YieldForecastChart` component. Use a charting library like Recharts or Chart.js to render an Area Chart. Use a solid line for `predicted_yield` and a semi-transparent shaded area behind it mapping the upper/lower bounds of the confidence intervals.
+
+#### E. Financials & Dynamic Pricing
+* **Endpoint:** `GET /ai/analyze/financials`
+* **Response:** `{ detected_anomalies: [{category, amount, reason}], dynamic_pricing: [{variety, recommended_price, confidence}] }`
+* **UI Action:** Update the Financials page. Split the screen: Left side shows a table of `detected_anomalies` highlighting unusual expenses in red. Right side shows "Dynamic Pricing Engine" card mapping `dynamic_pricing` recommendations.
+
+### 4. YOUR EXECUTION PLAN
+To begin, please follow these steps sequentially:
+1. Search my existing codebase to determine where Supabase authentication and the current `nursery_id` state reside.
+2. Formulate and present the code for `src/services/aiBrainApi.js` ensuring the interceptor rules are met perfectly.
+3. Once I approve the API service, map out exactly which of my existing files you will modify to integrate the Dashboard and Yield endpoints.
+4. Provide the exact, complete, copy-pasteable React component code updates, ensuring they use TailwindCSS for a highly polished, modern, premium aesthetic. DO NOT use placeholder styling.
+
+Are you ready to begin? Start by showing me the `aiBrainApi.js` implementation.

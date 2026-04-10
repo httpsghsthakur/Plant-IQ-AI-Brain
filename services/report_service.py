@@ -24,7 +24,7 @@ class ReportService:
         lines.append("=" * 60)
 
         summary = report_data.get("summary", {})
-        lines.append(f"\n📊 Summary:")
+        lines.append(f"\n[*] Summary:")
         lines.append(f"   Total Plants: {summary.get('total_plants', 'N/A')}")
         lines.append(f"   Healthy: {summary.get('healthy_plants_pct', 'N/A')}%")
 
@@ -39,7 +39,7 @@ class ReportService:
         # Important actions
         important = report_data.get("important_actions", [])
         if important:
-            lines.append(f"\n⚠️  Important Actions ({len(important)}):")
+            lines.append(f"\n[WARN]  Important Actions ({len(important)}):")
             for action in important:
                 lines.append(f"   ⚡ [{action.get('category', '')}] {action.get('title', '')}")
 

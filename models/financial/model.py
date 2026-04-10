@@ -33,7 +33,7 @@ class FinancialModel:
 
     def train(self, sales_df: pd.DataFrame, expense_df: pd.DataFrame) -> Dict:
         """Train financial analytics models."""
-        print("  📊 Training Financial Analytics Model...")
+        print("  [*] Training Financial Analytics Model...")
 
         self.revenue_patterns = compute_revenue_features(sales_df)
         self.expense_patterns = compute_expense_features(expense_df)
@@ -47,7 +47,7 @@ class FinancialModel:
             "collection_rate": self.revenue_patterns.get("collection_rate", 0),
             "top_expense_category": self.expense_patterns.get("top_expense", "Unknown"),
         }
-        print(f"  ✅ Financial Model trained: revenue=₹{int(self.revenue_patterns.get('total_revenue', 0)):,}")
+        print(f"  [OK] Financial Model trained: revenue=₹{int(self.revenue_patterns.get('total_revenue', 0)):,}")
         return metrics
 
     def _save_models(self):
@@ -89,24 +89,24 @@ class FinancialModel:
         target = config.TARGET_PROFIT_MARGIN
 
         if margin >= target:
-            insights.append(f"✅ Profit margin {margin*100:.1f}% exceeds target {target*100:.0f}%")
+            insights.append(f"[OK] Profit margin {margin*100:.1f}% exceeds target {target*100:.0f}%")
         else:
             gap = (target - margin) * 100
-            insights.append(f"⚠️ Profit margin {margin*100:.1f}% is {gap:.1f}% below target {target*100:.0f}%")
+            insights.append(f"[WARN] Profit margin {margin*100:.1f}% is {gap:.1f}% below target {target*100:.0f}%")
 
         if revenue.get("collection_rate", 1) < 0.8:
             outstanding = revenue.get("outstanding", 0)
-            insights.append(f"⚠️ Collection rate {revenue['collection_rate']*100:.0f}% — ₹{int(outstanding):,} outstanding")
+            insights.append(f"[WARN] Collection rate {revenue['collection_rate']*100:.0f}% -- ₹{int(outstanding):,} outstanding")
 
         if revenue.get("trend_direction") == "increasing":
             insights.append("📈 Revenue is trending upward month-over-month")
         elif revenue.get("trend_direction") == "decreasing":
-            insights.append("📉 Revenue is declining — review sales strategy")
+            insights.append("📉 Revenue is declining -- review sales strategy")
 
         # Labor cost ratio
         labor_cost = cat_totals.get("Labor - Regular", 0) + cat_totals.get("Labor - Overtime", 0)
         if labor_cost / max(1, total_exp) > 0.5:
-            insights.append(f"💼 Labor costs are {labor_cost/total_exp*100:.0f}% of expenses — optimize workforce")
+            insights.append(f"💼 Labor costs are {labor_cost/total_exp*100:.0f}% of expenses -- optimize workforce")
 
         return ProfitLossReport(
             period=f"Last {months} months",
@@ -167,7 +167,7 @@ class FinancialModel:
 
         alerts = []
         if status in ["tight", "critical"]:
-            alerts.append(f"⚠️ Cash flow projected to be {status} within {months_ahead} months")
+            alerts.append(f"[WARN] Cash flow projected to be {status} within {months_ahead} months")
             alerts.append("Consider accelerating collections on outstanding invoices")
         if any(m["net_cashflow"] < 0 for m in monthly_forecasts):
             neg_months = [m["month"] for m in monthly_forecasts if m["net_cashflow"] < 0]
@@ -277,18 +277,18 @@ class FinancialModel:
             demand_rate = len(variety_sales) / max(1, (df["date"].max() - df["date"].min()).days) * 30
 
             if supply > demand_rate * 3:
-                # Excess supply — lower price
+                # Excess supply -- lower price
                 price_adj = -0.10
                 reasoning = f"Excess supply ({supply} available vs {demand_rate:.0f}/month demand)"
             elif supply < demand_rate:
-                # Short supply — raise price
+                # Short supply -- raise price
                 price_adj = 0.15
                 reasoning = f"Strong demand ({demand_rate:.0f}/month) exceeds supply ({supply} available)"
             else:
                 price_adj = 0
                 reasoning = "Supply and demand are balanced"
 
-            # Quality factor — if mostly A+/A grade, can charge premium
+            # Quality factor -- if mostly A+/A grade, can charge premium
             if not variety_plants.empty:
                 healthy_pct = len(variety_plants[variety_plants["health_status"] == "healthy"]) / len(variety_plants)
                 if healthy_pct > 0.9:

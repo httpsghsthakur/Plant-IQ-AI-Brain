@@ -38,14 +38,14 @@ class EnvironmentalModel:
 
     def train(self, sensor_df: pd.DataFrame) -> Dict:
         """Train the environmental optimization models."""
-        print("  📊 Training Environmental Optimization Model...")
+        print("  [*] Training Environmental Optimization Model...")
 
         # Compute daily aggregates for training
         daily = compute_daily_aggregates(sensor_df)
         daily = daily.dropna()
 
         if len(daily) < 10:
-            print("  ⚠️  Insufficient data for environmental model training")
+            print("  [WARN] Insufficient data for environmental model training")
             self.is_trained = True  # Still mark as trained to use rule-based fallback
             return {"status": "rule_based", "reason": "insufficient_data"}
 
@@ -115,7 +115,7 @@ class EnvironmentalModel:
             "training_samples": len(X),
             "features_used": len(feature_cols + lag_cols),
         }
-        print(f"  ✅ Environmental Model trained: temp R²={temp_score:.3f}, moisture R²={moisture_score:.3f}, risk acc={risk_score:.3f}")
+        print(f"  [OK] Environmental Model trained: temp R2={temp_score:.3f}, moisture R2={moisture_score:.3f}, risk acc={risk_score:.3f}")
         return metrics
 
     def _save_models(self):

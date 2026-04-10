@@ -9,7 +9,7 @@ try:
     from .cnn_model import PlantDiseaseCNN
     TORCH_AVAILABLE = True
 except ImportError as e:
-    print(f"⚠️ PyTorch not fully available locally (DLL Error): {e}. CNN running in MOCK mode.")
+    print(f"[WARN] PyTorch not fully available locally (DLL Error): {e}. CNN running in MOCK mode.")
     TORCH_AVAILABLE = False
     
 from PIL import Image
@@ -57,15 +57,15 @@ class DiseaseVisionService:
         
         weights_path = config.MODELS_DIR / "disease_vision" / "cnn_weights.pth"
         if not weights_path.exists():
-            print(f"⚠️ CNN weights not found at {weights_path}. Model will use raw backbone features.")
+            print(f"[WARN] CNN weights not found at {weights_path}. Model will use raw backbone features.")
         else:
             try:
                 # Load with strict=False to allow for backbone/head variations if needed
                 state_dict = torch.load(weights_path, map_location=self.device, weights_only=True)
                 self.model.load_state_dict(state_dict, strict=False)
-                print(f"✅ CNN ShuffleNetV2 Model weights loaded.")
+                print(f"[OK] CNN ShuffleNetV2 Model weights loaded.")
             except Exception as e:
-                print(f"❌ Failed to load CNN weights: {e}")
+                print(f"[ERROR] Failed to load CNN weights: {e}")
                 
         self.model.eval()
         self.model_loaded = True

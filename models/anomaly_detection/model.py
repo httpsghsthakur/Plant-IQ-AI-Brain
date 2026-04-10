@@ -37,7 +37,7 @@ class AnomalyDetectionModel:
     def train(self, sensor_df: pd.DataFrame, attendance_df: pd.DataFrame,
               task_df: pd.DataFrame, inventory_df: pd.DataFrame) -> Dict:
         """Train anomaly detection models."""
-        print("  📊 Training Anomaly Detection Model...")
+        print("  [*] Training Anomaly Detection Model...")
 
         # Compute baselines
         self.sensor_baselines = compute_sensor_baselines(sensor_df)
@@ -65,7 +65,7 @@ class AnomalyDetectionModel:
             "workers_baselined": len(self.worker_baselines),
             "isolation_forest_trained": self.isolation_forest is not None,
         }
-        print(f"  ✅ Anomaly Detection Model trained: {len(self.sensor_baselines)} zones, {len(self.worker_baselines)} workers")
+        print(f"  [OK] Anomaly Detection Model trained: {len(self.sensor_baselines)} zones, {len(self.worker_baselines)} workers")
         return metrics
 
     def _save_models(self):
@@ -154,7 +154,7 @@ class AnomalyDetectionModel:
                 current_value=s["stuck_value"],
                 expected_range={"note": f"Same value for {s['duration_hours']} hours"},
                 detection_method="Variance analysis (std ≈ 0)",
-                recommended_action=f"Check {s['sensor_type']} sensor in zone {s['zone_id']} — may be malfunctioning",
+                recommended_action=f"Check {s['sensor_type']} sensor in zone {s['zone_id']} -- may be malfunctioning",
                 timestamp=datetime.now().isoformat(),
             ).model_dump())
 
@@ -188,7 +188,7 @@ class AnomalyDetectionModel:
                     anomaly_type="unusual_absence",
                     description=f"Absence rate {recent_absence_rate*100:.0f}% vs baseline {baseline['absence_rate']*100:.0f}%",
                     severity="medium",
-                    recommended_action="Check with worker — may indicate personal issues or dissatisfaction",
+                    recommended_action="Check with worker -- may indicate personal issues or dissatisfaction",
                 ).model_dump())
 
             # Unusual hours (working much more or less)
@@ -235,7 +235,7 @@ class AnomalyDetectionModel:
                     anomaly_type="consumption_spike",
                     description=f"Recent daily usage {recent_avg:.1f} vs historical avg {hist_avg:.1f}",
                     severity="medium",
-                    recommended_action=f"Investigate unusual {item} consumption — possible waste or theft",
+                    recommended_action=f"Investigate unusual {item} consumption -- possible waste or theft",
                 ).model_dump())
 
             # Stock drop anomaly
@@ -248,7 +248,7 @@ class AnomalyDetectionModel:
                         anomaly_type="unexpected_stock_drop",
                         description=f"Stock dropped by {stock_change:.0f} units (expected ~{expected_change:.0f})",
                         severity="high",
-                        recommended_action=f"Audit {item} inventory — check for recording errors or misuse",
+                        recommended_action=f"Audit {item} inventory -- check for recording errors or misuse",
                     ).model_dump())
 
         return anomalies

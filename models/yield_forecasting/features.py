@@ -8,7 +8,7 @@ from typing import Dict, List
 
 
 def compute_production_pipeline(plant_df: pd.DataFrame, days_ahead: int = 90) -> Dict:
-    """Compute production pipeline — plants expected to be ready in the forecast period."""
+    """Compute production pipeline -- plants expected to be ready in the forecast period."""
     df = plant_df.copy()
 
     # Estimate days to ready_to_sell based on current stage

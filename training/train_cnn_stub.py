@@ -28,7 +28,7 @@ def generate_stub_weights():
     
     # Save the state dict
     torch.save(model.state_dict(), save_path)
-    print("✅ Successfully generated dummy CNN weights.")
+    print("[OK] Successfully generated dummy CNN weights.")
 
 if __name__ == "__main__":
     generate_stub_weights()

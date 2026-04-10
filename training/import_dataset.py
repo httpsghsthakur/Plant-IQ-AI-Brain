@@ -26,12 +26,12 @@ def download_dataset():
     zip_path = Path(__file__).parent.parent / "data" / "plantvillage_raw.zip"
     
     if zip_path.exists():
-        print(f"📦 Found local dataset at {zip_path}. Extracting...")
+        print(f"[OK] Found local dataset at {zip_path}. Extracting...")
         with zipfile.ZipFile(zip_path, 'r') as zip_ref:
             zip_ref.extractall(EXTRACT_PATH)
-        print("✅ Extraction complete.")
+        print("[OK] Extraction complete.")
     else:
-        print("⚠️  Local dataset ZIP not found. Switching to 'Lite' (synthetic) image generation...")
+        print("[WARN]  Local dataset ZIP not found. Switching to 'Lite' (synthetic) image generation...")
         from data.generators.vision_lite_generator import generate_lite_vision_data
         generate_lite_vision_data()
 
@@ -40,10 +40,10 @@ def organize_dataset():
     if not os.path.exists(EXTRACT_PATH):
         # If EXTRACT_PATH doesn't exist, we assume Lite generation already filled FINAL_DATA_DIR
         if FINAL_DATA_DIR.exists():
-            print(f"✅ FINAL_DATA_DIR already exists at {FINAL_DATA_DIR}. Skipping organization.")
+            print(f"[OK] FINAL_DATA_DIR already exists at {FINAL_DATA_DIR}. Skipping organization.")
             return
         else:
-            print("❌ Error: No source images found and Lite generation failed.")
+            print("[ERROR] Error: No source images found and Lite generation failed.")
             return
 
     print(f"Organizing images from {EXTRACT_PATH}...")

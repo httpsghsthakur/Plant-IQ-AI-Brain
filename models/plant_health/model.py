@@ -39,12 +39,12 @@ class PlantHealthModel:
     def train(self, plant_df: pd.DataFrame, growth_df: pd.DataFrame,
               disease_df: pd.DataFrame) -> Dict:
         """Train the plant health models."""
-        print("  📊 Training Plant Health Prediction Model...")
+        print("  [*] Training Plant Health Prediction Model...")
 
         # Prepare training data
         train_data = prepare_training_data(plant_df, growth_df, disease_df)
         if len(train_data) < 20:
-            print("  ⚠️  Insufficient data for plant health model")
+            print("  [WARN]  Insufficient data for plant health model")
             self.is_trained = True
             return {"status": "rule_based", "reason": "insufficient_data"}
 
@@ -101,7 +101,7 @@ class PlantHealthModel:
             "training_samples": len(X),
             "features_used": len(available_cols),
         }
-        print(f"  ✅ Plant Health Model trained: growth R²={growth_r2:.3f}, mortality R²={mortality_r2:.3f}")
+        print(f"  [OK] Plant Health Model trained: growth R2={growth_r2:.3f}, mortality R2={mortality_r2:.3f}")
         return metrics
 
     def _save_models(self):

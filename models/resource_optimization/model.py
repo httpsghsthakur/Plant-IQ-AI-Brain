@@ -31,7 +31,7 @@ class ResourceOptimizationModel:
 
     def train(self, inventory_df: pd.DataFrame, sensor_df: pd.DataFrame) -> Dict:
         """Train resource optimization models (primarily rule/pattern-based)."""
-        print("  📊 Training Resource Optimization Model...")
+        print("  [*] Training Resource Optimization Model...")
 
         # This model is primarily rule-based with learned consumption patterns
         item_patterns = {}
@@ -49,7 +49,7 @@ class ResourceOptimizationModel:
             "items_below_reorder": sum(1 for v in item_patterns.values() if v.get("below_reorder")),
             "avg_daily_consumption_total": round(sum(v["daily_avg"] for v in item_patterns.values()), 2),
         }
-        print(f"  ✅ Resource Optimization Model trained: {len(items)} items analyzed")
+        print(f"  [OK] Resource Optimization Model trained: {len(items)} items analyzed")
         return metrics
 
     def _save_models(self):

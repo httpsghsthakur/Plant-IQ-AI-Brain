@@ -32,7 +32,7 @@ class YieldForecastingModel:
 
     def train(self, plant_df: pd.DataFrame, sales_df: pd.DataFrame) -> Dict:
         """Train yield forecasting models."""
-        print("  📊 Training Yield Forecasting Model...")
+        print("  [*] Training Yield Forecasting Model...")
 
         # Analyze production pipeline
         pipeline = compute_production_pipeline(plant_df)
@@ -49,7 +49,7 @@ class YieldForecastingModel:
             "monthly_demand_avg": demand.get("monthly_avg_quantity", 0),
             "grade_distribution": quality.get("grade_distribution", {}),
         }
-        print(f"  ✅ Yield Forecasting Model trained: {pipeline['total_ready']} plants in pipeline")
+        print(f"  [OK] Yield Forecasting Model trained: {pipeline['total_ready']} plants in pipeline")
         return metrics
 
     def _save_models(self):
@@ -100,7 +100,7 @@ class YieldForecastingModel:
             mult = grade_multipliers.get(grade, 1.0)
             revenue_by_grade[grade] = round(count * avg_price * mult, 0)
 
-        # Confidence interval (±15%)
+        # Confidence interval (+/-15%)
         low = int(total_ready * 0.85)
         high = int(total_ready * 1.15)
 
@@ -141,7 +141,7 @@ class YieldForecastingModel:
             recommendations.append("Explore new sales channels or bulk orders")
             recommendations.append("Reduce next planting batch by 15-20%")
         elif gap_status == "deficit":
-            recommendations.append(f"Increase production capacity — {abs(gap)} plant shortage expected")
+            recommendations.append(f"Increase production capacity -- {abs(gap)} plant shortage expected")
             recommendations.append("Prioritize high-value varieties for available stock")
             recommendations.append("Start advance bookings to manage demand")
         else:
@@ -198,7 +198,7 @@ class YieldForecastingModel:
                 "to_grade": "B",
                 "plant_count": c_count,
                 "potential_revenue_increase": f"₹{int(c_count * config.AVG_PLANT_PRICE * 0.25):,}",
-                "action": "Investigate root cause — disease treatment or environmental fix",
+                "action": "Investigate root cause -- disease treatment or environmental fix",
             })
 
         return QualityDistribution(

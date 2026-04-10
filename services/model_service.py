@@ -60,7 +60,7 @@ class ModelService:
 
         self._loaded = True
         loaded_count = sum(1 for v in results.values() if v)
-        print(f"  📦 Models loaded: {loaded_count}/8 from disk")
+        print(f"  [OK] Models loaded: {loaded_count}/8 from disk")
         return results
 
     def get_status(self) -> dict:

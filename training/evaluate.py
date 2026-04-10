@@ -38,14 +38,14 @@ def evaluate_all():
         if path.exists():
             data[key] = pd.read_csv(path)
         else:
-            print(f"  ⚠️ Missing: {filename}")
+            print(f"  [WARN] Missing: {filename}")
             return
 
-    print(f"\n📂 Data loaded: {sum(len(v) for v in data.values()):,} total rows")
+    print(f"\n[DIR] Data loaded: {sum(len(v) for v in data.values()):,} total rows")
 
     # Evaluate Environmental Model
     print("\n" + "─" * 50)
-    print("🌡️  Environmental Optimization Model")
+    print("[TEMP]  Environmental Optimization Model")
     from models.environmental.model import EnvironmentalModel
     env = EnvironmentalModel()
     if env.load_models():
@@ -54,13 +54,13 @@ def evaluate_all():
             result = env.analyze_zone(data["sensor"], zone["id"])
             if isinstance(result, dict):
                 print(f"   Zone {zone['name']}: status={result.get('overall_status')}, risk={result.get('risk_score')}")
-        print("   ✅ Environmental model operational")
+        print("   [OK] Environmental model operational")
     else:
-        print("   ⚠️ Model not trained")
+        print("   [WARN] Model not trained")
 
     # Evaluate Graft Model
     print("\n" + "─" * 50)
-    print("✂️  Graft Success Prediction Model")
+    print("[CUT]  Graft Success Prediction Model")
     from models.graft_prediction.model import GraftPredictionModel
     graft = GraftPredictionModel()
     if graft.load_models():
@@ -73,9 +73,9 @@ def evaluate_all():
         true_success = actual.mean()
         print(f"   Baseline success rate: {true_success*100:.1f}%")
         print(f"   Model accuracy (on generated prob): {accuracy*100:.1f}%")
-        print("   ✅ Graft model operational")
+        print("   [OK] Graft model operational")
     else:
-        print("   ⚠️ Model not trained")
+        print("   [WARN] Model not trained")
 
     # Evaluate Financial Model
     print("\n" + "─" * 50)
@@ -87,9 +87,9 @@ def evaluate_all():
         print(f"   Revenue: ₹{int(pnl.get('total_revenue', 0)):,}")
         print(f"   Expenses: ₹{int(pnl.get('total_expenses', 0)):,}")
         print(f"   Margin: {pnl.get('profit_margin', 0)}%")
-        print("   ✅ Financial model operational")
+        print("   [OK] Financial model operational")
     else:
-        print("   ⚠️ Model not trained")
+        print("   [WARN] Model not trained")
 
     # Summary
     print("\n" + "=" * 70)
@@ -102,7 +102,7 @@ def evaluate_all():
         if d.is_dir():
             files = list(d.glob("*.joblib"))
             total_size = sum(f.stat().st_size for f in files) / 1024
-            print(f"   📁 {d.name}: {len(files)} files ({total_size:.1f} KB)")
+            print(f"   [DIR] {d.name}: {len(files)} files ({total_size:.1f} KB)")
 
 
 if __name__ == "__main__":

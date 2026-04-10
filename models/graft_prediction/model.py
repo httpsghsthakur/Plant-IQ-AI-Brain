@@ -35,11 +35,11 @@ class GraftPredictionModel:
 
     def train(self, graft_df: pd.DataFrame) -> Dict:
         """Train the graft success prediction model."""
-        print("  📊 Training Graft Success Prediction Model...")
+        print("  [*] Training Graft Success Prediction Model...")
 
         X, y = prepare_graft_training_data(graft_df)
         if len(X) < 50:
-            print("  ⚠️  Insufficient graft data for training")
+            print("  [WARN]  Insufficient graft data for training")
             self.is_trained = True
             return {"status": "rule_based", "reason": "insufficient_data"}
 
@@ -72,7 +72,7 @@ class GraftPredictionModel:
             "positive_rate": round(y.mean(), 4),
             "top_features": {name: round(float(imp), 4) for name, imp in top_features},
         }
-        print(f"  ✅ Graft Prediction Model trained: accuracy={accuracy:.3f}, samples={len(X)}")
+        print(f"  [OK] Graft Prediction Model trained: accuracy={accuracy:.3f}, samples={len(X)}")
         return metrics
 
     def _save_models(self):

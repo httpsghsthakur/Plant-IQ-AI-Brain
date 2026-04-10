@@ -21,7 +21,7 @@ import config
 
 def train_model(data_dir, num_epochs=25, batch_size=32, lr=0.001):
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    print(f"🚀 Starting training on device: {device}")
+    print(f"[START] Starting training on device: {device}")
 
     # 1. Data Augmentation & Normalization
     data_transforms = {
@@ -43,7 +43,7 @@ def train_model(data_dir, num_epochs=25, batch_size=32, lr=0.001):
 
     # 2. Load Datasets
     if not os.path.exists(data_dir):
-        print(f"❌ Error: Data directory {data_dir} not found.")
+        print(f"[ERROR] Error: Data directory {data_dir} not found.")
         print("Please ensure you have subfolders named after the disease classes.")
         return
 
@@ -55,7 +55,7 @@ def train_model(data_dir, num_epochs=25, batch_size=32, lr=0.001):
     
     dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'val']}
     class_names = image_datasets['train'].classes
-    print(f"📊 Classes detected: {class_names}")
+    print(f"[*] Classes detected: {class_names}")
 
     # 3. Model Initialization
     model = PlantDiseaseCNN(num_classes=len(class_names))
@@ -115,7 +115,7 @@ def train_model(data_dir, num_epochs=25, batch_size=32, lr=0.001):
 
         print()
 
-    print(f'🏆 Best val Acc: {best_acc:4f}')
+    print(f'[BEST] Best val Acc: {best_acc:4f}')
 
     # 5. Save the weights
     save_dir = config.MODELS_DIR / "disease_vision"
@@ -123,7 +123,7 @@ def train_model(data_dir, num_epochs=25, batch_size=32, lr=0.001):
     save_path = save_dir / "cnn_weights.pth"
     
     torch.save(best_model_wts, save_path)
-    print(f"✅ Trained model saved to: {save_path}")
+    print(f"[OK] Trained model saved to: {save_path}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="PlantIQ Vision Trainer")

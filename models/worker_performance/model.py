@@ -33,7 +33,7 @@ class WorkerPerformanceModel:
 
     def train(self, attendance_df: pd.DataFrame, task_df: pd.DataFrame) -> Dict:
         """Train worker performance models."""
-        print("  📊 Training Worker Performance Model...")
+        print("  [*] Training Worker Performance Model...")
 
         # Prepare training data for burnout classifier
         worker_ids = attendance_df["worker_id"].unique()
@@ -107,7 +107,7 @@ class WorkerPerformanceModel:
             "absence_predictor_accuracy": round(absence_accuracy, 4),
             "workers_analyzed": len(worker_ids),
         }
-        print(f"  ✅ Worker Performance Model trained: burnout acc={burnout_accuracy:.3f}, absence acc={absence_accuracy:.3f}")
+        print(f"  [OK] Worker Performance Model trained: burnout acc={burnout_accuracy:.3f}, absence acc={absence_accuracy:.3f}")
         return metrics
 
     def _save_models(self):
@@ -188,7 +188,7 @@ class WorkerPerformanceModel:
                 },
             },
             "rank": f"{rank}{'st' if rank==1 else 'nd' if rank==2 else 'rd' if rank==3 else 'th'} out of {len(sorted_scores)} workers",
-            "trend": "↑ Performing well" if scores["composite_score"] > 75 else "→ Stable" if scores["composite_score"] > 60 else "↓ Needs improvement",
+            "trend": "^ Performing well" if scores["composite_score"] > 75 else "-> Stable" if scores["composite_score"] > 60 else "v Needs improvement",
             "recommendations": recommendations,
         }
 

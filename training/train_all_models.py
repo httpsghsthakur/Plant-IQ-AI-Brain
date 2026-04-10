@@ -28,18 +28,18 @@ def train_all():
     # Overwrite if provided in env
     nursery_id = sys.argv[1] if len(sys.argv) > 1 else nursery_id
     
-    print(f"\n📂 Fetching live data from Database for Nursery: {nursery_id}...")
+    print(f"\n[DIR] Fetching live data from Database for Nursery: {nursery_id}...")
     try:
         data = data_service.load_nursery_data(nursery_id)
-        print("   ✅ Data loaded successfully from Supabase")
+        print("   [OK] Data loaded successfully from Supabase")
         
         # Log counts
         for key, df in data.items():
             print(f"   v {key}: {len(df):,}")
             
     except Exception as e:
-        print(f"   ❌ Database fetch failed: {e}")
-        print("   ⚠️ Falling back to local CSV files if available...")
+        print(f"   [ERROR] Database fetch failed: {e}")
+        print("   [WARN] Falling back to local CSV files if available...")
         data_files = {
             "sensor": config.DATA_DIR / "sensor_data.csv",
             "plant_inventory": config.DATA_DIR / "plant_inventory.csv",
@@ -59,7 +59,7 @@ def train_all():
                 print(f"   v {key}: {len(data[key]):,} rows (local)")
             else:
                 data[key] = pd.DataFrame()
-                print(f"   ⚠️ {key}: missing local CSV")
+                print(f"   [WARN] {key}: missing local CSV")
 
     metrics = {}
 
@@ -145,7 +145,7 @@ def train_all():
             print("  [!] Disease data not found, skipping vision training")
             metrics["disease_vision"] = {"status": "skipped", "reason": "no_data"}
     except Exception as e:
-        print(f"  ❌ Disease vision training failed: {e}")
+        print(f"  [ERROR] Disease vision training failed: {e}")
         metrics["disease_vision"] = {"status": "failed", "error": str(e)}
 
     # ─── Summary ────────────────────────────────────────────────────
@@ -154,18 +154,18 @@ def train_all():
     print(f"  [V] All 9 models trained successfully in {elapsed:.1f} seconds!")
     print("=" * 70)
 
-    print("\n📊 Training Metrics Summary:")
+    print("\n[*] Training Metrics Summary:")
     for model_name, model_metrics in metrics.items():
         print(f"\n  {model_name}:")
         for k, v in model_metrics.items():
-            print(f"    • {k}: {v}")
+            print(f"    * {k}: {v}")
 
     # List saved model files
     print("\n[S] Saved Models:")
     for d in sorted(config.MODELS_DIR.glob("*")):
         if d.is_dir():
             files = list(d.glob("*.joblib"))
-            print(f"   📁 {d.name}/: {len(files)} files")
+            print(f"   [DIR] {d.name}/: {len(files)} files")
 
     return metrics
 
